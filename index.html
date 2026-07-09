@@ -3,18 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Centre for Intellectual Property Protection & Commercialization | CIPPAC</title>
+  <title>CIPPAC | Centre for Intellectual Property Protection and Commercialization | University of Ibadan</title>
+  <meta name="description" content="Official homepage of the Centre for Intellectual Property Protection and Commercialization (CIPPAC), University of Ibadan, Nigeria. Empowering researchers and driving innovation.">
   
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="Guiding university research and global innovations through patent protection, technology transfer, licensing, and commercialization partnerships.">
-  
-  <!-- Google Fonts -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   
-  <!-- Tailwind Play CDN -->
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+  
   <script>
     tailwind.config = {
       theme: {
@@ -42,7 +44,6 @@
   </script>
   
   <style>
-    
     html {
       scroll-behavior: smooth;
     }
@@ -125,7 +126,7 @@
     .nav-link {
       position: relative;
     }
-    .nav-link.!text-accentgold::after {
+    .nav-link.\!text-accentgold::after {
       content: '';
       position: absolute;
       bottom: -4px;
@@ -163,10 +164,15 @@
         margin-bottom: 0;
       }
     }
-  
   </style>
+  
+  
+
+  <!-- Lucide Icon Library -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
 </head>
-<body class="bg-white text-charcoal font-sans scroll-smooth">
+<body <?php body_class("bg-white text-charcoal antialiased"); ?>>
 
   <!-- Top Sticky Navigation -->
   <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 py-6 border-b border-transparent">
@@ -249,15 +255,18 @@
       
       <h1 class="font-heading hero-title font-[900] text-white tracking-tight leading-[1.1] mb-6">
         Empowering Breakthrough Research<br />
-and Global Innovation      </h1>
+and Global Innovation
+      </h1>
       
       <p class="max-w-2xl mx-auto text-white/80 text-base sm:text-xl font-light leading-relaxed mb-10">
-        Empowering researchers, innovators, inventors, and industry leaders through intellectual property protection, technology transfer, commercialization, and strategic partnerships.      </p>
+        Empowering researchers, innovators, inventors, and industry leaders through intellectual property protection, technology transfer, commercialization, and strategic partnerships.
+      </p>
       
       <!-- Action Buttons -->
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-14">
         <a href="#services" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-xl bg-uigreen text-white font-bold hover:bg-uigreen-dark transition-all duration-300 shadow-xl shadow-uigreen/20 border border-accentgold/20 hover:scale-[1.02] focus-visible:ring-2 focus-visible:ring-accentgold focus-visible:ring-offset-2 focus:outline-none">
-          Protect Your Innovation          <i data-lucide="arrow-right" class="w-4 h-4 ml-2" aria-hidden="true"></i>
+          Protect Your Innovation
+          <i data-lucide="arrow-right" class="w-4 h-4 ml-2" aria-hidden="true"></i>
         </a>
         <a href="#about" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-xl border border-white/20 text-white font-semibold hover:bg-white/10 transition-all backdrop-blur-md hover:scale-[1.02] focus-visible:ring-2 focus-visible:ring-accentgold focus-visible:ring-offset-2 focus:outline-none">
           Explore Our Services
@@ -296,7 +305,7 @@ and Global Innovation      </h1>
       <div class="text-center max-w-3xl mx-auto mb-16 fade-up-element">
         <span class="section-badge text-uigreen font-bold text-sm tracking-wider uppercase mb-3 block">Impact & Reach</span>
         <h2 class="font-heading text-3xl sm:text-4xl font-bold text-uigreen-dark mb-4">Our Impact in Numbers</h2>
-        <p class="text-gray-600 text-base">Measurable outcomes from CIPPAC\'s work in protecting and commercializing university research.</p>
+        <p class="text-gray-600 text-base">Measurable outcomes from CIPPAC\\\'s work in protecting and commercializing university research.</p>
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         <!-- Stat Card 1 -->
@@ -306,7 +315,7 @@ and Global Innovation      </h1>
               <i data-lucide="file-check" class="w-6 h-6"></i>
             </div>
             <div class="text-4xl sm:text-5xl font-heading font-black text-uigreen-dark mb-2">
-              <span class="counter" data-target="150">0</span>+
+              <span class="counter" data-target="<?php echo esc_attr($stat1_num); ?>">0</span>+
             </div>
             <h3 class="font-heading font-semibold text-lg text-charcoal mb-2">Registered Patents</h3>
             <p class="text-gray-500 text-sm leading-relaxed">Assisting faculty, staff, and student inventors with patent search, drafting, and registration.</p>
@@ -320,7 +329,7 @@ and Global Innovation      </h1>
               <i data-lucide="rocket" class="w-6 h-6"></i>
             </div>
             <div class="text-4xl sm:text-5xl font-heading font-black text-uigreen-dark mb-2">
-              <span class="counter" data-target="45">0</span>+
+              <span class="counter" data-target="<?php echo esc_attr($stat2_num); ?>">0</span>+
             </div>
             <h3 class="font-heading font-semibold text-lg text-charcoal mb-2">Commercialized Projects</h3>
             <p class="text-gray-500 text-sm leading-relaxed">Transitioning prototypes and research ideas into commercially viable market products.</p>
@@ -334,7 +343,7 @@ and Global Innovation      </h1>
               <i data-lucide="users" class="w-6 h-6"></i>
             </div>
             <div class="text-4xl sm:text-5xl font-heading font-black text-uigreen-dark mb-2">
-              <span class="counter" data-target="1200">0</span>+
+              <span class="counter" data-target="<?php echo esc_attr($stat3_num); ?>">0</span>+
             </div>
             <h3 class="font-heading font-semibold text-lg text-charcoal mb-2">Researchers Assisted</h3>
             <p class="text-gray-500 text-sm leading-relaxed">Conducting clinics, workshops, and individual IP counseling for the university community.</p>
@@ -348,7 +357,7 @@ and Global Innovation      </h1>
               <i data-lucide="handshake" class="w-6 h-6"></i>
             </div>
             <div class="text-4xl sm:text-5xl font-heading font-black text-uigreen-dark mb-2">
-              <span class="counter" data-target="80">0</span>+
+              <span class="counter" data-target="<?php echo esc_attr($stat4_num); ?>">0</span>+
             </div>
             <h3 class="font-heading font-semibold text-lg text-charcoal mb-2">Industry Partners</h3>
             <p class="text-gray-500 text-sm leading-relaxed">Fostering collaboration with corporate partners, investors, and public agencies.</p>
@@ -380,11 +389,14 @@ and Global Innovation      </h1>
         <div class="fade-up-element lg:col-span-6">
           <span class="section-badge text-uigreen font-bold text-sm tracking-wider uppercase mb-3 block">University of Ibadan Innovation Ecosystem</span>
           <h2 class="font-heading text-3xl sm:text-4xl font-bold text-uigreen-dark leading-tight mb-6">
-            Bridging Academic Excellence and Economic Impact          </h2>
+            Bridging Academic Excellence and Economic Impact
+          </h2>
           <p class="text-gray-600 text-base sm:text-lg leading-relaxed mb-6">
-            The Centre for Intellectual Property Protection and Commercialization (CIPPAC), University of Ibadan, is the official institutional engine dedicated to identifying, protecting, and commercializing the university&#039;s intellectual assets.          </p>
+            The Centre for Intellectual Property Protection and Commercialization (CIPPAC), University of Ibadan, is the official institutional engine dedicated to identifying, protecting, and commercializing the university's intellectual assets.
+          </p>
           <p class="text-gray-600 text-base leading-relaxed mb-8">
-            We empower inventors and researchers by providing advisory services, patent applications support, and licensing coordination, while actively matchmaking academy innovations with corporate industry partners to drive national economic development.          </p>
+            We empower inventors and researchers by providing advisory services, patent applications support, and licensing coordination, while actively matchmaking academy innovations with corporate industry partners to drive national economic development.
+          </p>
           
           <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
             <a href="#services" class="inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-uigreen text-white font-bold hover:bg-uigreen-dark transition-all shadow-md shadow-uigreen/10 focus-visible:ring-2 focus-visible:ring-uigreen focus-visible:ring-offset-2 focus:outline-none">
@@ -881,8 +893,42 @@ and Global Innovation      </h1>
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
         <!-- Photo Column (Left) -->
         <div class="fade-up-element lg:col-span-5 flex flex-col items-center">
-          <div class="relative rounded-2xl overflow-hidden w-full max-w-[340px] aspect-[3/4] border-4 border-uigreen shadow-[0_0_20px_rgba(11,107,58,0.4)] hover:shadow-[0_0_30px_rgba(11,107,58,0.7)] transition-all duration-500 group">
-            <img src="./ui-director-photo.jpg" alt="Professor Oladapo Titus Okareh" class="w-full h-full object-cover object-top hover:scale-[1.03] transition-transform duration-700">
+          <div class="relative overflow-hidden w-full max-w-[340px] aspect-[3/4] rounded-2xl border-4 border-uigreen shadow-[0_0_20px_rgba(11,107,58,0.4)] hover:shadow-[0_0_30px_rgba(11,107,58,0.7)] transition-all duration-500 group" id="director-slideshow">
+            <!-- Slide Track -->
+            <div class="flex h-full transition-transform duration-500 ease-out" id="director-slide-track" style="width: 400%;">
+              <!-- Slide 1 (Original Photo) -->
+              <div class="w-1/4 h-full flex-shrink-0">
+                <img src="./ui-director-photo.jpg" alt="Professor Oladapo Titus Okareh - Portrait 1" class="w-full h-full object-cover object-top">
+              </div>
+              <!-- Slide 2 -->
+              <div class="w-1/4 h-full flex-shrink-0">
+                <img src="./ui-director-photo-2.png" alt="Professor Oladapo Titus Okareh - Portrait 2" class="w-full h-full object-cover object-top">
+              </div>
+              <!-- Slide 3 -->
+              <div class="w-1/4 h-full flex-shrink-0">
+                <img src="./ui-director-photo-3.png" alt="Professor Oladapo Titus Okareh - Portrait 3" class="w-full h-full object-cover object-top">
+              </div>
+              <!-- Slide 4 -->
+              <div class="w-1/4 h-full flex-shrink-0">
+                <img src="./ui-director-photo-4.png" alt="Professor Oladapo Titus Okareh - Launching Ceremony" class="w-full h-full object-cover object-center">
+              </div>
+            </div>
+            
+            <!-- Slide Navigation Buttons (Hidden by default, show on hover) -->
+            <button id="prev-director-slide" aria-label="Previous image" class="absolute left-3 top-1/2 transform -translate-y-1/2 w-8 h-8 rounded-full bg-black/40 hover:bg-black/75 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 focus-visible:ring-2 focus-visible:ring-accentgold focus:outline-none z-10">
+              <i data-lucide="chevron-left" class="w-4 h-4" aria-hidden="true"></i>
+            </button>
+            <button id="next-director-slide" aria-label="Next image" class="absolute right-3 top-1/2 transform -translate-y-1/2 w-8 h-8 rounded-full bg-black/40 hover:bg-black/75 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 focus-visible:ring-2 focus-visible:ring-accentgold focus:outline-none z-10">
+              <i data-lucide="chevron-right" class="w-4 h-4" aria-hidden="true"></i>
+            </button>
+            
+            <!-- Slide Indicators (Dots) -->
+            <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10">
+              <button aria-label="Go to slide 1" class="w-2 h-2 rounded-full bg-white/50 hover:bg-white transition-colors director-dot active-director-dot" data-slide="0"></button>
+              <button aria-label="Go to slide 2" class="w-2 h-2 rounded-full bg-white/50 hover:bg-white transition-colors director-dot" data-slide="1"></button>
+              <button aria-label="Go to slide 3" class="w-2 h-2 rounded-full bg-white/50 hover:bg-white transition-colors director-dot" data-slide="2"></button>
+              <button aria-label="Go to slide 4" class="w-2 h-2 rounded-full bg-white/50 hover:bg-white transition-colors director-dot" data-slide="3"></button>
+            </div>
           </div>
           <!-- Title & Name below the photo, outside the overlay for perfect contrast -->
           <div class="text-center mt-6">
@@ -1131,7 +1177,14 @@ and Global Innovation      </h1>
 
   <!-- ELEMENTOR CONTENT AREA -->
   <div class="elementor-content-area">
-      </div>
+    <?php
+    if ( have_posts() ) :
+         while ( have_posts() ) : the_post();
+             the_content();
+         endwhile;
+     endif;
+    ?>
+  </div>
 
   <!-- Back to Top Button -->
   <button id="back-to-top" aria-label="Scroll back to top" class="fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-uigreen text-white shadow-lg shadow-uigreen/20 flex items-center justify-center opacity-0 translate-y-4 transition-all duration-300 pointer-events-none hover:bg-uigreen-dark border border-accentgold/30 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accentgold focus:outline-none">
@@ -1213,8 +1266,7 @@ and Global Innovation      </h1>
     </div>
   </footer>
 
-  <!-- Lucide Icons -->
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Lucide Icon Initialization -->
   <script>
     lucide.createIcons();
   </script>
@@ -1413,6 +1465,74 @@ and Global Innovation      </h1>
       });
     }
 
+    // Director Slideshow Control
+    const directorTrack = document.getElementById('director-slide-track');
+    const prevDirectorBtn = document.getElementById('prev-director-slide');
+    const nextDirectorBtn = document.getElementById('next-director-slide');
+    const directorDots = document.querySelectorAll('.director-dot');
+    const directorSlideshow = document.getElementById('director-slideshow');
+    
+    let directorIndex = 0;
+    const directorCount = 4;
+    let directorInterval;
+
+    function updateDirectorSlider() {
+      if (directorTrack) {
+        directorTrack.style.transform = "translateX(-" + (directorIndex * 25) + "%)";
+      }
+      
+      directorDots.forEach((dot, idx) => {
+        if (idx === directorIndex) {
+          dot.classList.add('bg-white', 'scale-110');
+          dot.classList.remove('bg-white/50');
+        } else {
+          dot.classList.remove('bg-white', 'scale-110');
+          dot.classList.add('bg-white/50');
+        }
+      });
+    }
+
+    function startDirectorAutoplay() {
+      directorInterval = setInterval(() => {
+        directorIndex = (directorIndex + 1) % directorCount;
+        updateDirectorSlider();
+      }, 5000);
+    }
+
+    function stopDirectorAutoplay() {
+      clearInterval(directorInterval);
+    }
+
+    if (nextDirectorBtn) {
+      nextDirectorBtn.addEventListener('click', () => {
+        directorIndex = (directorIndex + 1) % directorCount;
+        updateDirectorSlider();
+      });
+    }
+
+    if (prevDirectorBtn) {
+      prevDirectorBtn.addEventListener('click', () => {
+        directorIndex = (directorIndex - 1 + directorCount) % directorCount;
+        updateDirectorSlider();
+      });
+    }
+
+    directorDots.forEach(dot => {
+      dot.addEventListener('click', () => {
+        directorIndex = parseInt(dot.getAttribute('data-slide'));
+        updateDirectorSlider();
+      });
+    });
+
+    if (directorSlideshow) {
+      directorSlideshow.addEventListener('mouseenter', stopDirectorAutoplay);
+      directorSlideshow.addEventListener('mouseleave', startDirectorAutoplay);
+    }
+
+    // Initialize
+    updateDirectorSlider();
+    startDirectorAutoplay();
+
     // Newsletter Form Validation handler
     const newsletterForm = document.querySelector('footer form');
     if (newsletterForm) {
@@ -1430,6 +1550,7 @@ and Global Innovation      </h1>
       });
     }
   </script>
-
+  
+  
 </body>
 </html>
