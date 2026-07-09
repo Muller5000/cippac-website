@@ -1222,6 +1222,218 @@ and Global Innovation      </h1>
   <script>
     lucide.createIcons();
   </script>
+  
+  <!-- JavaScript for Interactions & Smooth Scrolling -->
+  <script>
+    // Header Scroll Transition
+    const header = document.getElementById('main-header');
+    const logoText = document.getElementById('logo-text-cippac');
+    const navCta = document.getElementById('nav-cta');
+    const navLinks = document.querySelectorAll('.nav-link');
+    
+    const sections = document.querySelectorAll('section[id]');
+    const backToTopBtn = document.getElementById('back-to-top');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.classList.remove('py-6');
+        header.classList.add('py-4', 'bg-white/80', 'backdrop-blur-md', 'shadow-sm', 'border-gray-100');
+        logoText.classList.remove('text-white');
+        logoText.classList.add('text-uigreen-dark');
+        navCta.classList.remove('border-white/30', 'text-white', 'hover:bg-white', 'hover:text-uigreen');
+        navCta.classList.add('border-uigreen/30', 'text-uigreen', 'hover:bg-uigreen', 'hover:text-white');
+        navLinks.forEach(link => {
+          link.classList.remove('text-white/90', 'hover:text-white');
+          link.classList.add('text-gray-600', 'hover:text-uigreen');
+        });
+      } else {
+        header.classList.remove('py-4', 'bg-white/80', 'backdrop-blur-md', 'shadow-sm', 'border-gray-100');
+        header.classList.add('py-6');
+        logoText.classList.remove('text-uigreen-dark');
+        logoText.classList.add('text-white');
+        navCta.classList.remove('border-uigreen/30', 'text-uigreen', 'hover:bg-uigreen', 'hover:text-white');
+        navCta.classList.add('border-white/30', 'text-white', 'hover:bg-white', 'hover:text-uigreen');
+        navLinks.forEach(link => {
+          link.classList.remove('text-gray-600', 'hover:text-uigreen');
+          link.classList.add('text-white/90', 'hover:text-white');
+        });
+      }
+
+      // Back to Top Button Show/Hide
+      if (backToTopBtn) {
+        if (window.scrollY > 600) {
+          backToTopBtn.classList.remove('opacity-0', 'translate-y-4', 'pointer-events-none');
+          backToTopBtn.classList.add('opacity-100', 'translate-y-0', 'pointer-events-auto');
+        } else {
+          backToTopBtn.classList.add('opacity-0', 'translate-y-4', 'pointer-events-none');
+          backToTopBtn.classList.remove('opacity-100', 'translate-y-0', 'pointer-events-auto');
+        }
+      }
+
+      // Active Nav Link Highlighting
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        if (window.scrollY >= sectionTop) {
+          current = section.getAttribute('id');
+        }
+      });
+      navLinks.forEach(link => {
+        link.classList.remove('text-accentgold', '!text-accentgold');
+        if (link.getAttribute('href') === '#' + current) {
+          link.classList.add('!text-accentgold');
+        }
+      });
+    });
+
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const closeMenuBtn = document.getElementById('close-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+    
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.remove('translate-x-full');
+    });
+    
+    closeMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.add('translate-x-full');
+    });
+    
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('translate-x-full');
+      });
+    });
+    
+    // Fade-up Animation using Intersection Observer
+    const fadeElements = document.querySelectorAll('.fade-up-element');
+    const observerOptions = {
+      root: null,
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+    
+    const fadeObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          
+          // Trigger metric counter animation if this element has counters
+          const counters = entry.target.querySelectorAll('.counter');
+          if (counters.length > 0) {
+            counters.forEach(counter => {
+              if (!counter.started) {
+                counter.started = true;
+                animateCounter(counter);
+              }
+            });
+          }
+          
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+    
+    fadeElements.forEach(element => {
+      fadeObserver.observe(element);
+    });
+    
+    // Animate Number Counters Function
+    function animateCounter(counter) {
+      const target = +counter.getAttribute('data-target');
+      const duration = 2000; // 2 seconds
+      const startTime = performance.now();
+      
+      function update(currentTime) {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        // Ease out quad
+        const easeProgress = progress * (2 - progress);
+        
+        const currentValue = Math.floor(easeProgress * target);
+        counter.innerText = currentValue;
+        
+        if (progress < 1) {
+          requestAnimationFrame(update);
+        } else {
+          counter.innerText = target;
+        }
+      }
+      
+      requestAnimationFrame(update);
+    }
+    
+    // Story Slider Control
+    const sliderTrack = document.getElementById('story-slider-track');
+    const prevBtn = document.getElementById('prev-story-btn');
+    const nextBtn = document.getElementById('next-story-btn');
+    let sliderOffset = 0;
+    
+    nextBtn.addEventListener('click', () => {
+      const maxScroll = sliderTrack.scrollWidth - sliderTrack.parentElement.clientWidth;
+      sliderOffset += sliderTrack.parentElement.clientWidth / 2;
+      if (sliderOffset > maxScroll) sliderOffset = maxScroll;
+      sliderTrack.style.transform = "translateX(-" + sliderOffset + "px)";
+    });
+    
+    prevBtn.addEventListener('click', () => {
+      sliderOffset -= sliderTrack.parentElement.clientWidth / 2;
+      if (sliderOffset < 0) sliderOffset = 0;
+      sliderTrack.style.transform = "translateX(-" + sliderOffset + "px)";
+    });
+    
+    // Testimonials Slider Control
+    const testTrack = document.getElementById('testimonial-slider-track');
+    const prevTestBtn = document.getElementById('prev-test-btn');
+    const nextTestBtn = document.getElementById('next-test-btn');
+    let testIndex = 0;
+    const testCount = testTrack.children.length;
+    
+    function updateTestimonialSlider() {
+      testTrack.style.transform = "translateX(-" + (testIndex * 100) + "%)";
+    }
+    
+    nextTestBtn.addEventListener('click', () => {
+      testIndex = (testIndex + 1) % testCount;
+      updateTestimonialSlider();
+    });
+    
+    prevTestBtn.addEventListener('click', () => {
+      testIndex = (testIndex - 1 + testCount) % testCount;
+      updateTestimonialSlider();
+    });
+    
+    // Auto play testimonials
+    setInterval(() => {
+      testIndex = (testIndex + 1) % testCount;
+      updateTestimonialSlider();
+    }, 8000);
+
+    // Back to Top Button click handler
+    if (backToTopBtn) {
+      backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    }
+
+    // Newsletter Form Validation handler
+    const newsletterForm = document.querySelector('footer form');
+    if (newsletterForm) {
+      newsletterForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const emailInput = newsletterForm.querySelector('input[type="email"]');
+        if (emailInput && emailInput.value && emailInput.value.includes('@')) {
+          emailInput.value = '';
+          emailInput.placeholder = 'Thank you for subscribing!';
+          emailInput.classList.add('border-accentgold');
+          emailInput.disabled = true;
+          const submitBtn = newsletterForm.querySelector('button[type="submit"]');
+          if (submitBtn) submitBtn.disabled = true;
+        }
+      });
+    }
+  </script>
 
 </body>
 </html>
