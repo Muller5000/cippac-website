@@ -1384,6 +1384,31 @@ and Global Innovation
     </div>
   </footer>
 
+  <!-- Privacy Notice Cookie Consent Banner -->
+  <div id="privacy-consent-banner" class="fixed bottom-6 left-6 right-6 md:left-auto md:right-6 md:max-w-md z-[100] translate-y-12 opacity-0 pointer-events-none transition-all duration-500 ease-out">
+    <div class="bg-uigreen-dark/95 backdrop-blur-md border border-white/10 p-6 rounded-2xl shadow-2xl text-white">
+      <div class="flex items-start space-x-3 mb-4">
+        <div class="w-8 h-8 rounded-lg bg-accentgold/15 flex items-center justify-center flex-shrink-0 text-accentgold">
+          <i data-lucide="cookie" class="w-4 h-4" aria-hidden="true"></i>
+        </div>
+        <div>
+          <h4 class="font-heading font-bold text-base text-white">Cookie Consent & Privacy Notice</h4>
+          <p class="text-white/70 text-xs leading-relaxed mt-1">
+            CIPPAC uses cookies to optimize your experience, analyze site traffic, and support tech transfer services. By clicking "Accept All", you agree to our policies in accordance with our <a href="./privacy-policy.html" class="text-accentgold hover:underline font-semibold">Privacy Policy</a>.
+          </p>
+        </div>
+      </div>
+      <div class="flex items-center justify-end space-x-3 text-xs">
+        <button id="reject-consent-btn" class="px-4 py-2 text-white/75 hover:text-white transition-colors focus-visible:ring-1 focus-visible:ring-white rounded-lg">
+          Decline
+        </button>
+        <button id="accept-consent-btn" class="px-5 py-2 bg-accentgold text-uigreen-dark font-bold rounded-xl hover:bg-white hover:text-uigreen transition-all duration-300 shadow-md focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accentgold focus:outline-none">
+          Accept All
+        </button>
+      </div>
+    </div>
+  </div>
+
   <!-- Lucide Icon Initialization -->
   <script>
     lucide.createIcons();
@@ -1733,6 +1758,38 @@ and Global Innovation
         successState.classList.add('hidden');
         contactForm.classList.remove('hidden');
       });
+    }
+
+    // Privacy Consent Banner Logic
+    const consentBanner = document.getElementById('privacy-consent-banner');
+    const acceptBtn = document.getElementById('accept-consent-btn');
+    const rejectBtn = document.getElementById('reject-consent-btn');
+
+    if (consentBanner && acceptBtn && rejectBtn) {
+      const consentGiven = localStorage.getItem('cippac-cookie-consent');
+      
+      // If no consent has been logged yet, show the banner with a delay
+      if (!consentGiven) {
+        setTimeout(() => {
+          consentBanner.classList.remove('translate-y-12', 'opacity-0', 'pointer-events-none');
+          consentBanner.classList.add('translate-y-0', 'opacity-100', 'pointer-events-auto');
+        }, 1200);
+      }
+
+      acceptBtn.addEventListener('click', () => {
+        localStorage.setItem('cippac-cookie-consent', 'accepted');
+        closeBanner();
+      });
+
+      rejectBtn.addEventListener('click', () => {
+        localStorage.setItem('cippac-cookie-consent', 'declined');
+        closeBanner();
+      });
+
+      function closeBanner() {
+        consentBanner.classList.remove('translate-y-0', 'opacity-100', 'pointer-events-auto');
+        consentBanner.classList.add('translate-y-12', 'opacity-0', 'pointer-events-none');
+      }
     }
   </script>
   
