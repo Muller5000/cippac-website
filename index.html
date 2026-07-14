@@ -1196,27 +1196,30 @@ and Global Innovation
         <!-- Right: Interactive Form Panel -->
         <div class="lg:col-span-7 p-4 sm:p-6">
           <form id="cippac-contact-form" class="h-full flex flex-col justify-between space-y-8">
+            <!-- Web3Forms Access Key (Placeholder for user to replace) -->
+            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+            
             <!-- Text Inputs Grid -->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6">
               <!-- First Name -->
               <div>
                 <label for="first-name" class="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1">First Name</label>
-                <input type="text" id="first-name" name="first-name" required placeholder="John" class="w-full bg-transparent border-b border-gray-200 py-2.5 text-sm text-gray-800 placeholder-gray-300 focus:outline-none focus:border-uigreen transition-colors">
+                <input type="text" id="first-name" name="first_name" required placeholder="John" class="w-full bg-transparent border-b border-gray-200 py-2.5 text-sm text-gray-800 placeholder-gray-300 focus:outline-none focus:border-uigreen transition-colors">
               </div>
               <!-- Last Name -->
               <div>
                 <label for="last-name" class="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1">Last Name</label>
-                <input type="text" id="last-name" name="last-name" required placeholder="Doe" class="w-full bg-transparent border-b border-gray-200 py-2.5 text-sm text-gray-800 placeholder-gray-300 focus:outline-none focus:border-uigreen transition-colors">
+                <input type="text" id="last-name" name="last_name" required placeholder="Doe" class="w-full bg-transparent border-b border-gray-200 py-2.5 text-sm text-gray-800 placeholder-gray-300 focus:outline-none focus:border-uigreen transition-colors">
               </div>
               <!-- Email -->
               <div>
                 <label for="email-addr" class="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1">Mail</label>
-                <input type="email" id="email-addr" name="email-addr" required placeholder="john.doe@gmail.com" class="w-full bg-transparent border-b border-gray-200 py-2.5 text-sm text-gray-800 placeholder-gray-300 focus:outline-none focus:border-uigreen transition-colors">
+                <input type="email" id="email-addr" name="email" required placeholder="john.doe@gmail.com" class="w-full bg-transparent border-b border-gray-200 py-2.5 text-sm text-gray-800 placeholder-gray-300 focus:outline-none focus:border-uigreen transition-colors">
               </div>
               <!-- Phone -->
               <div>
                 <label for="phone-number" class="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1">Phone</label>
-                <input type="tel" id="phone-number" name="phone-number" placeholder="+234 802 000 0000" class="w-full bg-transparent border-b border-gray-200 py-2.5 text-sm text-gray-800 placeholder-gray-300 focus:outline-none focus:border-uigreen transition-colors">
+                <input type="tel" id="phone-number" name="phone" placeholder="+234 802 000 0000" class="w-full bg-transparent border-b border-gray-200 py-2.5 text-sm text-gray-800 placeholder-gray-300 focus:outline-none focus:border-uigreen transition-colors">
               </div>
             </div>
             
@@ -1225,35 +1228,35 @@ and Global Innovation
               <span class="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">What service do you need?</span>
               <div class="flex flex-wrap gap-4 text-xs font-medium">
                 <label class="flex items-center space-x-2.5 cursor-pointer group">
-                  <input type="radio" name="service-type" value="Patent Protection" checked class="sr-only peer">
+                  <input type="radio" name="service_needed" value="Patent Protection" checked class="sr-only peer">
                   <div class="w-4 h-4 rounded-full border border-gray-300 flex items-center justify-center peer-checked:border-uigreen peer-checked:bg-uigreen transition-all">
                     <div class="w-1.5 h-1.5 rounded-full bg-white scale-0 peer-checked:scale-100 transition-transform"></div>
                   </div>
                   <span class="text-gray-600 peer-checked:text-uigreen peer-checked:font-bold transition-all">Patent Protection</span>
                 </label>
                 <label class="flex items-center space-x-2.5 cursor-pointer group">
-                  <input type="radio" name="service-type" value="Trademarks" class="sr-only peer">
+                  <input type="radio" name="service_needed" value="Trademarks" class="sr-only peer">
                   <div class="w-4 h-4 rounded-full border border-gray-300 flex items-center justify-center peer-checked:border-uigreen peer-checked:bg-uigreen transition-all">
                     <div class="w-1.5 h-1.5 rounded-full bg-white scale-0 peer-checked:scale-100 transition-transform"></div>
                   </div>
                   <span class="text-gray-600 peer-checked:text-uigreen peer-checked:font-bold transition-all">Trademarks</span>
                 </label>
                 <label class="flex items-center space-x-2.5 cursor-pointer group">
-                  <input type="radio" name="service-type" value="Copyright" class="sr-only peer">
+                  <input type="radio" name="service_needed" value="Copyright" class="sr-only peer">
                   <div class="w-4 h-4 rounded-full border border-gray-300 flex items-center justify-center peer-checked:border-uigreen peer-checked:bg-uigreen transition-all">
                     <div class="w-1.5 h-1.5 rounded-full bg-white scale-0 peer-checked:scale-100 transition-transform"></div>
                   </div>
                   <span class="text-gray-600 peer-checked:text-uigreen peer-checked:font-bold transition-all">Copyright</span>
                 </label>
                 <label class="flex items-center space-x-2.5 cursor-pointer group">
-                  <input type="radio" name="service-type" value="Tech Transfer" class="sr-only peer">
+                  <input type="radio" name="service_needed" value="Tech Transfer" class="sr-only peer">
                   <div class="w-4 h-4 rounded-full border border-gray-300 flex items-center justify-center peer-checked:border-uigreen peer-checked:bg-uigreen transition-all">
                     <div class="w-1.5 h-1.5 rounded-full bg-white scale-0 peer-checked:scale-100 transition-transform"></div>
                   </div>
                   <span class="text-gray-600 peer-checked:text-uigreen peer-checked:font-bold transition-all">Tech Transfer</span>
                 </label>
                 <label class="flex items-center space-x-2.5 cursor-pointer group">
-                  <input type="radio" name="service-type" value="Other" class="sr-only peer">
+                  <input type="radio" name="service_needed" value="Other" class="sr-only peer">
                   <div class="w-4 h-4 rounded-full border border-gray-300 flex items-center justify-center peer-checked:border-uigreen peer-checked:bg-uigreen transition-all">
                     <div class="w-1.5 h-1.5 rounded-full bg-white scale-0 peer-checked:scale-100 transition-transform"></div>
                   </div>
@@ -1265,7 +1268,7 @@ and Global Innovation
             <!-- Message Input -->
             <div>
               <label for="message-content" class="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1">Message</label>
-              <textarea id="message-content" name="message-content" required placeholder="Write your message..." rows="3" class="w-full bg-transparent border-b border-gray-200 py-2.5 text-sm text-gray-800 placeholder-gray-300 focus:outline-none focus:border-uigreen transition-colors resize-none"></textarea>
+              <textarea id="message-content" name="message" required placeholder="Write your message..." rows="3" class="w-full bg-transparent border-b border-gray-200 py-2.5 text-sm text-gray-800 placeholder-gray-300 focus:outline-none focus:border-uigreen transition-colors resize-none"></textarea>
             </div>
             
             <!-- Submit Button -->
@@ -1669,19 +1672,58 @@ and Global Innovation
     const contactForm = document.getElementById('cippac-contact-form');
     const successState = document.getElementById('contact-success-state');
     const resetFormBtn = document.getElementById('reset-contact-form');
+    const submitBtn = contactForm ? contactForm.querySelector('button[type="submit"]') : null;
 
     if (contactForm && successState) {
       contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
         
-        // Show success state
-        contactForm.classList.add('hidden');
-        successState.classList.remove('hidden');
-        
-        // Render check icon
-        if (window.lucide) {
-          window.lucide.createIcons();
+        // Show loading state
+        const originalBtnText = submitBtn ? submitBtn.innerHTML : 'Send Message';
+        if (submitBtn) {
+          submitBtn.disabled = true;
+          submitBtn.innerHTML = 'Sending... <i data-lucide="loader-2" class="w-4 h-4 ml-2 animate-spin inline-block"></i>';
+          if (window.lucide) window.lucide.createIcons();
         }
+        
+        const formData = new FormData(contactForm);
+        const object = Object.fromEntries(formData);
+        
+        // Set styling formats for Web3Forms email notifications
+        object['subject'] = 'New Contact Form Submission - CIPPAC';
+        object['from_name'] = 'CIPPAC Website Portal';
+
+        fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify(object)
+        })
+        .then(async (response) => {
+          let json = await response.json();
+          if (response.status == 200) {
+            // Show success state
+            contactForm.classList.add('hidden');
+            successState.classList.remove('hidden');
+            if (window.lucide) window.lucide.createIcons();
+          } else {
+            console.log(response);
+            alert(json.message || "Something went wrong!");
+          }
+        })
+        .catch(error => {
+          console.log(error);
+          alert("Connection error. Please try again.");
+        })
+        .then(() => {
+          // Restore button state
+          if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalBtnText;
+          }
+        });
       });
     }
 
