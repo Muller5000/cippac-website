@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patent Protection Services | CIPPAC | University of Ibadan</title>
+  <meta name="description" content="Official Patent Protection services for researchers, inventors, and scholars at the University of Ibadan, Nigeria. Guided prior art search, patent drafting, and prosecution support.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            heading: ['Outfit', 'sans-serif'],
+          },
+          colors: {
+            uigreen: {
+              DEFAULT: '#0B6B3A',
+              dark: '#05321A',
+              light: '#e8f5ee',
+            },
+            accentgold: {
+              DEFAULT: '#F5C236',
+              dark: '#B8901C',
+              light: '#fdf9e2',
+            },
+            charcoal: '#1F2937',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50 text-charcoal antialiased font-sans">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100 py-4">
+    <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="./index.html" class="flex items-center space-x-3 group focus-visible:ring-2 focus-visible:ring-accentgold focus-visible:ring-offset-2 focus:outline-none rounded-xl">
+        <div class="w-10 h-10 rounded-xl overflow-hidden shadow-md shadow-uigreen/20 transition-all group-hover:scale-105 border border-accentgold/30 flex items-center justify-center bg-white p-0.5">
+          <img src="./ui-cippac-logo.png" alt="CIPPAC Logo" class="w-full h-full object-contain">
+        </div>
+        <div>
+          <span class="font-heading font-extrabold text-xl tracking-tight text-uigreen-dark transition-colors duration-500">CIPPAC</span>
+          <span class="block text-[9px] font-medium tracking-widest text-accentgold uppercase">UI Innovation Hub</span>
+        </div>
+      </a>
+      
+      <!-- Navigation Links -->
+      <nav class="hidden md:flex items-center space-x-6">
+        <a href="./index.html#about" class="text-sm font-semibold text-gray-500 hover:text-uigreen transition-colors">About</a>
+        <a href="./index.html#services" class="text-sm font-semibold text-uigreen hover:text-uigreen transition-colors">Services</a>
+        <a href="./index.html#timeline" class="text-sm font-semibold text-gray-500 hover:text-uigreen transition-colors">Methodology</a>
+        <a href="./index.html#contact" class="text-sm font-semibold text-gray-500 hover:text-uigreen transition-colors">Contact</a>
+      </nav>
+      
+      <!-- Back Link -->
+      <a href="./index.html" class="inline-flex items-center text-sm font-semibold text-uigreen hover:text-uigreen-dark transition-colors focus-visible:ring-2 focus-visible:ring-accentgold focus:outline-none rounded-lg px-3 py-1.5">
+        <i data-lucide="arrow-left" class="w-4 h-4 mr-1.5"></i>
+        Back to Home
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-uigreen-dark text-white py-20 sm:py-24 relative overflow-hidden">
+    <!-- Graphic background elements -->
+    <div class="absolute inset-0 pointer-events-none">
+      <div class="absolute w-80 h-80 rounded-full bg-accentgold/10 blur-[100px] -bottom-10 -left-10"></div>
+      <div class="absolute w-96 h-96 rounded-full bg-white/5 blur-[120px] -top-10 -right-10"></div>
+    </div>
+    
+    <div class="relative max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+      <div class="lg:col-span-8 space-y-6">
+        <span class="inline-flex items-center px-3 py-1 rounded-full bg-accentgold/15 border border-accentgold/35 text-accentgold font-bold text-xs uppercase tracking-wider">
+          Service Profile 01
+        </span>
+        <h1 class="font-heading text-4xl sm:text-5xl font-extrabold tracking-tight leading-tight">
+          Patent Protection &amp; Prosecution
+        </h1>
+        <p class="text-white/70 text-base sm:text-lg font-light max-w-2xl leading-relaxed">
+          Assisting University of Ibadan faculty, staff, and student inventors with patent search, specification drafting, and registration to secure exclusive IP rights.
+        </p>
+      </div>
+      <div class="lg:col-span-4 flex justify-start lg:justify-end">
+        <div class="w-20 h-20 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-accentgold shadow-xl">
+          <i data-lucide="file-key" class="w-10 h-10" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content Split Grid -->
+  <main class="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 lg:grid-cols-12 gap-12">
+    
+    <!-- Left Column: Detailed Service Context (70%) -->
+    <div class="lg:col-span-8 space-y-12">
+      
+      <!-- Section 1: Overview -->
+      <article class="space-y-4">
+        <h2 class="font-heading font-bold text-2xl text-uigreen-dark flex items-center">
+          <span class="w-2 h-6 bg-accentgold rounded-full mr-2.5 inline-block"></span>
+          Service Overview
+        </h2>
+        <p class="text-gray-600 leading-relaxed">
+          Securing a patent is a critical first step toward translating laboratory research discoveries into commercially viable innovations. CIPPAC manages the entire patenting lifecycle for innovations developed within the University of Ibadan ecosystem.
+        </p>
+        <p class="text-gray-600 leading-relaxed">
+          Our service guides researchers through prior art reviews, audits invention disclosures to determine novelty and industrial applicability, and drafts comprehensive patent specifications. We manage coordination with the Federal Ministry of Industry, Trade and Investment (Patent Registry, Abuja), as well as foreign registries via the Patent Cooperation Treaty (PCT) and regional organizations like ARIPO.
+        </p>
+      </article>
+
+      <!-- Section 2: Step-by-Step Pathway -->
+      <article class="space-y-6">
+        <h2 class="font-heading font-bold text-2xl text-uigreen-dark flex items-center">
+          <span class="w-2 h-6 bg-accentgold rounded-full mr-2.5 inline-block"></span>
+          Our Patent Pathway
+        </h2>
+        <div class="space-y-6 relative border-l border-gray-200 pl-6 ml-3">
+          
+          <!-- Step 1 -->
+          <div class="relative">
+            <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-uigreen border-4 border-white shadow-sm"></div>
+            <h3 class="font-heading font-bold text-lg text-uigreen-dark">1. Novelty Assessment &amp; Prior Art Search</h3>
+            <p class="text-gray-500 text-sm leading-relaxed mt-1">
+              Before drafting, our experts perform extensive global prior art searches across proprietary and public databases to verify that the invention is truly novel, non-obvious, and has industrial application.
+            </p>
+          </div>
+          
+          <!-- Step 2 -->
+          <div class="relative">
+            <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-uigreen border-4 border-white shadow-sm"></div>
+            <h3 class="font-heading font-bold text-lg text-uigreen-dark">2. Invention Disclosure Assessment</h3>
+            <p class="text-gray-500 text-sm leading-relaxed mt-1">
+              Inventors submit their disclosure forms details to CIPPAC. We analyze the technical specs, commercial viability, and alignment with the University's Intellectual Property policy.
+            </p>
+          </div>
+          
+          <!-- Step 3 -->
+          <div class="relative">
+            <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-uigreen border-4 border-white shadow-sm"></div>
+            <h3 class="font-heading font-bold text-lg text-uigreen-dark">3. Drafting Patent Specifications</h3>
+            <p class="text-gray-500 text-sm leading-relaxed mt-1">
+              Our registered patent agents draft detailed descriptions, technical claims, and drawings. We translate laboratory research terminology into legal descriptions that protect the maximum scope of claims.
+            </p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="relative">
+            <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-uigreen border-4 border-white shadow-sm"></div>
+            <h3 class="font-heading font-bold text-lg text-uigreen-dark">4. Filing and Prosecution</h3>
+            <p class="text-gray-500 text-sm leading-relaxed mt-1">
+              CIPPAC submits files to the registry and handles subsequent search reports, office actions, corrections, and registry correspondence through to formal patent grant.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Section 3: Eligibility & Requirements -->
+      <article class="space-y-4">
+        <h2 class="font-heading font-bold text-2xl text-uigreen-dark flex items-center">
+          <span class="w-2 h-6 bg-accentgold rounded-full mr-2.5 inline-block"></span>
+          Eligibility &amp; Requirements
+        </h2>
+        <p class="text-gray-600 leading-relaxed">
+          Patent support services are open to all active members of the University of Ibadan community. This includes:
+        </p>
+        <ul class="list-disc pl-6 space-y-2 text-gray-600">
+          <li><strong>Academic Faculty &amp; Staff:</strong> Research projects developed utilizing university funding, space, or resources.</li>
+          <li><strong>Postgraduate &amp; Undergraduate Students:</strong> Innovations developed during academic coursework, theses, or student-led laboratories.</li>
+          <li><strong>External Partners:</strong> Collaborative joint ventures where the University of Ibadan shares inventor rights.</li>
+        </ul>
+      </article>
+
+    </div>
+
+    <!-- Right Column: Sidebar (30%) -->
+    <aside class="lg:col-span-4 space-y-8">
+      
+      <!-- CTA Consult Card -->
+      <div class="bg-uigreen-dark text-white rounded-3xl p-8 relative overflow-hidden shadow-xl border border-white/5">
+        <div class="absolute inset-0 pointer-events-none">
+          <div class="absolute w-40 h-40 rounded-full bg-accentgold/10 blur-[60px] -bottom-10 -right-10"></div>
+        </div>
+        <div class="relative space-y-6">
+          <h3 class="font-heading font-bold text-2xl">Start Your Patent Process</h3>
+          <p class="text-white/80 text-sm leading-relaxed">
+            Ready to secure exclusive commercial rights for your technological invention? Schedule a free 1-on-1 consultation with our IP counsel.
+          </p>
+          <a href="./index.html#contact" class="w-full inline-flex items-center justify-center px-6 py-3.5 bg-accentgold text-uigreen-dark font-bold rounded-xl hover:bg-white hover:text-uigreen transition-all duration-300 shadow-md">
+            Request Consultation
+            <i data-lucide="arrow-up-right" class="w-4 h-4 ml-2" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Metrics Card -->
+      <div class="bg-white border border-gray-100 rounded-3xl p-8 shadow-sm space-y-6">
+        <h4 class="font-heading font-bold text-lg text-uigreen-dark">Impact Metrics</h4>
+        <div class="space-y-4">
+          <div class="flex items-center justify-between pb-3 border-b border-gray-100">
+            <span class="text-sm text-gray-500">Patents Registered</span>
+            <span class="font-bold text-uigreen">120+</span>
+          </div>
+          <div class="flex items-center justify-between pb-3 border-b border-gray-100">
+            <span class="text-sm text-gray-500">Avg. Initial Draft Time</span>
+            <span class="font-bold text-uigreen">4-6 Weeks</span>
+          </div>
+          <div class="flex items-center justify-between">
+            <span class="text-sm text-gray-500">IP Clinic Support</span>
+            <span class="font-bold text-uigreen">100% Free</span>
+          </div>
+        </div>
+      </div>
+
+    </aside>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-uigreen-dark text-white/85 py-12 border-t border-white/5 text-center text-xs">
+    <div class="max-w-7xl mx-auto px-6 space-y-4">
+      <p>&copy; 2026 CIPPAC, University of Ibadan, Nigeria. All Rights Reserved.</p>
+      <div class="flex items-center justify-center space-x-6">
+        <a href="./privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a>
+        <a href="./terms-of-use.html" class="hover:text-white transition-colors">Terms of Use</a>
+        <a href="https://www.ui.edu.ng" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">UI Portal</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
