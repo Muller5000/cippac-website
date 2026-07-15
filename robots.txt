@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Allow AI scrapers and crawlers explicitly
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+Sitemap: https://cippac.ui.edu.ng/sitemap.xml
