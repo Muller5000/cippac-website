@@ -210,42 +210,62 @@
 </head>
 <body class="bg-background text-on-surface font-body-md overflow-x-hidden">
 <!-- TopNavBar -->
-  <div id="mobile-menu" class="fixed inset-0 z-40 bg-[#00201a]/95 backdrop-blur-lg flex flex-col justify-center items-center space-y-8 transition-transform duration-500 translate-x-full cursor-pointer">
-    <button id="close-menu-btn" aria-label="Close navigation menu" class="absolute top-6 right-6 w-12 h-12 flex items-center justify-center rounded-full text-white bg-white/10 active:bg-white/25 hover:bg-white/20 transition-all focus-visible:ring-2 focus-visible:ring-accentgold focus:outline-none cursor-default">
-      <span class="material-symbols-outlined text-2xl">close</span>
-    </button>
-    <a href="#hero" class="mobile-nav-link text-white font-bold text-xl uppercase tracking-wider">Home</a>
-    <a href="#about" class="mobile-nav-link text-white font-bold text-xl uppercase tracking-wider">About</a>
-    <a href="#services" class="mobile-nav-link text-white font-bold text-xl uppercase tracking-wider">Services</a>
-    <a href="#timeline" class="mobile-nav-link text-white font-bold text-xl uppercase tracking-wider">Process</a>
-    <a href="#stories" class="mobile-nav-link text-white font-bold text-xl uppercase tracking-wider">Success Stories</a>
-    <a href="#contact" class="mobile-nav-link text-white font-bold text-xl uppercase tracking-wider">Contact</a>
+<header class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-surface/90 backdrop-blur-md shadow-sm border-b border-outline-variant py-4">
+  <div class="max-w-7xl mx-auto flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop">
+    <!-- Logo Section -->
+    <div class="flex items-center gap-3">
+      <img alt="CIPPAC Logo" class="h-9 w-9 object-contain" src="./ui-cippac-logo.png"/>
+      <span class="font-heading font-extrabold text-deep-emerald tracking-tight transition-colors">
+        <span class="hidden sm:inline text-lg">CIPPAC Innovation Hub</span>
+        <span class="inline sm:hidden text-base">CIPPAC</span>
+      </span>
+    </div>
+    
+    <!-- Desktop Navigation Links -->
+    <nav class="hidden md:flex items-center gap-1">
+      <a class="px-4 py-2 text-deep-emerald font-bold text-xs uppercase tracking-wider rounded-full bg-deep-emerald/5 transition-all animate-fade-in" href="#hero">Home</a>
+      <a class="px-4 py-2 text-on-surface-variant hover:text-deep-emerald hover:bg-slate-100/50 font-bold text-xs uppercase tracking-wider rounded-full transition-all" href="#about">About</a>
+      <a class="px-4 py-2 text-on-surface-variant hover:text-deep-emerald hover:bg-slate-100/50 font-bold text-xs uppercase tracking-wider rounded-full transition-all" href="#services">Services</a>
+      <a class="px-4 py-2 text-on-surface-variant hover:text-deep-emerald hover:bg-slate-100/50 font-bold text-xs uppercase tracking-wider rounded-full transition-all" href="#timeline">Process</a>
+      <a class="px-4 py-2 text-on-surface-variant hover:text-deep-emerald hover:bg-slate-100/50 font-bold text-xs uppercase tracking-wider rounded-full transition-all" href="#stories">Success Stories</a>
+      <a class="px-4 py-2 text-on-surface-variant hover:text-deep-emerald hover:bg-slate-100/50 font-bold text-xs uppercase tracking-wider rounded-full transition-all" href="#contact">Contact</a>
+    </nav>
+    
+    <!-- Action Area -->
+    <div class="flex items-center gap-2">
+      <!-- Consultation Button (Desktop only) -->
+      <a href="#contact" class="hidden md:inline-flex items-center justify-center bg-institutional-gold text-deep-emerald font-heading font-extrabold text-xs uppercase tracking-wider px-5 py-2.5 rounded-full hover:bg-institutional-gold/90 hover:scale-[1.03] active:scale-[0.98] transition-all shadow-sm hover:shadow">
+        Book Consultation
+      </a>
+      <!-- Mobile Hamburger Trigger Button (Mobile only) -->
+      <button id="mobile-menu-btn" aria-label="Open navigation menu" class="md:hidden w-10 h-10 flex items-center justify-center rounded-full text-deep-emerald hover:bg-deep-emerald/10 transition-colors focus-visible:ring-2 focus-visible:ring-accentgold focus:outline-none">
+        <span class="material-symbols-outlined text-2xl">menu</span>
+      </button>
+    </div>
   </div>
-<header class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-surface/90 backdrop-blur-md shadow-sm border-b border-outline-variant">
-<div class="max-w-7xl mx-auto flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4">
-<div class="flex items-center gap-3">
-<img alt="CIPPAC Logo" class="h-10 w-10 object-contain" src="./ui-cippac-logo.png"/>
-<span class="text-headline-sm font-headline-sm font-bold text-deep-emerald">CIPPAC Innovation Hub</span>
-</div>
-<nav class="hidden md:flex items-center gap-8">
-<a class="text-deep-emerald border-b-2 border-institutional-gold pb-1 font-bold text-label-caps font-label-caps" href="#">Home</a>
-<a class="text-on-surface-variant hover:text-deep-emerald transition-colors text-label-caps font-label-caps" href="#">About</a>
-<a class="text-on-surface-variant hover:text-deep-emerald transition-colors text-label-caps font-label-caps" href="#">Services</a>
-<a class="text-on-surface-variant hover:text-deep-emerald transition-colors text-label-caps font-label-caps" href="#">Process</a>
-<a class="text-on-surface-variant hover:text-deep-emerald transition-colors text-label-caps font-label-caps" href="#">Success Stories</a>
-<a class="text-on-surface-variant hover:text-deep-emerald transition-colors text-label-caps font-label-caps" href="#">News</a>
-</nav>
-<div class="flex items-center gap-4">
-        <!-- Mobile Trigger Button -->
-        <button id="mobile-menu-btn" aria-label="Open navigation menu" class="md:hidden p-2 rounded-xl text-deep-emerald hover:bg-deep-emerald/10 transition-colors focus-visible:ring-2 focus-visible:ring-accentgold focus:outline-none">
-          <span class="material-symbols-outlined">menu</span>
-        </button>
-<button class="bg-institutional-gold text-deep-emerald font-bold px-6 py-2 rounded-lg hover:scale-105 transition-transform text-label-caps font-label-caps shadow-md">
-                    Book Consultation
-                </button>
-</div>
-</div>
 </header>
+
+<!-- Mobile Navigation Menu Drawer -->
+<div id="mobile-menu" class="fixed inset-0 z-40 bg-[#00201a]/95 backdrop-blur-lg flex flex-col justify-center items-center space-y-8 transition-transform duration-500 translate-x-full cursor-pointer">
+  <button id="close-menu-btn" aria-label="Close navigation menu" class="absolute top-6 right-6 w-12 h-12 flex items-center justify-center rounded-full text-white bg-white/10 active:bg-white/25 hover:bg-white/20 transition-all focus-visible:ring-2 focus-visible:ring-accentgold focus:outline-none cursor-default">
+    <span class="material-symbols-outlined text-2xl">close</span>
+  </button>
+  
+  <!-- Logo Emblem inside mobile drawer -->
+  <img alt="CIPPAC Logo" class="h-16 w-16 object-contain mb-4 select-none" src="./ui-cippac-logo.png"/>
+  
+  <a href="#hero" class="mobile-nav-link text-white font-bold text-xl uppercase tracking-wider hover:text-institutional-gold transition-colors">Home</a>
+  <a href="#about" class="mobile-nav-link text-white font-bold text-xl uppercase tracking-wider hover:text-institutional-gold transition-colors">About</a>
+  <a href="#services" class="mobile-nav-link text-white font-bold text-xl uppercase tracking-wider hover:text-institutional-gold transition-colors">Services</a>
+  <a href="#timeline" class="mobile-nav-link text-white font-bold text-xl uppercase tracking-wider hover:text-institutional-gold transition-colors">Process</a>
+  <a href="#stories" class="mobile-nav-link text-white font-bold text-xl uppercase tracking-wider hover:text-institutional-gold transition-colors">Success Stories</a>
+  <a href="#contact" class="mobile-nav-link text-white font-bold text-xl uppercase tracking-wider hover:text-institutional-gold transition-colors">Contact</a>
+  
+  <!-- Consultation Button inside Mobile Drawer -->
+  <a href="#contact" class="mobile-nav-link px-8 py-3 bg-institutional-gold text-deep-emerald font-heading font-extrabold text-sm uppercase tracking-widest rounded-full hover:scale-105 active:scale-95 transition-transform shadow-md mt-6">
+    Book Consultation
+  </a>
+</div>
 <!-- Hero Section -->
 <section id="hero"
 <section class="relative min-h-screen flex items-center pt-20 overflow-hidden bg-primary-container">
