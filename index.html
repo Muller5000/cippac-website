@@ -223,7 +223,7 @@
     
     <!-- Desktop Navigation Links -->
     <nav class="hidden md:flex items-center gap-1">
-      <a class="px-4 py-2 text-deep-emerald font-bold text-xs uppercase tracking-wider rounded-full bg-deep-emerald/5 transition-all animate-fade-in" href="#hero">Home</a>
+      <a class="px-4 py-2 text-deep-emerald font-bold text-xs uppercase tracking-wider rounded-full bg-deep-emerald/5 transition-all" href="#hero">Home</a>
       <a class="px-4 py-2 text-on-surface-variant hover:text-deep-emerald hover:bg-slate-100/50 font-bold text-xs uppercase tracking-wider rounded-full transition-all" href="#about">About</a>
       <a class="px-4 py-2 text-on-surface-variant hover:text-deep-emerald hover:bg-slate-100/50 font-bold text-xs uppercase tracking-wider rounded-full transition-all" href="#services">Services</a>
       <a class="px-4 py-2 text-on-surface-variant hover:text-deep-emerald hover:bg-slate-100/50 font-bold text-xs uppercase tracking-wider rounded-full transition-all" href="#timeline">Process</a>
@@ -267,7 +267,6 @@
   </a>
 </div>
 <!-- Hero Section -->
-<section id="hero"
 <section class="relative min-h-screen flex items-center pt-20 overflow-hidden bg-primary-container">
 
 <div class="relative z-10 max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -310,7 +309,6 @@ and Global Innovation
 </div>
 </section>
 <!-- Metrics Section -->
-<section id="about"
 <section class="py-section-gap bg-surface">
 <div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop text-center mb-16">
 <span class="text-label-caps font-label-caps text-deep-emerald">Impact &amp; Reach</span>
@@ -380,7 +378,6 @@ and Global Innovation
 </div>
 </section>
 <!-- Services Section -->
-<section id="services"
 <section class="py-section-gap bg-surface-container-lowest">
 <div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop text-center mb-16">
 <span class="text-label-caps font-label-caps text-deep-emerald">What We Do</span>
@@ -659,7 +656,6 @@ and Global Innovation
   </div>
 </section>
 <!-- Case Studies -->
-<section id="stories"
 <section class="py-section-gap">
 <div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop flex justify-between items-end mb-16">
 <div>
@@ -724,54 +720,101 @@ and Global Innovation
 </div>
 </section>
 <!-- Leadership / Director Spotlight -->
-<section class="py-section-gap bg-surface">
-<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
-<div class="lg:col-span-5 relative fade-up-element">
-<div class="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl relative z-10 border-8 border-white">
-<img alt="Prof. Oladapo T. Okareh" class="w-full h-full object-cover" src="./ui-director-redesign.png"/>
-</div>
-<div class="absolute -bottom-10 -right-10 w-48 h-48 bg-institutional-gold rounded-full -z-10 mix-blend-multiply opacity-50"></div>
-<div class="absolute top-10 -left-10 w-24 h-24 bg-deep-emerald rounded-full -z-10 opacity-30"></div>
-</div>
-<div class="lg:col-span-7 space-y-8 fade-up-element">
-<div>
-<span class="text-label-caps font-label-caps text-deep-emerald">Leadership Spotlight</span>
-<h2 class="text-headline-md font-headline-md text-primary mt-2">Guiding Intellectual Property &amp; Commercialization at UI</h2>
-</div>
-<div class="space-y-4">
-<p class="text-body-md text-on-surface leading-relaxed">
-<strong>Professor Oladapo Titus Okareh</strong> is a distinguished scholar and Professor of Environmental Health Sciences in the College of Medicine, University of Ibadan, Nigeria. His academic excellence was nationally recognized by the National Universities Commission (NUC) with a merit award for the best doctoral thesis in Public Health in 2008.
-                    </p>
-<p class="text-body-md text-on-surface-variant leading-relaxed">
-                        Re-appointed as Director of the Centre for Intellectual Property Protection and Commercialization (CIPPAC) in September 2023, Prof. Okareh has championed institutional patenting, technology licensing, and matchmaking university innovations with global markets to drive tangible socio-economic impact.
-                    </p>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-<div class="flex items-start gap-4">
-<div class="w-10 h-10 bg-primary-fixed rounded-lg flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-primary">emoji_events</span>
-</div>
-<div>
-<h4 class="font-headline-sm text-base text-deep-emerald">NUC Merit Award Winner</h4>
-<p class="text-xs text-on-surface-variant">Recognized for outstanding doctoral research contributions.</p>
-</div>
-</div>
-<div class="flex items-start gap-4">
-<div class="w-10 h-10 bg-secondary-fixed rounded-lg flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-secondary">insights</span>
-</div>
-<div>
-<h4 class="font-headline-sm text-base text-deep-emerald">Transformative Director</h4>
-<p class="text-xs text-on-surface-variant">Leading UI's global intellectual property strategy since 2023.</p>
-</div>
-</div>
-</div>
-<div class="pt-4 border-t border-slate-200">
-<p class="text-deep-emerald font-bold text-xl">Prof. Oladapo T. Okareh</p>
-<p class="text-on-surface-variant font-label-caps text-[10px]">Director, CIPPAC | University of Ibadan, Nigeria</p>
-</div>
-</div>
-</div>
+<section id="leadership" class="py-section-gap bg-surface relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+      <!-- Photo Column (Left) -->
+      <div class="lg:col-span-5 flex flex-col items-center relative fade-up-element">
+        <!-- Floating Depth Elements -->
+        <div class="absolute -bottom-6 -right-6 w-48 h-48 bg-institutional-gold rounded-full -z-10 mix-blend-multiply opacity-40"></div>
+        <div class="absolute -top-6 -left-6 w-32 h-32 bg-deep-emerald rounded-full -z-10 opacity-20"></div>
+
+        <!-- Slideshow Frame -->
+        <div class="relative overflow-hidden w-full max-w-[360px] aspect-[3/4] rounded-3xl border-8 border-white shadow-2xl group z-10" id="director-slideshow">
+          <!-- Slide Track -->
+          <div class="flex h-full transition-transform duration-500 ease-out" id="director-slide-track" style="width: 400%;">
+            <!-- Slide 1 -->
+            <div class="w-1/4 h-full flex-shrink-0">
+              <img src="./ui-director-redesign.png" alt="Professor Oladapo Titus Okareh - Portrait 1" class="w-full h-full object-cover object-top select-none pointer-events-none">
+            </div>
+            <!-- Slide 2 -->
+            <div class="w-1/4 h-full flex-shrink-0">
+              <img src="./ui-director-photo-2.png" alt="Professor Oladapo Titus Okareh - Portrait 2" class="w-full h-full object-cover object-top select-none pointer-events-none">
+            </div>
+            <!-- Slide 3 -->
+            <div class="w-1/4 h-full flex-shrink-0">
+              <img src="./ui-director-photo-3.png" alt="Professor Oladapo Titus Okareh - Portrait 3" class="w-full h-full object-cover object-top select-none pointer-events-none">
+            </div>
+            <!-- Slide 4 -->
+            <div class="w-1/4 h-full flex-shrink-0">
+              <img src="./ui-director-photo-4.png" alt="Professor Oladapo Titus Okareh - Launching Ceremony" class="w-full h-full object-cover object-center select-none pointer-events-none">
+            </div>
+          </div>
+          
+          <!-- Slide Navigation Buttons -->
+          <button id="prev-director-slide" aria-label="Previous image" class="absolute left-3 top-1/2 transform -translate-y-1/2 w-8 h-8 rounded-full bg-black/40 hover:bg-black/75 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 focus-visible:ring-2 focus-visible:ring-accentgold focus:outline-none z-20">
+            <span class="material-symbols-outlined text-base">chevron_left</span>
+          </button>
+          <button id="next-director-slide" aria-label="Next image" class="absolute right-3 top-1/2 transform -translate-y-1/2 w-8 h-8 rounded-full bg-black/40 hover:bg-black/75 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 focus-visible:ring-2 focus-visible:ring-accentgold focus:outline-none z-20">
+            <span class="material-symbols-outlined text-base">chevron_right</span>
+          </button>
+          
+          <!-- Slide Indicators (Dots) -->
+          <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 z-20">
+            <button aria-label="Go to slide 1" class="w-2 h-2 rounded-full bg-white/50 hover:bg-white transition-colors director-dot" data-slide="0"></button>
+            <button aria-label="Go to slide 2" class="w-2 h-2 rounded-full bg-white/50 hover:bg-white transition-colors director-dot" data-slide="1"></button>
+            <button aria-label="Go to slide 3" class="w-2 h-2 rounded-full bg-white/50 hover:bg-white transition-colors director-dot" data-slide="2"></button>
+            <button aria-label="Go to slide 4" class="w-2 h-2 rounded-full bg-white/50 hover:bg-white transition-colors director-dot" data-slide="3"></button>
+          </div>
+        </div>
+        
+        <!-- Aligned Director Signature Details -->
+        <div class="text-center mt-6">
+          <span class="text-xs uppercase tracking-widest text-institutional-gold font-bold mb-1 block">Director, CIPPAC</span>
+          <h4 class="font-heading font-extrabold text-2xl text-deep-emerald">Prof. Oladapo T. Okareh</h4>
+          <p class="text-on-surface-variant text-xs mt-1">University of Ibadan, Nigeria</p>
+        </div>
+      </div>
+
+      <!-- Content Column (Right) -->
+      <div class="lg:col-span-7 space-y-8 fade-up-element">
+        <div>
+          <span class="text-label-caps font-label-caps text-deep-emerald">Leadership Spotlight</span>
+          <h2 class="text-headline-md font-headline-md text-primary mt-2">Guiding Intellectual Property &amp; Commercialization at UI</h2>
+        </div>
+        <div class="space-y-4">
+          <p class="text-body-md text-on-surface leading-relaxed">
+            <strong>Professor Oladapo Titus Okareh</strong> is a distinguished scholar and Professor of Environmental Health Sciences in the College of Medicine, University of Ibadan, Nigeria. His academic excellence was nationally recognized by the National Universities Commission (NUC) with a merit award for the best doctoral thesis in Public Health in 2008.
+          </p>
+          <p class="text-body-md text-on-surface-variant leading-relaxed">
+            Re-appointed as Director of the Centre for Intellectual Property Protection and Commercialization (CIPPAC) in September 2023, Prof. Okareh has championed institutional patenting, technology licensing, and matchmaking university innovations with global markets to drive tangible socio-economic impact.
+          </p>
+        </div>
+
+        <!-- Highlights Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 border-t border-slate-200 pt-8">
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-primary-fixed rounded-lg flex items-center justify-center shrink-0">
+              <span class="material-symbols-outlined text-primary">emoji_events</span>
+            </div>
+            <div>
+              <h4 class="font-headline-sm text-base text-deep-emerald font-bold">NUC Merit Award Winner</h4>
+              <p class="text-xs text-on-surface-variant mt-1">Recognized for outstanding doctoral research contributions.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-secondary-fixed rounded-lg flex items-center justify-center shrink-0">
+              <span class="material-symbols-outlined text-secondary">insights</span>
+            </div>
+            <div>
+              <h4 class="font-headline-sm text-base text-deep-emerald font-bold">Transformative Director</h4>
+              <p class="text-xs text-on-surface-variant mt-1">Leading UI's global intellectual property strategy since 2023.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 <!-- Partners Row -->
 <section class="py-16 border-y border-slate-100 overflow-hidden bg-gray-50/30">
@@ -822,7 +865,6 @@ and Global Innovation
 </div>
 </section>
 <!-- Contact Section -->
-<section id="contact"
 <section class="py-section-gap">
 <div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
 <div class="bg-white rounded-[2rem] shadow-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-5 border border-outline-variant">
@@ -1142,6 +1184,77 @@ and Global Innovation
         consentBanner.classList.add('translate-y-12', 'opacity-0', 'pointer-events-none');
       }
     }
+
+    // Director Slideshow Logic
+    const directorTrack = document.getElementById('director-slide-track');
+    const prevDirectorBtn = document.getElementById('prev-director-slide');
+    const nextDirectorBtn = document.getElementById('next-director-slide');
+    const directorDots = document.querySelectorAll('.director-dot');
+    const directorSlideshow = document.getElementById('director-slideshow');
+    
+    let directorIndex = 0;
+    const directorCount = 4;
+    let directorInterval;
+
+    function updateDirectorSlider() {
+      if (directorTrack) {
+        directorTrack.style.transform = "translateX(-" + (directorIndex * 25) + "%)";
+      }
+      
+      directorDots.forEach((dot, idx) => {
+        if (idx === directorIndex) {
+          dot.classList.add('bg-white', 'scale-110');
+          dot.classList.remove('bg-white/50');
+        } else {
+          dot.classList.remove('bg-white', 'scale-110');
+          dot.classList.add('bg-white/50');
+        }
+      });
+    }
+
+    function startDirectorAutoplay() {
+      directorInterval = setInterval(() => {
+        directorIndex = (directorIndex + 1) % directorCount;
+        updateDirectorSlider();
+      }, 5000);
+    }
+
+    function stopDirectorAutoplay() {
+      clearInterval(directorInterval);
+    }
+
+    if (nextDirectorBtn) {
+      nextDirectorBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        directorIndex = (directorIndex + 1) % directorCount;
+        updateDirectorSlider();
+      });
+    }
+
+    if (prevDirectorBtn) {
+      prevDirectorBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        directorIndex = (directorIndex - 1 + directorCount) % directorCount;
+        updateDirectorSlider();
+      });
+    }
+
+    directorDots.forEach(dot => {
+      dot.addEventListener('click', (e) => {
+        e.stopPropagation();
+        directorIndex = parseInt(dot.getAttribute('data-slide'));
+        updateDirectorSlider();
+      });
+    });
+
+    if (directorSlideshow) {
+      directorSlideshow.addEventListener('mouseenter', stopDirectorAutoplay);
+      directorSlideshow.addEventListener('mouseleave', startDirectorAutoplay);
+    }
+
+    // Initialize
+    updateDirectorSlider();
+    startDirectorAutoplay();
 
     // Animate Number Counters Function
     function animateCounter(counter) {
