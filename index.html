@@ -150,6 +150,24 @@
     </script>
 <style>
         
+    /* Fade up styling for intersection observer */
+    .fade-up-element {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .fade-up-element.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Staggered transition delays for grid elements */
+    .fade-up-element:nth-child(2) { transition-delay: 100ms; }
+    .fade-up-element:nth-child(3) { transition-delay: 200ms; }
+    .fade-up-element:nth-child(4) { transition-delay: 300ms; }
+    .fade-up-element:nth-child(5) { transition-delay: 400ms; }
+    .fade-up-element:nth-child(6) { transition-delay: 500ms; }
+
     /* Logo wall marquee */
     @keyframes marquee {
       0% { transform: translateX(0%); }
@@ -265,7 +283,7 @@ and Global Innovation
 <img class="w-full h-full object-cover" data-alt="A premium, high-quality architectural photo of a modern university innovation center interior. The space is filled with natural light, featuring glass partitions, sleek minimalist furniture, and groups of researchers collaborating in a bright, tech-forward environment. The color palette reflects deep emerald greens and clean whites, embodying professional academic excellence and modern innovation." src="./ui-hero-redesign.png"/>
 </div>
 <div class="absolute -bottom-8 -left-8 bg-surface p-6 rounded-2xl shadow-xl border border-outline-variant max-w-[240px] transform -rotate-3">
-<div class="text-deep-emerald font-bold text-headline-sm mb-1">150+</div>
+<div class="text-deep-emerald font-bold text-headline-sm mb-1"><span class="counter" data-target="150">0</span>+</div>
 <div class="text-on-surface-variant text-sm font-label-caps">Registered Patents Supporting Research Excellence</div>
 </div>
 </div>
@@ -280,7 +298,7 @@ and Global Innovation
 <p class="text-on-surface-variant max-w-2xl mx-auto mt-4">Measurable outcomes from CIPPAC's work in protecting and commercializing university research.</p>
 </div>
 <div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
-<div class="bg-white p-8 rounded-xl shadow-sm border border-slate-50 hover:shadow-md transition-shadow group text-center">
+<div class="bg-white p-8 rounded-xl shadow-sm border border-slate-50 hover:shadow-md transition-shadow group text-center fade-up-element">
 <div class="w-16 h-16 bg-primary-fixed rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
 <span class="material-symbols-outlined text-primary text-3xl">description</span>
 </div>
@@ -288,27 +306,27 @@ and Global Innovation
 <h3 class="text-headline-sm font-headline-sm mb-2 text-deep-emerald">Registered Patents</h3>
 <p class="text-on-surface-variant text-sm">Assisting faculty and student inventors with drafting and registration.</p>
 </div>
-<div class="bg-white p-8 rounded-xl shadow-sm border border-slate-50 hover:shadow-md transition-shadow group text-center">
+<div class="bg-white p-8 rounded-xl shadow-sm border border-slate-50 hover:shadow-md transition-shadow group text-center fade-up-element">
 <div class="w-16 h-16 bg-secondary-fixed rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
 <span class="material-symbols-outlined text-secondary text-3xl">rocket_launch</span>
 </div>
-<div class="text-display-lg text-secondary font-bold mb-2">45+</div>
+<div class="text-display-lg text-secondary font-bold mb-2"><span class="counter" data-target="45">0</span>+</div>
 <h3 class="text-headline-sm font-headline-sm mb-2 text-deep-emerald">Commercial Projects</h3>
 <p class="text-on-surface-variant text-sm">Transitioning prototypes into commercially viable market products.</p>
 </div>
-<div class="bg-white p-8 rounded-xl shadow-sm border border-slate-50 hover:shadow-md transition-shadow group text-center">
+<div class="bg-white p-8 rounded-xl shadow-sm border border-slate-50 hover:shadow-md transition-shadow group text-center fade-up-element">
 <div class="w-16 h-16 bg-tertiary-fixed rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
 <span class="material-symbols-outlined text-tertiary text-3xl">school</span>
 </div>
-<div class="text-display-lg text-tertiary font-bold mb-2">1200+</div>
+<div class="text-display-lg text-tertiary font-bold mb-2"><span class="counter" data-target="1200">0</span>+</div>
 <h3 class="text-headline-sm font-headline-sm mb-2 text-deep-emerald">Researchers Assisted</h3>
 <p class="text-on-surface-variant text-sm">Conducting clinics, workshops, and individual IP counseling.</p>
 </div>
-<div class="bg-white p-8 rounded-xl shadow-sm border border-slate-50 hover:shadow-md transition-shadow group text-center">
+<div class="bg-white p-8 rounded-xl shadow-sm border border-slate-50 hover:shadow-md transition-shadow group text-center fade-up-element">
 <div class="w-16 h-16 bg-primary-fixed rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
 <span class="material-symbols-outlined text-primary text-3xl">corporate_fare</span>
 </div>
-<div class="text-display-lg text-primary font-bold mb-2">80+</div>
+<div class="text-display-lg text-primary font-bold mb-2"><span class="counter" data-target="80">0</span>+</div>
 <h3 class="text-headline-sm font-headline-sm mb-2 text-deep-emerald">Industry Partners</h3>
 <p class="text-on-surface-variant text-sm">Fostering collaboration with corporate partners and investors.</p>
 </div>
@@ -317,13 +335,13 @@ and Global Innovation
 <!-- Bridging Academic Section -->
 <section class="py-section-gap overflow-hidden">
 <div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
-<div class="relative group">
+<div class="relative group fade-up-element">
 <div class="aspect-video rounded-2xl overflow-hidden shadow-2xl relative z-10">
 <img class="w-full h-full object-cover" data-alt="A professional group of diverse researchers and industry leaders gathered in a modern conference hall at the University of Ibadan. They are engaged in a technology transfer discussion, with digital prototypes displayed on screens in the background. The lighting is soft and professional, capturing a moment of productive academic-industrial partnership." src="./ui-partnership-redesign.png"/>
 </div>
 <div class="absolute -top-6 -right-6 w-full h-full border-2 border-institutional-gold rounded-2xl -z-10 group-hover:translate-x-4 group-hover:-translate-y-4 transition-transform duration-500"></div>
 </div>
-<div class="space-y-6">
+<div class="space-y-6 fade-up-element">
 <span class="text-label-caps font-label-caps text-deep-emerald">University of Ibadan Innovation Ecosystem</span>
 <h2 class="text-headline-md font-headline-md text-primary leading-tight">Bridging Academic Excellence and Economic Impact</h2>
 <p class="text-body-md text-on-surface-variant leading-relaxed">
@@ -351,7 +369,7 @@ and Global Innovation
 </div>
 <div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
 <!-- Service 1 -->
-<div class="bg-white p-8 rounded-2xl border border-outline-variant hover:border-deep-emerald hover:shadow-xl transition-all group flex flex-col h-full">
+<div class="bg-white p-8 rounded-2xl border border-outline-variant hover:border-deep-emerald hover:shadow-xl transition-all group flex flex-col h-full fade-up-element">
 <div class="text-institutional-gold font-bold text-sm mb-4">01</div>
 <div class="w-12 h-12 bg-surface-container rounded-lg flex items-center justify-center mb-6 group-hover:bg-deep-emerald group-hover:text-white transition-colors">
 <span class="material-symbols-outlined">verified</span>
@@ -363,7 +381,7 @@ and Global Innovation
 </a>
 </div>
 <!-- Service 2 -->
-<div class="bg-white p-8 rounded-2xl border border-outline-variant hover:border-deep-emerald hover:shadow-xl transition-all group flex flex-col h-full">
+<div class="bg-white p-8 rounded-2xl border border-outline-variant hover:border-deep-emerald hover:shadow-xl transition-all group flex flex-col h-full fade-up-element">
 <div class="text-institutional-gold font-bold text-sm mb-4">02</div>
 <div class="w-12 h-12 bg-surface-container rounded-lg flex items-center justify-center mb-6 group-hover:bg-deep-emerald group-hover:text-white transition-colors">
 <span class="material-symbols-outlined">stars</span>
@@ -375,7 +393,7 @@ and Global Innovation
 </a>
 </div>
 <!-- Service 3 -->
-<div class="bg-white p-8 rounded-2xl border border-outline-variant hover:border-deep-emerald hover:shadow-xl transition-all group flex flex-col h-full">
+<div class="bg-white p-8 rounded-2xl border border-outline-variant hover:border-deep-emerald hover:shadow-xl transition-all group flex flex-col h-full fade-up-element">
 <div class="text-institutional-gold font-bold text-sm mb-4">03</div>
 <div class="w-12 h-12 bg-surface-container rounded-lg flex items-center justify-center mb-6 group-hover:bg-deep-emerald group-hover:text-white transition-colors">
 <span class="material-symbols-outlined">copyright</span>
@@ -387,7 +405,7 @@ and Global Innovation
 </a>
 </div>
 <!-- Service 4 -->
-<div class="bg-white p-8 rounded-2xl border border-outline-variant hover:border-deep-emerald hover:shadow-xl transition-all group flex flex-col h-full">
+<div class="bg-white p-8 rounded-2xl border border-outline-variant hover:border-deep-emerald hover:shadow-xl transition-all group flex flex-col h-full fade-up-element">
 <div class="text-institutional-gold font-bold text-sm mb-4">04</div>
 <div class="w-12 h-12 bg-surface-container rounded-lg flex items-center justify-center mb-6 group-hover:bg-deep-emerald group-hover:text-white transition-colors">
 <span class="material-symbols-outlined">swap_horiz</span>
@@ -399,7 +417,7 @@ and Global Innovation
 </a>
 </div>
 <!-- Service 5 -->
-<div class="bg-white p-8 rounded-2xl border border-outline-variant hover:border-deep-emerald hover:shadow-xl transition-all group flex flex-col h-full">
+<div class="bg-white p-8 rounded-2xl border border-outline-variant hover:border-deep-emerald hover:shadow-xl transition-all group flex flex-col h-full fade-up-element">
 <div class="text-institutional-gold font-bold text-sm mb-4">05</div>
 <div class="w-12 h-12 bg-surface-container rounded-lg flex items-center justify-center mb-6 group-hover:bg-deep-emerald group-hover:text-white transition-colors">
 <span class="material-symbols-outlined">hub</span>
@@ -411,7 +429,7 @@ and Global Innovation
 </a>
 </div>
 <!-- Service 6 -->
-<div class="bg-white p-8 rounded-2xl border border-outline-variant hover:border-deep-emerald hover:shadow-xl transition-all group flex flex-col h-full">
+<div class="bg-white p-8 rounded-2xl border border-outline-variant hover:border-deep-emerald hover:shadow-xl transition-all group flex flex-col h-full fade-up-element">
 <div class="text-institutional-gold font-bold text-sm mb-4">06</div>
 <div class="w-12 h-12 bg-surface-container rounded-lg flex items-center justify-center mb-6 group-hover:bg-deep-emerald group-hover:text-white transition-colors">
 <span class="material-symbols-outlined">school</span>
@@ -427,7 +445,7 @@ and Global Innovation
 <!-- Methodology Section (The Path) -->
 <section id="timeline" class="py-24 bg-primary relative overflow-hidden">
   <div class="max-w-7xl mx-auto px-6">
-    <div class="text-center max-w-3xl mx-auto mb-20">
+    <div class="text-center max-w-3xl mx-auto mb-20 fade-up-element">
       <span class="text-label-caps font-label-caps text-institutional-gold mb-3 block">Our Methodology</span>
       <h2 class="font-heading text-3xl sm:text-4xl font-bold text-white mb-4">From Idea to Societal Impact</h2>
       <p class="text-white/70 text-base">The structured path CIPPAC uses to transform research outputs into real-world market innovations.</p>
@@ -454,7 +472,7 @@ and Global Innovation
       <div class="relative flex flex-col lg:flex-row items-center justify-between mb-16 last:mb-0 w-full group">
         <!-- Left Column (Card for odd steps on desktop) -->
         <div class="w-full lg:w-[calc(50%-30px)] pr-0 lg:pr-8 pl-16 lg:pl-0 order-2 lg:order-1 lg:text-right">
-          <div class="bg-white/5 p-6 rounded-2xl border border-white/10 shadow-sm hover:shadow-lg hover:border-institutional-gold/30 transition-all duration-300 relative border-l-3 border-l-institutional-gold lg:border-l-0 lg:border-r-3 lg:border-r-institutional-gold backdrop-blur-md">
+          <div class="bg-white/5 p-6 rounded-2xl border border-white/10 shadow-sm hover:shadow-lg hover:border-institutional-gold/30 transition-all duration-300 relative border-l-3 border-l-institutional-gold lg:border-l-0 lg:border-r-3 lg:border-r-institutional-gold backdrop-blur-md fade-up-element">
             <div class="flex items-center lg:justify-end space-x-3 mb-3">
               <div class="w-10 h-10 rounded-xl bg-white/10 text-institutional-gold flex items-center justify-center flex-shrink-0 lg:order-2 lg:ml-3">
                 <i data-lucide="lightbulb" class="w-5 h-5" aria-hidden="true"></i>
@@ -486,7 +504,7 @@ and Global Innovation
         
         <!-- Right Column (Card for even steps on desktop/mobile) -->
         <div class="w-full lg:w-[calc(50%-30px)] pl-16 lg:pl-8 order-3">
-          <div class="bg-white/5 p-6 rounded-2xl border border-white/10 shadow-sm hover:shadow-lg hover:border-white/30 transition-all duration-300 relative border-l-3 border-l-white backdrop-blur-md">
+          <div class="bg-white/5 p-6 rounded-2xl border border-white/10 shadow-sm hover:shadow-lg hover:border-white/30 transition-all duration-300 relative border-l-3 border-l-white backdrop-blur-md fade-up-element">
             <div class="flex items-center space-x-3 mb-3">
               <div class="w-10 h-10 rounded-xl bg-white/10 text-white flex items-center justify-center flex-shrink-0">
                 <i data-lucide="microscope" class="w-5 h-5" aria-hidden="true"></i>
@@ -502,7 +520,7 @@ and Global Innovation
       <div class="relative flex flex-col lg:flex-row items-center justify-between mb-16 last:mb-0 w-full group">
         <!-- Left Column (Card for odd steps on desktop) -->
         <div class="w-full lg:w-[calc(50%-30px)] pr-0 lg:pr-8 pl-16 lg:pl-0 order-2 lg:order-1 lg:text-right">
-          <div class="bg-white/5 p-6 rounded-2xl border border-white/10 shadow-sm hover:shadow-lg hover:border-institutional-gold/30 transition-all duration-300 relative border-l-3 border-l-institutional-gold lg:border-l-0 lg:border-r-3 lg:border-r-institutional-gold backdrop-blur-md">
+          <div class="bg-white/5 p-6 rounded-2xl border border-white/10 shadow-sm hover:shadow-lg hover:border-institutional-gold/30 transition-all duration-300 relative border-l-3 border-l-institutional-gold lg:border-l-0 lg:border-r-3 lg:border-r-institutional-gold backdrop-blur-md fade-up-element">
             <div class="flex items-center lg:justify-end space-x-3 mb-3">
               <div class="w-10 h-10 rounded-xl bg-white/10 text-institutional-gold flex items-center justify-center flex-shrink-0 lg:order-2 lg:ml-3">
                 <i data-lucide="shield" class="w-5 h-5" aria-hidden="true"></i>
@@ -534,7 +552,7 @@ and Global Innovation
         
         <!-- Right Column (Card for even steps on desktop/mobile) -->
         <div class="w-full lg:w-[calc(50%-30px)] pl-16 lg:pl-8 order-3">
-          <div class="bg-white/5 p-6 rounded-2xl border border-white/10 shadow-sm hover:shadow-lg hover:border-white/30 transition-all duration-300 relative border-l-3 border-l-white backdrop-blur-md">
+          <div class="bg-white/5 p-6 rounded-2xl border border-white/10 shadow-sm hover:shadow-lg hover:border-white/30 transition-all duration-300 relative border-l-3 border-l-white backdrop-blur-md fade-up-element">
             <div class="flex items-center space-x-3 mb-3">
               <div class="w-10 h-10 rounded-xl bg-white/10 text-white flex items-center justify-center flex-shrink-0">
                 <i data-lucide="git-merge" class="w-5 h-5" aria-hidden="true"></i>
@@ -550,7 +568,7 @@ and Global Innovation
       <div class="relative flex flex-col lg:flex-row items-center justify-between mb-16 last:mb-0 w-full group">
         <!-- Left Column (Card for odd steps on desktop) -->
         <div class="w-full lg:w-[calc(50%-30px)] pr-0 lg:pr-8 pl-16 lg:pl-0 order-2 lg:order-1 lg:text-right">
-          <div class="bg-white/5 p-6 rounded-2xl border border-white/10 shadow-sm hover:shadow-lg hover:border-institutional-gold/30 transition-all duration-300 relative border-l-3 border-l-institutional-gold lg:border-l-0 lg:border-r-3 lg:border-r-institutional-gold backdrop-blur-md">
+          <div class="bg-white/5 p-6 rounded-2xl border border-white/10 shadow-sm hover:shadow-lg hover:border-institutional-gold/30 transition-all duration-300 relative border-l-3 border-l-institutional-gold lg:border-l-0 lg:border-r-3 lg:border-r-institutional-gold backdrop-blur-md fade-up-element">
             <div class="flex items-center lg:justify-end space-x-3 mb-3">
               <div class="w-10 h-10 rounded-xl bg-white/10 text-institutional-gold flex items-center justify-center flex-shrink-0 lg:order-2 lg:ml-3">
                 <i data-lucide="trending-up" class="w-5 h-5" aria-hidden="true"></i>
@@ -582,7 +600,7 @@ and Global Innovation
         
         <!-- Right Column (Card for even steps on desktop/mobile) -->
         <div class="w-full lg:w-[calc(50%-30px)] pl-16 lg:pl-8 order-3">
-          <div class="bg-white/5 p-6 rounded-2xl border border-white/10 shadow-sm hover:shadow-lg hover:border-white/30 transition-all duration-300 relative border-l-3 border-l-white backdrop-blur-md">
+          <div class="bg-white/5 p-6 rounded-2xl border border-white/10 shadow-sm hover:shadow-lg hover:border-white/30 transition-all duration-300 relative border-l-3 border-l-white backdrop-blur-md fade-up-element">
             <div class="flex items-center space-x-3 mb-3">
               <div class="w-10 h-10 rounded-xl bg-white/10 text-white flex items-center justify-center flex-shrink-0">
                 <i data-lucide="warehouse" class="w-5 h-5" aria-hidden="true"></i>
@@ -598,7 +616,7 @@ and Global Innovation
       <div class="relative flex flex-col lg:flex-row items-center justify-between mb-16 last:mb-0 w-full group">
         <!-- Left Column (Card for odd steps on desktop) -->
         <div class="w-full lg:w-[calc(50%-30px)] pr-0 lg:pr-8 pl-16 lg:pl-0 order-2 lg:order-1 lg:text-right">
-          <div class="bg-white/5 p-6 rounded-2xl border border-white/10 shadow-sm hover:shadow-lg hover:border-institutional-gold/30 transition-all duration-300 relative border-l-3 border-l-institutional-gold lg:border-l-0 lg:border-r-3 lg:border-r-institutional-gold backdrop-blur-md">
+          <div class="bg-white/5 p-6 rounded-2xl border border-white/10 shadow-sm hover:shadow-lg hover:border-institutional-gold/30 transition-all duration-300 relative border-l-3 border-l-institutional-gold lg:border-l-0 lg:border-r-3 lg:border-r-institutional-gold backdrop-blur-md fade-up-element">
             <div class="flex items-center lg:justify-end space-x-3 mb-3">
               <div class="w-10 h-10 rounded-xl bg-white/10 text-institutional-gold flex items-center justify-center flex-shrink-0 lg:order-2 lg:ml-3">
                 <i data-lucide="flag" class="w-5 h-5" aria-hidden="true"></i>
@@ -639,7 +657,7 @@ and Global Innovation
 </div>
 <div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-gutter">
 <!-- Case 1 -->
-<div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow flex flex-col group">
+<div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow flex flex-col group fade-up-element">
 <div class="h-64 overflow-hidden relative">
 <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A detailed scientific laboratory setting showing a medical professional examining a microscope slide of the UI-Diag Malaria Kit. The background is clean and bright, emphasizing medical precision and biotech innovation. Deep emerald green accents in the lab equipment coordinate with the brand aesthetic." src="./ui-case-malaria.png"/>
 <div class="absolute top-4 left-4 bg-primary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Biotech</div>
@@ -654,7 +672,7 @@ and Global Innovation
 </div>
 </div>
 <!-- Case 2 -->
-<div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow flex flex-col group">
+<div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow flex flex-col group fade-up-element">
 <div class="h-64 overflow-hidden relative">
 <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A large-scale hybrid solar crop dryer installation on a modern Nigerian farm. The sun shines brightly on the metallic surfaces of the dryer, symbolizing agricultural innovation and sustainable energy. The scene is wide and professional, showcasing real-world technology application." src="./ui-case-dryer.png"/>
 <div class="absolute top-4 left-4 bg-primary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Agritech</div>
@@ -669,7 +687,7 @@ and Global Innovation
 </div>
 </div>
 <!-- Case 3 -->
-<div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow flex flex-col group">
+<div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow flex flex-col group fade-up-element">
 <div class="h-64 overflow-hidden relative">
 <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A sleek laptop screen showing the interface of the ClassHub AI Portal, an educational software platform. The environment is a modern classroom with soft natural light, highlighting the intersection of technology and education. High-contrast UI elements on the screen reflect the modern institutional aesthetic." src="./ui-case-classhub.png"/>
 <div class="absolute top-4 left-4 bg-primary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Software</div>
@@ -688,14 +706,14 @@ and Global Innovation
 <!-- Leadership / Director Spotlight -->
 <section class="py-section-gap bg-surface">
 <div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
-<div class="lg:col-span-5 relative">
+<div class="lg:col-span-5 relative fade-up-element">
 <div class="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl relative z-10 border-8 border-white">
 <img alt="Prof. Oladapo T. Okareh" class="w-full h-full object-cover" src="./ui-director-redesign.png"/>
 </div>
 <div class="absolute -bottom-10 -right-10 w-48 h-48 bg-institutional-gold rounded-full -z-10 mix-blend-multiply opacity-50"></div>
 <div class="absolute top-10 -left-10 w-24 h-24 bg-deep-emerald rounded-full -z-10 opacity-30"></div>
 </div>
-<div class="lg:col-span-7 space-y-8">
+<div class="lg:col-span-7 space-y-8 fade-up-element">
 <div>
 <span class="text-label-caps font-label-caps text-deep-emerald">Leadership Spotlight</span>
 <h2 class="text-headline-md font-headline-md text-primary mt-2">Guiding Intellectual Property &amp; Commercialization at UI</h2>
@@ -767,7 +785,7 @@ and Global Innovation
 <span class="text-label-caps font-label-caps text-institutional-gold">Testimonials</span>
 <h2 class="text-headline-md font-headline-md mt-2">Feedback from Our Community</h2>
 </div>
-<div class="max-w-4xl mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="max-w-4xl mx-auto px-margin-mobile md:px-margin-desktop fade-up-element">
 <div class="bg-deep-emerald p-12 rounded-3xl relative overflow-hidden">
 <div class="absolute -top-6 -left-6 text-9xl text-white/5 font-serif select-none">“</div>
 <div class="relative z-10 text-center">
@@ -789,7 +807,7 @@ and Global Innovation
 <div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
 <div class="bg-white rounded-[2rem] shadow-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-5 border border-outline-variant">
 <!-- Contact Info -->
-<div class="lg:col-span-2 bg-deep-emerald p-12 text-white flex flex-col justify-between">
+<div class="lg:col-span-2 bg-deep-emerald p-12 text-white flex flex-col justify-between fade-up-element">
 <div>
 <h2 class="text-headline-md font-headline-md mb-6">Contact Information</h2>
 <p class="text-on-primary-container text-sm mb-12">Fill up the form and our team will get back to you within 24 hours.</p>
@@ -815,7 +833,7 @@ and Global Innovation
 </div>
 </div>
 <!-- Contact Form -->
-<div class="lg:col-span-3 p-12 bg-white">
+<div class="lg:col-span-3 p-12 bg-white fade-up-element">
 
       <!-- Form Success State -->
       <div id="contact-success-state" class="hidden text-center py-16 space-y-6">
@@ -1104,6 +1122,64 @@ and Global Innovation
         consentBanner.classList.add('translate-y-12', 'opacity-0', 'pointer-events-none');
       }
     }
+
+    // Animate Number Counters Function
+    function animateCounter(counter) {
+      const target = +counter.getAttribute('data-target');
+      if (isNaN(target)) return;
+      const duration = 2000; // 2 seconds
+      const startTime = performance.now();
+      
+      function update(currentTime) {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        // Ease out quad
+        const easeProgress = progress * (2 - progress);
+        
+        const currentValue = Math.floor(easeProgress * target);
+        counter.innerText = currentValue;
+        
+        if (progress < 1) {
+          requestAnimationFrame(update);
+        } else {
+          counter.innerText = target;
+        }
+      }
+      requestAnimationFrame(update);
+    }
+
+    // Scroll reveal observer
+    const fadeElements = document.querySelectorAll('.fade-up-element');
+    const observerOptions = {
+      root: null,
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const fadeObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          
+          // Trigger metric counter animation if this element has counters
+          const counters = entry.target.querySelectorAll('.counter');
+          if (counters.length > 0) {
+            counters.forEach(counter => {
+              if (!counter.started) {
+                counter.started = true;
+                animateCounter(counter);
+              }
+            });
+          }
+          
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+    
+    fadeElements.forEach(element => {
+      fadeObserver.observe(element);
+    });
   </script>
 
   <!-- Privacy Consent Banner -->
