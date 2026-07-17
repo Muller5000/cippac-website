@@ -149,7 +149,19 @@
         }
     </script>
 <style>
-        .material-symbols-outlined {
+        
+    /* Logo wall marquee */
+    @keyframes marquee {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-50%); }
+    }
+    .animate-marquee {
+      animation: marquee 25s linear infinite;
+    }
+    .animate-marquee:hover {
+      animation-play-state: paused;
+    }
+    .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
         .bento-grid {
@@ -724,17 +736,30 @@ and Global Innovation
 </div>
 </section>
 <!-- Partners Row -->
-<section class="py-16 border-y border-slate-100 overflow-hidden">
-<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
-<p class="text-center text-label-caps font-label-caps text-on-surface-variant mb-8">Trusted By &amp; Partnered With</p>
-<div class="flex flex-wrap justify-center items-center gap-12 grayscale opacity-60">
-<span class="text-xl font-bold font-headline-sm text-primary">University of Ibadan</span>
-<span class="text-xl font-bold font-headline-sm text-primary">Patent Registry Nigeria</span>
-<span class="text-xl font-bold font-headline-sm text-primary">NOTAP</span>
-<span class="text-xl font-bold font-headline-sm text-primary">WIPO Agency</span>
-<span class="text-xl font-bold font-headline-sm text-primary">Academy of Sciences</span>
-</div>
-</div>
+<section class="py-16 border-y border-slate-100 overflow-hidden bg-gray-50/30">
+  <div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop mb-8 text-center">
+    <p class="text-center text-label-caps font-label-caps text-on-surface-variant tracking-widest block">Trusted By &amp; Partnered With</p>
+  </div>
+  
+  <!-- Scrolling Marquee -->
+  <div class="relative flex overflow-x-hidden w-full select-none">
+    <div class="flex space-x-16 animate-marquee py-4 whitespace-nowrap">
+      <span class="text-slate-400 font-heading font-bold text-2xl uppercase tracking-widest whitespace-nowrap hover:text-deep-emerald transition-colors cursor-default">University of Ibadan</span>
+      <span class="text-slate-400 font-heading font-bold text-2xl uppercase tracking-widest whitespace-nowrap hover:text-deep-emerald transition-colors cursor-default">Patent Registry Nigeria</span>
+      <span class="text-slate-400 font-heading font-bold text-2xl uppercase tracking-widest whitespace-nowrap hover:text-deep-emerald transition-colors cursor-default">NOTAP Nigeria</span>
+      <span class="text-slate-400 font-heading font-bold text-2xl uppercase tracking-widest whitespace-nowrap hover:text-deep-emerald transition-colors cursor-default">Federal Ministry of Science</span>
+      <span class="text-slate-400 font-heading font-bold text-2xl uppercase tracking-widest whitespace-nowrap hover:text-deep-emerald transition-colors cursor-default">WIPO Agency</span>
+      <span class="text-slate-400 font-heading font-bold text-2xl uppercase tracking-widest whitespace-nowrap hover:text-deep-emerald transition-colors cursor-default">African Academy of Sciences</span>
+      
+      <!-- Duplicate for Infinite Loop -->
+      <span class="text-slate-400 font-heading font-bold text-2xl uppercase tracking-widest whitespace-nowrap hover:text-deep-emerald transition-colors cursor-default">University of Ibadan</span>
+      <span class="text-slate-400 font-heading font-bold text-2xl uppercase tracking-widest whitespace-nowrap hover:text-deep-emerald transition-colors cursor-default">Patent Registry Nigeria</span>
+      <span class="text-slate-400 font-heading font-bold text-2xl uppercase tracking-widest whitespace-nowrap hover:text-deep-emerald transition-colors cursor-default">NOTAP Nigeria</span>
+      <span class="text-slate-400 font-heading font-bold text-2xl uppercase tracking-widest whitespace-nowrap hover:text-deep-emerald transition-colors cursor-default">Federal Ministry of Science</span>
+      <span class="text-slate-400 font-heading font-bold text-2xl uppercase tracking-widest whitespace-nowrap hover:text-deep-emerald transition-colors cursor-default">WIPO Agency</span>
+      <span class="text-slate-400 font-heading font-bold text-2xl uppercase tracking-widest whitespace-nowrap hover:text-deep-emerald transition-colors cursor-default">African Academy of Sciences</span>
+    </div>
+  </div>
 </section>
 <!-- Testimonials -->
 <section class="py-section-gap bg-primary text-white">
@@ -1069,7 +1094,6 @@ and Global Innovation
         closeBanner();
       });
 
-      // Reject consent button logic
       rejectBtn.addEventListener('click', () => {
         localStorage.setItem('cippac-cookie-consent', 'declined');
         closeBanner();
