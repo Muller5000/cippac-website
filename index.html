@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en-US">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<html class="scroll-smooth" lang="en-US"><head>
+<meta charset="UTF-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <title>CIPPAC | IP & Commercialization | University of Ibadan</title>
   <meta name="description" content="Official homepage of the Centre for Intellectual Property Protection and Commercialization (CIPPAC), University of Ibadan, Nigeria. Empowering researchers and driving innovation.">
   <link rel="canonical" href="https://cippac.ui.edu.ng/">
@@ -50,1724 +50,829 @@
     }
   }
   </script>
-  
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <!-- Lucide Icons -->
-  <script src="https://unpkg.com/lucide@latest"></script>
-  
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Plus Jakarta Sans', 'sans-serif'],
-            heading: ['Outfit', 'sans-serif'],
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Source+Serif+4:ital,wght@0,400;0,600;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "tertiary": "#202e40",
+                      "on-background": "#191c1b",
+                      "surface-container-highest": "#e1e3e0",
+                      "primary": "#00342b",
+                      "institutional-gold": "#FFD700",
+                      "deep-emerald": "#004D40",
+                      "surface": "#f8faf7",
+                      "secondary-container": "#fcd400",
+                      "on-tertiary-fixed": "#0d1c2e",
+                      "primary-fixed": "#afefdd",
+                      "error-container": "#ffdad6",
+                      "surface-container-high": "#e7e9e6",
+                      "surface-tint": "#29695b",
+                      "on-secondary": "#ffffff",
+                      "background": "#f8faf7",
+                      "on-secondary-container": "#6e5c00",
+                      "on-surface-variant": "#3f4945",
+                      "on-error": "#ffffff",
+                      "tertiary-fixed": "#d5e3fc",
+                      "error": "#ba1a1a",
+                      "on-tertiary-container": "#a3b1c8",
+                      "on-tertiary-fixed-variant": "#3a485b",
+                      "primary-fixed-dim": "#94d3c1",
+                      "success-green": "#0B6B3A",
+                      "primary-container": "#004d40",
+                      "on-secondary-fixed": "#221b00",
+                      "on-primary": "#ffffff",
+                      "secondary": "#705d00",
+                      "secondary-fixed": "#ffe16d",
+                      "tertiary-fixed-dim": "#b9c7df",
+                      "tertiary-container": "#364457",
+                      "on-surface": "#191c1b",
+                      "surface-container-low": "#f2f4f1",
+                      "inverse-surface": "#2e3130",
+                      "slate-50": "#F8FAFC",
+                      "outline-variant": "#bfc9c4",
+                      "on-primary-container": "#7ebdac",
+                      "surface-container-lowest": "#ffffff",
+                      "outline": "#707975",
+                      "on-primary-fixed": "#00201a",
+                      "slate-600": "#475569",
+                      "on-primary-fixed-variant": "#065043",
+                      "on-secondary-fixed-variant": "#544600",
+                      "surface-dim": "#d8dbd8",
+                      "on-tertiary": "#ffffff",
+                      "on-error-container": "#93000a",
+                      "surface-bright": "#f8faf7",
+                      "inverse-on-surface": "#eff1ef",
+                      "inverse-primary": "#94d3c1",
+                      "secondary-fixed-dim": "#e9c400",
+                      "surface-variant": "#e1e3e0",
+                      "surface-container": "#eceeec"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "gutter": "24px",
+                      "section-gap": "120px",
+                      "unit": "8px",
+                      "margin-desktop": "64px",
+                      "margin-mobile": "16px"
+              },
+              "fontFamily": {
+                      "headline-sm": ["Montserrat"],
+                      "display-lg": ["Montserrat"],
+                      "body-lg": ["\"Source Serif 4\""],
+                      "headline-md": ["Montserrat"],
+                      "body-md": ["\"Source Serif 4\""],
+                      "display-lg-mobile": ["Montserrat"],
+                      "label-caps": ["Montserrat"]
+              },
+              "fontSize": {
+                      "headline-sm": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                      "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "headline-md": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                      "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "display-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                      "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "700"}]
+              }
+            },
           },
-          colors: {
-            uigreen: {
-              DEFAULT: '#0B6B3A',
-              dark: '#05321A',
-              light: '#e8f5ee',
-            },
-            accentgold: {
-              DEFAULT: '#F5C236',
-              dark: '#A68B2D',
-              light: '#F7F0D4',
-            },
-            charcoal: '#1F2937',
-          }
         }
-      }
-    }
-  </script>
-  
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-    section[id] {
-      scroll-margin-top: 80px;
-    }
-    /* Custom Animations and Styles */
-    .glassmorphism {
-      background: rgba(255, 255, 255, 0.7);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-    }
-    .glassmorphism-dark {
-      background: rgba(5, 50, 26, 0.6);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-    }
-    .text-gradient {
-      background: linear-gradient(135deg, #0B6B3A 0%, #F5C236 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    .text-gradient-gold {
-      background: linear-gradient(135deg, #FFF 30%, #F5C236 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    
-    @keyframes float {
-      0%, 100% { transform: translateY(0px) rotate(0deg); }
-      50% { transform: translateY(-10px) rotate(3deg); }
-    }
-    .animate-float {
-      animation: float 6s ease-in-out infinite;
-    }
-    
-    /* Logo wall marquee */
-    @keyframes marquee {
-      0% { transform: translateX(0%); }
-      100% { transform: translateX(-50%); }
-    }
-    .animate-marquee {
-      animation: marquee 25s linear infinite;
-    }
-    .animate-marquee:hover {
-      animation-play-state: paused;
-    }
-    
-    /* Hide scrollbar */
-    .no-scrollbar::-webkit-scrollbar { display: none; }
-    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-    
-    /* Fade up styling for intersection observer */
-    .fade-up-element {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    .fade-up-element.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    /* Staggered transition delays for grid elements */
-    .fade-up-element:nth-child(2) { transition-delay: 100ms; }
-    .fade-up-element:nth-child(3) { transition-delay: 200ms; }
-    .fade-up-element:nth-child(4) { transition-delay: 300ms; }
-    .fade-up-element:nth-child(5) { transition-delay: 400ms; }
-    .fade-up-element:nth-child(6) { transition-delay: 500ms; }
-
-    /* Typographic refinements */
-    h1.hero-title {
-      font-size: clamp(2.5rem, 6vw, 5.5rem);
-    }
-    .section-badge {
-      letter-spacing: 0.15em;
-    }
-
-    /* Navigation styling */
-    .nav-link {
-      position: relative;
-    }
-    .nav-link.\!text-accentgold::after {
-      content: '';
-      position: absolute;
-      bottom: -4px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 4px;
-      height: 4px;
-      border-radius: 50%;
-      background: currentColor;
-    }
-
-    /* Mobile vertical timeline responsive styling */
-    @media (max-width: 1023px) {
-      .timeline-wrapper {
-        overflow-x: visible !important;
-      }
-      .timeline-track {
-        flex-direction: column !important;
-        min-width: auto !important;
-        gap: 0 !important;
-        padding-left: 2rem !important;
-        border-left: 3px solid #0B6B3A;
-      }
-      .timeline-step {
-        width: 100% !important;
-        text-align: left !important;
-        flex-direction: row !important;
-        align-items: flex-start !important;
-        padding: 1.5rem 0;
-        margin-left: -2.5rem;
-      }
-      .timeline-step .step-circle {
-        flex-shrink: 0;
-        margin-right: 1rem;
-        margin-bottom: 0;
-      }
-    }
-  </style>
-  
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 24px;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .nav-sticky {
+            transition: all 0.3s ease;
+        }
+        .nav-scrolled {
+            padding-top: 0.75rem;
+            padding-bottom: 0.75rem;
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+        }
+    </style>
   
 
   <!-- Lucide Icon Library -->
   <script src="https://unpkg.com/lucide@latest"></script>
 
 </head>
-<body <?php body_class("bg-white text-charcoal antialiased"); ?>>
-
-  <!-- Top Sticky Navigation -->
-  <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 py-6 border-b border-transparent">
-    <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
-      <!-- Logo -->
-      <a href="#" class="flex items-center space-x-3 group focus-visible:ring-2 focus-visible:ring-accentgold focus-visible:ring-offset-2 focus:outline-none rounded-xl">
-        <div class="w-10 h-10 rounded-xl overflow-hidden shadow-md shadow-uigreen/20 transition-all group-hover:scale-105 border border-accentgold/30 flex items-center justify-center bg-white p-0.5">
-          <img src="./ui-cippac-logo.png" alt="CIPPAC Logo" class="w-full h-full object-contain">
-        </div>
-        <div>
-          <span id="logo-text-cippac" class="font-heading font-extrabold text-xl tracking-tight text-white transition-colors duration-500">CIPPAC</span>
-          <span class="block text-[9px] font-medium tracking-widest text-accentgold uppercase">UI Innovation Hub</span>
-        </div>
-      </a>
-      
-      <!-- Nav Links (Desktop) -->
-      <nav class="hidden md:flex items-center space-x-8">
-        <a href="#hero" class="nav-link font-medium text-sm text-white/90 hover:text-white transition-colors focus-visible:ring-2 focus-visible:ring-accentgold focus:outline-none rounded-lg px-2 py-1">Home</a>
-        <a href="#about" class="nav-link font-medium text-sm text-white/90 hover:text-white transition-colors focus-visible:ring-2 focus-visible:ring-accentgold focus:outline-none rounded-lg px-2 py-1">About</a>
-        <a href="#services" class="nav-link font-medium text-sm text-white/90 hover:text-white transition-colors focus-visible:ring-2 focus-visible:ring-accentgold focus:outline-none rounded-lg px-2 py-1">Services</a>
-        <a href="#timeline" class="nav-link font-medium text-sm text-white/90 hover:text-white transition-colors focus-visible:ring-2 focus-visible:ring-accentgold focus:outline-none rounded-lg px-2 py-1">Process</a>
-        <a href="#stories" class="nav-link font-medium text-sm text-white/90 hover:text-white transition-colors focus-visible:ring-2 focus-visible:ring-accentgold focus:outline-none rounded-lg px-2 py-1">Success Stories</a>
-        <a href="#news" class="nav-link font-medium text-sm text-white/90 hover:text-white transition-colors focus-visible:ring-2 focus-visible:ring-accentgold focus:outline-none rounded-lg px-2 py-1">News</a>
-        <a href="#contact" class="nav-link font-medium text-sm text-white/90 hover:text-white transition-colors focus-visible:ring-2 focus-visible:ring-accentgold focus:outline-none rounded-lg px-2 py-1">Contact</a>
-      </nav>
-      
-      <!-- CTA Button -->
-      <div class="flex items-center space-x-4">
-        <a href="#contact" id="nav-cta" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-xl border border-white/30 text-white font-medium text-sm hover:bg-white hover:text-uigreen transition-all duration-300 backdrop-blur-md shadow-sm focus-visible:ring-2 focus-visible:ring-accentgold focus-visible:ring-offset-2 focus:outline-none">
-          Book Consultation
-        </a>
-        
-        <!-- Mobile Menu Trigger -->
-        <button id="mobile-menu-btn" aria-label="Open navigation menu" class="md:hidden p-2 rounded-xl text-white hover:bg-white/10 transition-colors focus-visible:ring-2 focus-visible:ring-accentgold focus:outline-none">
-          <i data-lucide="menu" class="w-6 h-6" aria-hidden="true"></i>
-        </button>
-      </div>
-    </div>
-  </header>
-  
-  <!-- Mobile Drawer Menu -->
-  <div id="mobile-menu" class="fixed inset-0 z-40 bg-uigreen-dark/95 backdrop-blur-lg flex flex-col justify-center items-center space-y-8 transition-transform duration-500 translate-x-full cursor-pointer">
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+  <div id="mobile-menu" class="fixed inset-0 z-40 bg-[#00201a]/95 backdrop-blur-lg flex flex-col justify-center items-center space-y-8 transition-transform duration-500 translate-x-full cursor-pointer">
     <button id="close-menu-btn" aria-label="Close navigation menu" class="absolute top-6 right-6 w-12 h-12 flex items-center justify-center rounded-full text-white bg-white/10 active:bg-white/25 hover:bg-white/20 transition-all focus-visible:ring-2 focus-visible:ring-accentgold focus:outline-none cursor-default">
-      <i data-lucide="x" class="w-6 h-6" aria-hidden="true"></i>
+      <span class="material-symbols-outlined text-2xl">close</span>
     </button>
-    <a href="#hero" class="mobile-nav-link font-heading text-2xl font-bold text-white hover:text-accentgold transition-colors focus-visible:ring-2 focus-visible:ring-accentgold focus:outline-none rounded-lg px-3 py-1">Home</a>
-    <a href="#about" class="mobile-nav-link font-heading text-2xl font-bold text-white hover:text-accentgold transition-colors focus-visible:ring-2 focus-visible:ring-accentgold focus:outline-none rounded-lg px-3 py-1">About</a>
-    <a href="#services" class="mobile-nav-link font-heading text-2xl font-bold text-white hover:text-accentgold transition-colors focus-visible:ring-2 focus-visible:ring-accentgold focus:outline-none rounded-lg px-3 py-1">Services</a>
-    <a href="#timeline" class="mobile-nav-link font-heading text-2xl font-bold text-white hover:text-accentgold transition-colors focus-visible:ring-2 focus-visible:ring-accentgold focus:outline-none rounded-lg px-3 py-1">Process</a>
-    <a href="#stories" class="mobile-nav-link font-heading text-2xl font-bold text-white hover:text-accentgold transition-colors focus-visible:ring-2 focus-visible:ring-accentgold focus:outline-none rounded-lg px-3 py-1">Success Stories</a>
-    <a href="#news" class="mobile-nav-link font-heading text-2xl font-bold text-white hover:text-accentgold transition-colors focus-visible:ring-2 focus-visible:ring-accentgold focus:outline-none rounded-lg px-3 py-1">News</a>
-    <a href="#contact" class="mobile-nav-link font-heading text-2xl font-bold text-white hover:text-accentgold transition-colors focus-visible:ring-2 focus-visible:ring-accentgold focus:outline-none rounded-lg px-3 py-1">Contact</a>
-    <a href="#contact" class="px-8 py-3.5 rounded-xl bg-accentgold text-uigreen-dark font-bold text-lg hover:bg-white hover:text-uigreen transition-all shadow-lg focus-visible:ring-2 focus-visible:ring-accentgold focus-visible:ring-offset-2 focus:outline-none">
-      Book Consultation
-    </a>
+    <a href="#hero" class="mobile-nav-link text-white font-bold text-xl uppercase tracking-wider">Home</a>
+    <a href="#about" class="mobile-nav-link text-white font-bold text-xl uppercase tracking-wider">About</a>
+    <a href="#services" class="mobile-nav-link text-white font-bold text-xl uppercase tracking-wider">Services</a>
+    <a href="#timeline" class="mobile-nav-link text-white font-bold text-xl uppercase tracking-wider">Process</a>
+    <a href="#stories" class="mobile-nav-link text-white font-bold text-xl uppercase tracking-wider">Success Stories</a>
+    <a href="#contact" class="mobile-nav-link text-white font-bold text-xl uppercase tracking-wider">Contact</a>
   </div>
+<header class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-surface/90 backdrop-blur-md shadow-sm border-b border-outline-variant">
+<div class="max-w-7xl mx-auto flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4">
+<div class="flex items-center gap-3">
+<img alt="CIPPAC Logo" class="h-10 w-10 object-contain" src="./ui-cippac-logo.png"/>
+<span class="text-headline-sm font-headline-sm font-bold text-deep-emerald">CIPPAC Innovation Hub</span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-deep-emerald border-b-2 border-institutional-gold pb-1 font-bold text-label-caps font-label-caps" href="#">Home</a>
+<a class="text-on-surface-variant hover:text-deep-emerald transition-colors text-label-caps font-label-caps" href="#">About</a>
+<a class="text-on-surface-variant hover:text-deep-emerald transition-colors text-label-caps font-label-caps" href="#">Services</a>
+<a class="text-on-surface-variant hover:text-deep-emerald transition-colors text-label-caps font-label-caps" href="#">Process</a>
+<a class="text-on-surface-variant hover:text-deep-emerald transition-colors text-label-caps font-label-caps" href="#">Success Stories</a>
+<a class="text-on-surface-variant hover:text-deep-emerald transition-colors text-label-caps font-label-caps" href="#">News</a>
+</nav>
+<div class="flex items-center gap-4">
+        <!-- Mobile Trigger Button -->
+        <button id="mobile-menu-btn" aria-label="Open navigation menu" class="md:hidden p-2 rounded-xl text-deep-emerald hover:bg-deep-emerald/10 transition-colors focus-visible:ring-2 focus-visible:ring-accentgold focus:outline-none">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+<button class="bg-institutional-gold text-deep-emerald font-bold px-6 py-2 rounded-lg hover:scale-105 transition-transform text-label-caps font-label-caps shadow-md">
+                    Book Consultation
+                </button>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section id="hero"
+<section class="relative min-h-screen flex items-center pt-20 overflow-hidden bg-primary-container">
 
-  <!-- SECTION 1: HERO -->
-  <section id="hero" class="relative h-screen w-full flex items-center justify-center overflow-hidden bg-gradient-to-tr from-uigreen-dark via-uigreen to-uigreen-dark" style="background: linear-gradient(135deg, #05321A 0%, #0B6B3A 50%, #05321A 100%);">
-    <!-- Looping Background Video -->
-    <video autoplay muted loop playsinline poster="./ui-hero-poster.jpg" class="absolute inset-0 w-full h-full object-cover z-0">
-      <source src="./ui-hero-video.mp4" type="video/mp4">
-    </video>
-    
-    <!-- Dark Gradient Overlay -->
-    <div class="absolute inset-0 bg-gradient-to-t from-black via-uigreen-dark/75 to-uigreen-dark/50 z-10"></div>
-    
-    <!-- Floating particles background -->
-    <div class="absolute inset-0 pointer-events-none z-10">
-      <div class="absolute w-72 h-72 rounded-full bg-accentgold/10 blur-[100px] top-1/4 left-1/4 animate-pulse"></div>
-      <div class="absolute w-96 h-96 rounded-full bg-uigreen/20 blur-[120px] bottom-1/4 right-1/4"></div>
-    </div>
-    
-    <!-- Hero Content -->
-    <div class="relative max-w-5xl mx-auto px-6 text-center z-20 pt-20">
-      <span class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-accentgold font-heading text-xs font-semibold uppercase tracking-wider mb-6 backdrop-blur-md">
-        <i data-lucide="sparkles" class="w-3.5 h-3.5" aria-hidden="true"></i>
-        <span>Global Innovation Hub</span>
-      </span>
-      
-      <h1 class="font-heading hero-title font-[900] text-white tracking-tight leading-[1.1] mb-6">
-        Empowering Breakthrough Research<br />
+<div class="relative z-10 max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="space-y-8">
+<div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-deep-emerald text-institutional-gold font-bold text-label-caps">
+<span class="material-symbols-outlined text-sm">public</span>
+                    Global Innovation Hub
+                </div>
+<h1 class="text-on-primary font-display-lg text-display-lg-mobile md:text-display-lg max-w-xl leading-tight">
+                    Empowering Breakthrough Research<br />
 and Global Innovation
-      </h1>
-      
-      <p class="max-w-2xl mx-auto text-white/80 text-base sm:text-xl font-light leading-relaxed mb-10">
-        Empowering researchers, innovators, inventors, and industry leaders through intellectual property protection, technology transfer, commercialization, and strategic partnerships.
-      </p>
-      
-      <!-- Action Buttons -->
-      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-14">
-        <a href="#services" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-xl bg-uigreen text-white font-bold hover:bg-uigreen-dark transition-all duration-300 shadow-xl shadow-uigreen/20 border border-accentgold/20 hover:scale-[1.02] focus-visible:ring-2 focus-visible:ring-accentgold focus-visible:ring-offset-2 focus:outline-none">
-          Protect Your Innovation
-          <i data-lucide="arrow-right" class="w-4 h-4 ml-2" aria-hidden="true"></i>
-        </a>
-        <a href="#about" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-xl border border-white/20 text-white font-semibold hover:bg-white/10 transition-all backdrop-blur-md hover:scale-[1.02] focus-visible:ring-2 focus-visible:ring-accentgold focus-visible:ring-offset-2 focus:outline-none">
-          Explore Our Services
-        </a>
-      </div>
-      
-      <!-- Trust Indicators -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto border-t border-white/15 pt-8 text-white/80 text-xs sm:text-sm">
-        <div class="flex items-center justify-center space-x-2">
-          <i data-lucide="check-circle" class="w-4 h-4 text-accentgold flex-shrink-0" aria-hidden="true"></i>
-          <span>Official UI IP & Commercialization Centre</span>
-        </div>
-        <div class="flex items-center justify-center space-x-2">
-          <i data-lucide="check-circle" class="w-4 h-4 text-accentgold flex-shrink-0" aria-hidden="true"></i>
-          <span>University Innovation & Incubation Hub</span>
-        </div>
-        <div class="flex items-center justify-center space-x-2">
-          <i data-lucide="check-circle" class="w-4 h-4 text-accentgold flex-shrink-0" aria-hidden="true"></i>
-          <span>Supporting 1000+ Inventors & Partners</span>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Animated Scroll Down Indicator -->
-    <a href="#metrics" aria-label="Scroll down to metrics" class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 flex flex-col items-center text-white/50 hover:text-white transition-colors focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accentgold focus:outline-none rounded-xl">
-      <span class="text-[10px] tracking-widest uppercase mb-2">Scroll Down</span>
-      <div class="w-6 h-10 rounded-full border-2 border-white/30 flex justify-center pt-1.5">
-        <div class="w-1.5 h-1.5 bg-accentgold rounded-full animate-bounce"></div>
-      </div>
-    </a>
-  </section>
+                </h1>
+<p class="text-on-primary-container font-body-lg text-body-lg max-w-lg">
+                    Empowering researchers, innovators, inventors, and industry leaders through intellectual property protection, technology transfer, and strategic partnerships.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-institutional-gold text-deep-emerald font-extrabold px-8 py-4 rounded-lg flex items-center justify-center gap-2 hover:shadow-xl transition-all">
+                        Protect Your Innovation
+                        <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="border-2 border-on-primary text-on-primary font-bold px-8 py-4 rounded-lg hover:bg-on-primary hover:text-deep-emerald transition-all">
+                        Explore Our Services
+                    </button>
+</div>
+<div class="flex flex-wrap gap-6 pt-4 text-on-primary-container text-xs font-label-caps">
+<div class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">verified_user</span> Official UI IP Centre</div>
+<div class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">hub</span> University Hub</div>
+<div class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">groups</span> 1000+ Partners</div>
+</div>
+</div>
+<div class="hidden md:block relative h-[600px]">
+<div class="absolute inset-0 rounded-[2rem] overflow-hidden shadow-2xl border-4 border-deep-emerald transform rotate-3 hover:rotate-0 transition-transform duration-700">
+<img class="w-full h-full object-cover" data-alt="A premium, high-quality architectural photo of a modern university innovation center interior. The space is filled with natural light, featuring glass partitions, sleek minimalist furniture, and groups of researchers collaborating in a bright, tech-forward environment. The color palette reflects deep emerald greens and clean whites, embodying professional academic excellence and modern innovation." src="./ui-hero-redesign.png"/>
+</div>
+<div class="absolute -bottom-8 -left-8 bg-surface p-6 rounded-2xl shadow-xl border border-outline-variant max-w-[240px] transform -rotate-3">
+<div class="text-deep-emerald font-bold text-headline-sm mb-1">150+</div>
+<div class="text-on-surface-variant text-sm font-label-caps">Registered Patents Supporting Research Excellence</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Metrics Section -->
+<section id="about"
+<section class="py-section-gap bg-surface">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop text-center mb-16">
+<span class="text-label-caps font-label-caps text-deep-emerald">Impact &amp; Reach</span>
+<h2 class="text-headline-md font-headline-md mt-2">Our Impact in Numbers</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto mt-4">Measurable outcomes from CIPPAC's work in protecting and commercializing university research.</p>
+</div>
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<div class="bg-white p-8 rounded-xl shadow-sm border border-slate-50 hover:shadow-md transition-shadow group text-center">
+<div class="w-16 h-16 bg-primary-fixed rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl">description</span>
+</div>
+<div class="text-display-lg text-primary font-bold mb-2">150+</div>
+<h3 class="text-headline-sm font-headline-sm mb-2 text-deep-emerald">Registered Patents</h3>
+<p class="text-on-surface-variant text-sm">Assisting faculty and student inventors with drafting and registration.</p>
+</div>
+<div class="bg-white p-8 rounded-xl shadow-sm border border-slate-50 hover:shadow-md transition-shadow group text-center">
+<div class="w-16 h-16 bg-secondary-fixed rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-secondary text-3xl">rocket_launch</span>
+</div>
+<div class="text-display-lg text-secondary font-bold mb-2">45+</div>
+<h3 class="text-headline-sm font-headline-sm mb-2 text-deep-emerald">Commercial Projects</h3>
+<p class="text-on-surface-variant text-sm">Transitioning prototypes into commercially viable market products.</p>
+</div>
+<div class="bg-white p-8 rounded-xl shadow-sm border border-slate-50 hover:shadow-md transition-shadow group text-center">
+<div class="w-16 h-16 bg-tertiary-fixed rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-tertiary text-3xl">school</span>
+</div>
+<div class="text-display-lg text-tertiary font-bold mb-2">1200+</div>
+<h3 class="text-headline-sm font-headline-sm mb-2 text-deep-emerald">Researchers Assisted</h3>
+<p class="text-on-surface-variant text-sm">Conducting clinics, workshops, and individual IP counseling.</p>
+</div>
+<div class="bg-white p-8 rounded-xl shadow-sm border border-slate-50 hover:shadow-md transition-shadow group text-center">
+<div class="w-16 h-16 bg-primary-fixed rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl">corporate_fare</span>
+</div>
+<div class="text-display-lg text-primary font-bold mb-2">80+</div>
+<h3 class="text-headline-sm font-headline-sm mb-2 text-deep-emerald">Industry Partners</h3>
+<p class="text-on-surface-variant text-sm">Fostering collaboration with corporate partners and investors.</p>
+</div>
+</div>
+</section>
+<!-- Bridging Academic Section -->
+<section class="py-section-gap overflow-hidden">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+<div class="relative group">
+<div class="aspect-video rounded-2xl overflow-hidden shadow-2xl relative z-10">
+<img class="w-full h-full object-cover" data-alt="A professional group of diverse researchers and industry leaders gathered in a modern conference hall at the University of Ibadan. They are engaged in a technology transfer discussion, with digital prototypes displayed on screens in the background. The lighting is soft and professional, capturing a moment of productive academic-industrial partnership." src="./ui-partnership-redesign.png"/>
+</div>
+<div class="absolute -top-6 -right-6 w-full h-full border-2 border-institutional-gold rounded-2xl -z-10 group-hover:translate-x-4 group-hover:-translate-y-4 transition-transform duration-500"></div>
+</div>
+<div class="space-y-6">
+<span class="text-label-caps font-label-caps text-deep-emerald">University of Ibadan Innovation Ecosystem</span>
+<h2 class="text-headline-md font-headline-md text-primary leading-tight">Bridging Academic Excellence and Economic Impact</h2>
+<p class="text-body-md text-on-surface-variant leading-relaxed">
+                    The Centre for Intellectual Property Protection and Commercialization (CIPPAC), University of Ibadan, is the official institutional engine dedicated to identifying, protecting, and commercializing the university's intellectual assets.
+                </p>
+<p class="text-body-md text-on-surface-variant leading-relaxed">
+                    We empower inventors and researchers by providing advisory services, patent applications support, and licensing coordination, while actively matchmaking academy innovations with corporate industry partners to drive national economic development.
+                </p>
+<div class="pt-4">
+<button class="inline-flex items-center gap-2 bg-deep-emerald text-white px-8 py-3 rounded-lg font-bold hover:bg-primary transition-colors">
+                        Learn More About CIPPAC
+                        <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section id="services"
+<section class="py-section-gap bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop text-center mb-16">
+<span class="text-label-caps font-label-caps text-deep-emerald">What We Do</span>
+<h2 class="text-headline-md font-headline-md mt-2">Core Innovation &amp; IP Services</h2>
+<p class="text-on-surface-variant mt-4 max-w-2xl mx-auto">Empowering researchers and inventors at every step of their commercialization journey.</p>
+</div>
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Service 1 -->
+<div class="bg-white p-8 rounded-2xl border border-outline-variant hover:border-deep-emerald hover:shadow-xl transition-all group flex flex-col h-full">
+<div class="text-institutional-gold font-bold text-sm mb-4">01</div>
+<div class="w-12 h-12 bg-surface-container rounded-lg flex items-center justify-center mb-6 group-hover:bg-deep-emerald group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">verified</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm mb-4">Patent Protection</h3>
+<p class="text-on-surface-variant text-sm flex-grow">Assisting inventors with novelty searches, drafting comprehensive patent specifications, and managing registrations.</p>
+<a class="mt-8 inline-flex items-center gap-2 text-deep-emerald font-bold text-label-caps group-hover:gap-4 transition-all" href="./patent-protection.html">
+                    Learn More <span class="material-symbols-outlined">trending_flat</span>
+</a>
+</div>
+<!-- Service 2 -->
+<div class="bg-white p-8 rounded-2xl border border-outline-variant hover:border-deep-emerald hover:shadow-xl transition-all group flex flex-col h-full">
+<div class="text-institutional-gold font-bold text-sm mb-4">02</div>
+<div class="w-12 h-12 bg-surface-container rounded-lg flex items-center justify-center mb-6 group-hover:bg-deep-emerald group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">stars</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm mb-4">Trademark Advisory</h3>
+<p class="text-on-surface-variant text-sm flex-grow">Securing institutional brands, project logos, and university trademarks to build commercial market identity.</p>
+<a class="mt-8 inline-flex items-center gap-2 text-deep-emerald font-bold text-label-caps group-hover:gap-4 transition-all" href="./trademark-advisory.html">
+                    Learn More <span class="material-symbols-outlined">trending_flat</span>
+</a>
+</div>
+<!-- Service 3 -->
+<div class="bg-white p-8 rounded-2xl border border-outline-variant hover:border-deep-emerald hover:shadow-xl transition-all group flex flex-col h-full">
+<div class="text-institutional-gold font-bold text-sm mb-4">03</div>
+<div class="w-12 h-12 bg-surface-container rounded-lg flex items-center justify-center mb-6 group-hover:bg-deep-emerald group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">copyright</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm mb-4">Copyright Support</h3>
+<p class="text-on-surface-variant text-sm flex-grow">Filing copyrights for software, academic manuscripts, educational videos, and creative works.</p>
+<a class="mt-8 inline-flex items-center gap-2 text-deep-emerald font-bold text-label-caps group-hover:gap-4 transition-all" href="./copyright-support.html">
+                    Learn More <span class="material-symbols-outlined">trending_flat</span>
+</a>
+</div>
+<!-- Service 4 -->
+<div class="bg-white p-8 rounded-2xl border border-outline-variant hover:border-deep-emerald hover:shadow-xl transition-all group flex flex-col h-full">
+<div class="text-institutional-gold font-bold text-sm mb-4">04</div>
+<div class="w-12 h-12 bg-surface-container rounded-lg flex items-center justify-center mb-6 group-hover:bg-deep-emerald group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">swap_horiz</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm mb-4">Technology Transfer</h3>
+<p class="text-on-surface-variant text-sm flex-grow">Managing licensing, MTAs, NDAs, and structuring industry transition pathways for university assets.</p>
+<a class="mt-8 inline-flex items-center gap-2 text-deep-emerald font-bold text-label-caps group-hover:gap-4 transition-all" href="./technology-transfer.html">
+                    Learn More <span class="material-symbols-outlined">trending_flat</span>
+</a>
+</div>
+<!-- Service 5 -->
+<div class="bg-white p-8 rounded-2xl border border-outline-variant hover:border-deep-emerald hover:shadow-xl transition-all group flex flex-col h-full">
+<div class="text-institutional-gold font-bold text-sm mb-4">05</div>
+<div class="w-12 h-12 bg-surface-container rounded-lg flex items-center justify-center mb-6 group-hover:bg-deep-emerald group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">hub</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm mb-4">Research Commercialization</h3>
+<p class="text-on-surface-variant text-sm flex-grow">Mentoring spin-offs, market validation, and connecting inventors with venture capital investors.</p>
+<a class="mt-8 inline-flex items-center gap-2 text-deep-emerald font-bold text-label-caps group-hover:gap-4 transition-all" href="./research-commercialization.html">
+                    Learn More <span class="material-symbols-outlined">trending_flat</span>
+</a>
+</div>
+<!-- Service 6 -->
+<div class="bg-white p-8 rounded-2xl border border-outline-variant hover:border-deep-emerald hover:shadow-xl transition-all group flex flex-col h-full">
+<div class="text-institutional-gold font-bold text-sm mb-4">06</div>
+<div class="w-12 h-12 bg-surface-container rounded-lg flex items-center justify-center mb-6 group-hover:bg-deep-emerald group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">school</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm mb-4">Innovation &amp; IP Consultancy</h3>
+<p class="text-on-surface-variant text-sm flex-grow">Organizing patent clinics, hosting workshops, and developing institutional IP policies.</p>
+<a class="mt-8 inline-flex items-center gap-2 text-deep-emerald font-bold text-label-caps group-hover:gap-4 transition-all" href="./innovation-ip-consultancy.html">
+                    Learn More <span class="material-symbols-outlined">trending_flat</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Methodology Section (The Path) -->
+<section id="timeline"
+<section class="py-section-gap relative overflow-hidden bg-primary overflow-hidden">
 
-  <!-- SECTION 2: IMPACT IN NUMBERS -->
-  <section id="metrics" class="bg-gray-50 py-20 border-b border-gray-100">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="text-center max-w-3xl mx-auto mb-16 fade-up-element">
-        <span class="section-badge text-uigreen font-bold text-sm tracking-wider uppercase mb-3 block">Impact & Reach</span>
-        <h2 class="font-heading text-3xl sm:text-4xl font-bold text-uigreen-dark mb-4">Our Impact in Numbers</h2>
-        <p class="text-gray-600 text-base">Measurable outcomes from CIPPAC\\\'s work in protecting and commercializing university research.</p>
-      </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-        <!-- Stat Card 1 -->
-        <div class="fade-up-element bg-white p-8 rounded-2xl border border-gray-100 shadow-sm shadow-gray-100/50 flex flex-col justify-between group hover:shadow-lg transition-all duration-500 hover:-translate-y-1">
-          <div>
-            <div class="w-12 h-12 rounded-xl bg-uigreen-light flex items-center justify-center text-uigreen mb-6 group-hover:scale-110 transition-transform">
-              <i data-lucide="file-check" class="w-6 h-6"></i>
-            </div>
-            <div class="text-4xl sm:text-5xl font-heading font-black text-uigreen-dark mb-2">
-              <span class="counter" data-target="150">0</span>+
-            </div>
-            <h3 class="font-heading font-semibold text-lg text-charcoal mb-2">Registered Patents</h3>
-            <p class="text-gray-500 text-sm leading-relaxed">Assisting faculty, staff, and student inventors with patent search, drafting, and registration.</p>
-          </div>
-        </div>
-        
-        <!-- Stat Card 2 -->
-        <div class="fade-up-element bg-white p-8 rounded-2xl border border-gray-100 shadow-sm shadow-gray-100/50 flex flex-col justify-between group hover:shadow-lg transition-all duration-500 hover:-translate-y-1">
-          <div>
-            <div class="w-12 h-12 rounded-xl bg-accentgold-light flex items-center justify-center text-accentgold-dark mb-6 group-hover:scale-110 transition-transform">
-              <i data-lucide="rocket" class="w-6 h-6"></i>
-            </div>
-            <div class="text-4xl sm:text-5xl font-heading font-black text-uigreen-dark mb-2">
-              <span class="counter" data-target="45">0</span>+
-            </div>
-            <h3 class="font-heading font-semibold text-lg text-charcoal mb-2">Commercialized Projects</h3>
-            <p class="text-gray-500 text-sm leading-relaxed">Transitioning prototypes and research ideas into commercially viable market products.</p>
-          </div>
-        </div>
-        
-        <!-- Stat Card 3 -->
-        <div class="fade-up-element bg-white p-8 rounded-2xl border border-gray-100 shadow-sm shadow-gray-100/50 flex flex-col justify-between group hover:shadow-lg transition-all duration-500 hover:-translate-y-1">
-          <div>
-            <div class="w-12 h-12 rounded-xl bg-uigreen-light flex items-center justify-center text-uigreen mb-6 group-hover:scale-110 transition-transform">
-              <i data-lucide="users" class="w-6 h-6"></i>
-            </div>
-            <div class="text-4xl sm:text-5xl font-heading font-black text-uigreen-dark mb-2">
-              <span class="counter" data-target="1200">0</span>+
-            </div>
-            <h3 class="font-heading font-semibold text-lg text-charcoal mb-2">Researchers Assisted</h3>
-            <p class="text-gray-500 text-sm leading-relaxed">Conducting clinics, workshops, and individual IP counseling for the university community.</p>
-          </div>
-        </div>
-        
-        <!-- Stat Card 4 -->
-        <div class="fade-up-element bg-white p-8 rounded-2xl border border-gray-100 shadow-sm shadow-gray-100/50 flex flex-col justify-between group hover:shadow-lg transition-all duration-500 hover:-translate-y-1">
-          <div>
-            <div class="w-12 h-12 rounded-xl bg-accentgold-light flex items-center justify-center text-accentgold-dark mb-6 group-hover:scale-110 transition-transform">
-              <i data-lucide="handshake" class="w-6 h-6"></i>
-            </div>
-            <div class="text-4xl sm:text-5xl font-heading font-black text-uigreen-dark mb-2">
-              <span class="counter" data-target="80">0</span>+
-            </div>
-            <h3 class="font-heading font-semibold text-lg text-charcoal mb-2">Industry Partners</h3>
-            <p class="text-gray-500 text-sm leading-relaxed">Fostering collaboration with corporate partners, investors, and public agencies.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+<div class="relative z-10 max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-20">
+<span class="text-label-caps font-label-caps text-institutional-gold">Our Methodology</span>
+<h2 class="text-headline-md font-headline-md text-white mt-2">From Idea to Societal Impact</h2>
+</div>
+<div class="relative">
+<!-- Vertical Line -->
+<div class="absolute left-8 md:left-1/2 top-0 bottom-0 w-1 bg-institutional-gold/30 -translate-x-1/2 hidden md:block"></div>
+<div class="space-y-16">
+<!-- Step 1 -->
+<div class="flex flex-col md:flex-row items-start md:items-center gap-8 md:gap-0">
+<div class="md:w-1/2 md:text-right md:pr-16 order-2 md:order-1">
+<h4 class="text-white font-headline-sm text-xl mb-2">Idea Generation</h4>
+<p class="text-on-primary-container text-sm">Researchers and inventors identify innovative solutions to critical local and global problems.</p>
+</div>
+<div class="w-12 h-12 rounded-full bg-institutional-gold flex items-center justify-center text-primary font-bold shrink-0 relative z-10 order-1 md:order-2">01</div>
+<div class="md:w-1/2 order-3"></div>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col md:flex-row items-start md:items-center gap-8 md:gap-0">
+<div class="md:w-1/2 order-1"></div>
+<div class="w-12 h-12 rounded-full bg-institutional-gold flex items-center justify-center text-primary font-bold shrink-0 relative z-10 order-2">02</div>
+<div class="md:w-1/2 md:pl-16 order-3">
+<h4 class="text-white font-headline-sm text-xl mb-2">Research &amp; Dev</h4>
+<p class="text-on-primary-container text-sm">Proving concepts in laboratory research and building initial working prototypes.</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col md:flex-row items-start md:items-center gap-8 md:gap-0">
+<div class="md:w-1/2 md:text-right md:pr-16 order-2 md:order-1">
+<h4 class="text-white font-headline-sm text-xl mb-2">IP Protection</h4>
+<p class="text-on-primary-container text-sm">CIPPAC audits innovation and files patents, copyrights, or trademarks to secure rights.</p>
+</div>
+<div class="w-12 h-12 rounded-full bg-institutional-gold flex items-center justify-center text-primary font-bold shrink-0 relative z-10 order-1 md:order-2">03</div>
+<div class="md:w-1/2 order-3"></div>
+</div>
+<!-- Step 4 -->
+<div class="flex flex-col md:flex-row items-start md:items-center gap-8 md:gap-0">
+<div class="md:w-1/2 order-1"></div>
+<div class="w-12 h-12 rounded-full bg-institutional-gold flex items-center justify-center text-primary font-bold shrink-0 relative z-10 order-2">04</div>
+<div class="md:w-1/2 md:pl-16 order-3">
+<h4 class="text-white font-headline-sm text-xl mb-2">Tech Transfer</h4>
+<p class="text-on-primary-container text-sm">Structuring commercial licensing deals or establishing university spin-off startups.</p>
+</div>
+</div>
+<!-- Step 7 (Final) -->
+<div class="flex flex-col md:flex-row items-start md:items-center gap-8 md:gap-0">
+<div class="md:w-1/2 order-1"></div>
+<div class="w-12 h-12 rounded-full bg-institutional-gold flex items-center justify-center text-primary font-bold shrink-0 relative z-10 order-2">07</div>
+<div class="md:w-1/2 md:pl-16 order-3">
+<h4 class="text-white font-headline-sm text-xl mb-2">Societal Impact</h4>
+<p class="text-on-primary-container text-sm">Creation of new jobs, generation of revenue, and resolving critical societal problems.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Case Studies -->
+<section id="stories"
+<section class="py-section-gap">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop flex justify-between items-end mb-16">
+<div>
+<span class="text-label-caps font-label-caps text-deep-emerald">Case Studies</span>
+<h2 class="text-headline-md font-headline-md mt-2">Featured Success Stories</h2>
+</div>
+<div class="flex gap-4">
+<button class="w-12 h-12 border border-outline rounded-full flex items-center justify-center hover:bg-deep-emerald hover:text-white transition-all">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-12 h-12 border border-outline rounded-full flex items-center justify-center hover:bg-deep-emerald hover:text-white transition-all">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Case 1 -->
+<div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow flex flex-col group">
+<div class="h-64 overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A detailed scientific laboratory setting showing a medical professional examining a microscope slide of the UI-Diag Malaria Kit. The background is clean and bright, emphasizing medical precision and biotech innovation. Deep emerald green accents in the lab equipment coordinate with the brand aesthetic." src="./ui-case-malaria.png"/>
+<div class="absolute top-4 left-4 bg-primary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Biotech</div>
+</div>
+<div class="p-8 flex-grow flex flex-col">
+<h3 class="text-headline-sm font-headline-sm mb-4">UI-Diag Malaria Kit</h3>
+<p class="text-on-surface-variant text-sm mb-6 flex-grow">A rapid, low-cost molecular diagnostic malaria kit developed by UI biochemists. Patented via CIPPAC and licensed to African pharma.</p>
+<div class="pt-6 border-t border-slate-100 flex items-center justify-between">
+<span class="text-[10px] font-bold text-success-green uppercase">Outcome: Licensed</span>
+<a class="text-primary font-bold text-xs underline" href="#">Read Case Study</a>
+</div>
+</div>
+</div>
+<!-- Case 2 -->
+<div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow flex flex-col group">
+<div class="h-64 overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A large-scale hybrid solar crop dryer installation on a modern Nigerian farm. The sun shines brightly on the metallic surfaces of the dryer, symbolizing agricultural innovation and sustainable energy. The scene is wide and professional, showcasing real-world technology application." src="./ui-case-dryer.png"/>
+<div class="absolute top-4 left-4 bg-primary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Agritech</div>
+</div>
+<div class="p-8 flex-grow flex flex-col">
+<h3 class="text-headline-sm font-headline-sm mb-4">Solar-Grain Dryer</h3>
+<p class="text-on-surface-variant text-sm mb-6 flex-grow">High-efficiency hybrid solar crop dryer designed by UI engineers. Licensed to farming cooperatives to reduce post-harvest losses.</p>
+<div class="pt-6 border-t border-slate-100 flex items-center justify-between">
+<span class="text-[10px] font-bold text-success-green uppercase">Outcome: 200+ Units</span>
+<a class="text-primary font-bold text-xs underline" href="#">Read Case Study</a>
+</div>
+</div>
+</div>
+<!-- Case 3 -->
+<div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow flex flex-col group">
+<div class="h-64 overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A sleek laptop screen showing the interface of the ClassHub AI Portal, an educational software platform. The environment is a modern classroom with soft natural light, highlighting the intersection of technology and education. High-contrast UI elements on the screen reflect the modern institutional aesthetic." src="./ui-case-classhub.png"/>
+<div class="absolute top-4 left-4 bg-primary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Software</div>
+</div>
+<div class="p-8 flex-grow flex flex-col">
+<h3 class="text-headline-sm font-headline-sm mb-4">ClassHub AI Portal</h3>
+<p class="text-on-surface-variant text-sm mb-6 flex-grow">AI-driven classroom portal secured copyright via CIPPAC and licensed to top private schools for digital learning transformation.</p>
+<div class="pt-6 border-t border-slate-100 flex items-center justify-between">
+<span class="text-[10px] font-bold text-success-green uppercase">Outcome: Spin-off Launch</span>
+<a class="text-primary font-bold text-xs underline" href="#">Read Case Study</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Leadership / Director Spotlight -->
+<section class="py-section-gap bg-surface">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+<div class="lg:col-span-5 relative">
+<div class="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl relative z-10 border-8 border-white">
+<img alt="Prof. Oladapo T. Okareh" class="w-full h-full object-cover" src="./ui-director-redesign.png"/>
+</div>
+<div class="absolute -bottom-10 -right-10 w-48 h-48 bg-institutional-gold rounded-full -z-10 mix-blend-multiply opacity-50"></div>
+<div class="absolute top-10 -left-10 w-24 h-24 bg-deep-emerald rounded-full -z-10 opacity-30"></div>
+</div>
+<div class="lg:col-span-7 space-y-8">
+<div>
+<span class="text-label-caps font-label-caps text-deep-emerald">Leadership Spotlight</span>
+<h2 class="text-headline-md font-headline-md text-primary mt-2">Guiding Intellectual Property &amp; Commercialization at UI</h2>
+</div>
+<div class="space-y-4">
+<p class="text-body-md text-on-surface leading-relaxed">
+<strong>Professor Oladapo Titus Okareh</strong> is a distinguished scholar and Professor of Environmental Health Sciences in the College of Medicine, University of Ibadan, Nigeria. His academic excellence was nationally recognized by the National Universities Commission (NUC) with a merit award for the best doctoral thesis in Public Health in 2008.
+                    </p>
+<p class="text-body-md text-on-surface-variant leading-relaxed">
+                        Re-appointed as Director of the Centre for Intellectual Property Protection and Commercialization (CIPPAC) in September 2023, Prof. Okareh has championed institutional patenting, technology licensing, and matchmaking university innovations with global markets to drive tangible socio-economic impact.
+                    </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 bg-primary-fixed rounded-lg flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">emoji_events</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-base text-deep-emerald">NUC Merit Award Winner</h4>
+<p class="text-xs text-on-surface-variant">Recognized for outstanding doctoral research contributions.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 bg-secondary-fixed rounded-lg flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary">insights</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-base text-deep-emerald">Transformative Director</h4>
+<p class="text-xs text-on-surface-variant">Leading UI's global intellectual property strategy since 2023.</p>
+</div>
+</div>
+</div>
+<div class="pt-4 border-t border-slate-200">
+<p class="text-deep-emerald font-bold text-xl">Prof. Oladapo T. Okareh</p>
+<p class="text-on-surface-variant font-label-caps text-[10px]">Director, CIPPAC | University of Ibadan, Nigeria</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Partners Row -->
+<section class="py-16 border-y border-slate-100 overflow-hidden">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
+<p class="text-center text-label-caps font-label-caps text-on-surface-variant mb-8">Trusted By &amp; Partnered With</p>
+<div class="flex flex-wrap justify-center items-center gap-12 grayscale opacity-60">
+<span class="text-xl font-bold font-headline-sm text-primary">University of Ibadan</span>
+<span class="text-xl font-bold font-headline-sm text-primary">Patent Registry Nigeria</span>
+<span class="text-xl font-bold font-headline-sm text-primary">NOTAP</span>
+<span class="text-xl font-bold font-headline-sm text-primary">WIPO Agency</span>
+<span class="text-xl font-bold font-headline-sm text-primary">Academy of Sciences</span>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-section-gap bg-primary text-white">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop text-center mb-16">
+<span class="text-label-caps font-label-caps text-institutional-gold">Testimonials</span>
+<h2 class="text-headline-md font-headline-md mt-2">Feedback from Our Community</h2>
+</div>
+<div class="max-w-4xl mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="bg-deep-emerald p-12 rounded-3xl relative overflow-hidden">
+<div class="absolute -top-6 -left-6 text-9xl text-white/5 font-serif select-none">“</div>
+<div class="relative z-10 text-center">
+<p class="text-headline-sm italic mb-10 font-normal leading-relaxed">
+                        "CIPPAC helped guide me through the complicated process of registering my agricultural diagnostic patent. Their expert legal counsel allowed our laboratory to secure its IP rights in less than a year."
+                    </p>
+<div class="flex flex-col items-center">
+<img class="w-16 h-16 rounded-full object-cover mb-4 border-2 border-institutional-gold" data-alt="A professional portrait of a female university professor, Dr. Funke Adebayo, in a modern laboratory setting. She is smiling warmly, representing academic achievement and industrial success. The portrait is high-quality with a shallow depth of field, focusing on her expression of professional satisfaction." src="./ui-testimonial-funke-redesign.png"/>
+<h4 class="font-headline-sm text-lg">Prof. Funke Adebayo</h4>
+<p class="text-institutional-gold text-xs font-label-caps">Department of Biochemistry, University of Ibadan</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section id="contact"
+<section class="py-section-gap">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="bg-white rounded-[2rem] shadow-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-5 border border-outline-variant">
+<!-- Contact Info -->
+<div class="lg:col-span-2 bg-deep-emerald p-12 text-white flex flex-col justify-between">
+<div>
+<h2 class="text-headline-md font-headline-md mb-6">Contact Information</h2>
+<p class="text-on-primary-container text-sm mb-12">Fill up the form and our team will get back to you within 24 hours.</p>
+<div class="space-y-8">
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-institutional-gold">call</span>
+<span class="text-sm">+234 (0) 802 000 0000</span>
+</div>
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-institutional-gold">mail</span>
+<span class="text-sm">cippac@ui.edu.ng</span>
+</div>
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-institutional-gold">location_on</span>
+<span class="text-sm">Trenchard Hall, University of Ibadan, Nigeria</span>
+</div>
+</div>
+</div>
+<div class="flex gap-6 pt-12">
+<a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-deep-emerald transition-all" href="#">FB</a>
+<a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-deep-emerald transition-all" href="#">TW</a>
+<a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-deep-emerald transition-all" href="#">LN</a>
+</div>
+</div>
+<!-- Contact Form -->
+<div class="lg:col-span-3 p-12 bg-white">
 
-  <!-- SECTION 3: ABOUT CIPPAC -->
-  <section id="about" class="py-24 relative overflow-hidden bg-white">
-    <!-- Floating geometric shape -->
-    <div class="absolute right-0 top-1/4 w-96 h-96 bg-uigreen/5 rounded-full blur-[100px] pointer-events-none animate-float"></div>
-    <div class="absolute left-0 bottom-1/4 w-80 h-80 bg-accentgold/5 rounded-full blur-[90px] pointer-events-none"></div>
-
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
-        <!-- Image Column -->
-        <div class="fade-up-element lg:col-span-6 relative">
-          <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-gray-100">
-            <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=800&q=80" alt="CIPPAC Research Collaboration" class="w-full h-[450px] object-cover hover:scale-105 transition-transform duration-700">
-            <div class="absolute inset-0 bg-gradient-to-t from-uigreen-dark/40 to-transparent"></div>
-          </div>
-          <!-- Decorative element -->
-          <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-accentgold/10 rounded-3xl z-[-1] animate-float"></div>
+      <!-- Form Success State -->
+      <div id="contact-success-state" class="hidden text-center py-16 space-y-6">
+        <div class="w-16 h-16 bg-uigreen-light text-uigreen rounded-full flex items-center justify-center mx-auto shadow-md">
+          <i data-lucide="check" class="w-8 h-8"></i>
         </div>
-        
-        <!-- Content Column -->
-        <div class="fade-up-element lg:col-span-6">
-          <span class="section-badge text-uigreen font-bold text-sm tracking-wider uppercase mb-3 block">University of Ibadan Innovation Ecosystem</span>
-          <h2 class="font-heading text-3xl sm:text-4xl font-bold text-uigreen-dark leading-tight mb-6">
-            Bridging Academic Excellence and Economic Impact
-          </h2>
-          <p class="text-gray-600 text-base sm:text-lg leading-relaxed mb-6">
-            The Centre for Intellectual Property Protection and Commercialization (CIPPAC), University of Ibadan, is the official institutional engine dedicated to identifying, protecting, and commercializing the university's intellectual assets.
-          </p>
-          <p class="text-gray-600 text-base leading-relaxed mb-8">
-            We empower inventors and researchers by providing advisory services, patent applications support, and licensing coordination, while actively matchmaking academy innovations with corporate industry partners to drive national economic development.
-          </p>
-          
-          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
-            <a href="#services" class="inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-uigreen text-white font-bold hover:bg-uigreen-dark transition-all shadow-md shadow-uigreen/10 focus-visible:ring-2 focus-visible:ring-uigreen focus-visible:ring-offset-2 focus:outline-none">
-              Learn More About CIPPAC
-              <i data-lucide="arrow-up-right" class="w-4 h-4 ml-2" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- SECTION 4: CORE SERVICES -->
-  <section id="services" class="bg-gray-50 py-24 border-y border-gray-100">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="text-center max-w-3xl mx-auto mb-16 fade-up-element">
-        <span class="section-badge text-uigreen font-bold text-sm tracking-wider uppercase mb-3 block">What We Do</span>
-        <h2 class="font-heading text-3xl sm:text-4xl font-bold text-uigreen-dark mb-4">Core Innovation & IP Services</h2>
-        <p class="text-gray-600 text-base sm:text-lg">Empowering researchers and inventors at every step of their commercialization journey.</p>
-      </div>
-      
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Service 1 -->
-        <div class="fade-up-element bg-white p-8 rounded-2xl border border-gray-100 hover:shadow-xl hover:shadow-uigreen/5 hover:border-uigreen/20 transition-all duration-500 group flex flex-col justify-between hover:-translate-y-1 relative border-t-3 border-t-transparent hover:border-t-accentgold">
-          <div class="absolute top-4 right-6 text-gray-200 font-heading font-bold text-sm select-none">01</div>
-          <div>
-            <div class="w-12 h-12 rounded-xl bg-uigreen-light text-uigreen flex items-center justify-center mb-6 group-hover:bg-uigreen group-hover:text-white transition-colors duration-300">
-              <i data-lucide="file-key" class="w-6 h-6" aria-hidden="true"></i>
-            </div>
-            <h3 class="font-heading font-bold text-xl text-uigreen-dark mb-3">Patent Protection</h3>
-            <p class="text-gray-500 text-sm leading-relaxed mb-6">Assisting inventors with novelty searches, drafting comprehensive patent specifications, and managing registrations with the patent registry.</p>
-          </div>
-          <a href="./patent-protection.html" class="inline-flex items-center text-uigreen font-bold text-sm group-hover:text-accentgold-dark transition-colors focus-visible:ring-2 focus-visible:ring-uigreen focus:outline-none rounded-lg px-2 py-1">
-            Learn More <i data-lucide="chevron-right" class="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" aria-hidden="true"></i>
-          </a>
-        </div>
-        
-        <!-- Service 2 -->
-        <div class="fade-up-element bg-white p-8 rounded-2xl border border-gray-100 hover:shadow-xl hover:shadow-uigreen/5 hover:border-uigreen/20 transition-all duration-500 group flex flex-col justify-between hover:-translate-y-1 relative border-t-3 border-t-transparent hover:border-t-accentgold">
-          <div class="absolute top-4 right-6 text-gray-200 font-heading font-bold text-sm select-none">02</div>
-          <div>
-            <div class="w-12 h-12 rounded-xl bg-uigreen-light text-uigreen flex items-center justify-center mb-6 group-hover:bg-uigreen group-hover:text-white transition-colors duration-300">
-              <i data-lucide="award" class="w-6 h-6" aria-hidden="true"></i>
-            </div>
-            <h3 class="font-heading font-bold text-xl text-uigreen-dark mb-3">Trademark Advisory</h3>
-            <p class="text-gray-500 text-sm leading-relaxed mb-6">Securing institutional brands, project logos, spin-off identities, and university trademarks to build commercial market identity.</p>
-          </div>
-          <a href="./trademark-advisory.html" class="inline-flex items-center text-uigreen font-bold text-sm group-hover:text-accentgold-dark transition-colors focus-visible:ring-2 focus-visible:ring-uigreen focus:outline-none rounded-lg px-2 py-1">
-            Learn More <i data-lucide="chevron-right" class="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" aria-hidden="true"></i>
-          </a>
-        </div>
-        
-        <!-- Service 3 -->
-        <div class="fade-up-element bg-white p-8 rounded-2xl border border-gray-100 hover:shadow-xl hover:shadow-uigreen/5 hover:border-uigreen/20 transition-all duration-500 group flex flex-col justify-between hover:-translate-y-1 relative border-t-3 border-t-transparent hover:border-t-accentgold">
-          <div class="absolute top-4 right-6 text-gray-200 font-heading font-bold text-sm select-none">03</div>
-          <div>
-            <div class="w-12 h-12 rounded-xl bg-uigreen-light text-uigreen flex items-center justify-center mb-6 group-hover:bg-uigreen group-hover:text-white transition-colors duration-300">
-              <i data-lucide="copyright" class="w-6 h-6" aria-hidden="true"></i>
-            </div>
-            <h3 class="font-heading font-bold text-xl text-uigreen-dark mb-3">Copyright Support</h3>
-            <p class="text-gray-500 text-sm leading-relaxed mb-6">Filing copyrights for university-developed software, platforms, academic manuscripts, educational videos, and creative works.</p>
-          </div>
-          <a href="./copyright-support.html" class="inline-flex items-center text-uigreen font-bold text-sm group-hover:text-accentgold-dark transition-colors focus-visible:ring-2 focus-visible:ring-uigreen focus:outline-none rounded-lg px-2 py-1">
-            Learn More <i data-lucide="chevron-right" class="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" aria-hidden="true"></i>
-          </a>
-        </div>
-        
-        <!-- Service 4 -->
-        <div class="fade-up-element bg-white p-8 rounded-2xl border border-gray-100 hover:shadow-xl hover:shadow-uigreen/5 hover:border-uigreen/20 transition-all duration-500 group flex flex-col justify-between hover:-translate-y-1 relative border-t-3 border-t-transparent hover:border-t-accentgold">
-          <div class="absolute top-4 right-6 text-gray-200 font-heading font-bold text-sm select-none">04</div>
-          <div>
-            <div class="w-12 h-12 rounded-xl bg-uigreen-light text-uigreen flex items-center justify-center mb-6 group-hover:bg-uigreen group-hover:text-white transition-colors duration-300">
-              <i data-lucide="git-merge" class="w-6 h-6" aria-hidden="true"></i>
-            </div>
-            <h3 class="font-heading font-bold text-xl text-uigreen-dark mb-3">Technology Transfer</h3>
-            <p class="text-gray-500 text-sm leading-relaxed mb-6">Managing licensing, material transfer agreements (MTAs), non-disclosure agreements (NDAs), and industry transition pathways.</p>
-          </div>
-          <a href="./technology-transfer.html" class="inline-flex items-center text-uigreen font-bold text-sm group-hover:text-accentgold-dark transition-colors focus-visible:ring-2 focus-visible:ring-uigreen focus:outline-none rounded-lg px-2 py-1">
-            Learn More <i data-lucide="chevron-right" class="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" aria-hidden="true"></i>
-          </a>
-        </div>
-        
-        <!-- Service 5 -->
-        <div class="fade-up-element bg-white p-8 rounded-2xl border border-gray-100 hover:shadow-xl hover:shadow-uigreen/5 hover:border-uigreen/20 transition-all duration-500 group flex flex-col justify-between hover:-translate-y-1 relative border-t-3 border-t-transparent hover:border-t-accentgold">
-          <div class="absolute top-4 right-6 text-gray-200 font-heading font-bold text-sm select-none">05</div>
-          <div>
-            <div class="w-12 h-12 rounded-xl bg-uigreen-light text-uigreen flex items-center justify-center mb-6 group-hover:bg-uigreen group-hover:text-white transition-colors duration-300">
-              <i data-lucide="trending-up" class="w-6 h-6" aria-hidden="true"></i>
-            </div>
-            <h3 class="font-heading font-bold text-xl text-uigreen-dark mb-3">Research Commercialization</h3>
-            <p class="text-gray-500 text-sm leading-relaxed mb-6">Providing incubation mentoring, university spin-off support, market validation, and connecting inventors with venture capital investors.</p>
-          </div>
-          <a href="./research-commercialization.html" class="inline-flex items-center text-uigreen font-bold text-sm group-hover:text-accentgold-dark transition-colors focus-visible:ring-2 focus-visible:ring-uigreen focus:outline-none rounded-lg px-2 py-1">
-            Learn More <i data-lucide="chevron-right" class="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" aria-hidden="true"></i>
-          </a>
-        </div>
-        
-        <!-- Service 6 -->
-        <div class="fade-up-element bg-white p-8 rounded-2xl border border-gray-100 hover:shadow-xl hover:shadow-uigreen/5 hover:border-uigreen/20 transition-all duration-500 group flex flex-col justify-between hover:-translate-y-1 relative border-t-3 border-t-transparent hover:border-t-accentgold">
-          <div class="absolute top-4 right-6 text-gray-200 font-heading font-bold text-sm select-none">06</div>
-          <div>
-            <div class="w-12 h-12 rounded-xl bg-uigreen-light text-uigreen flex items-center justify-center mb-6 group-hover:bg-uigreen group-hover:text-white transition-colors duration-300">
-              <i data-lucide="help-circle" class="w-6 h-6" aria-hidden="true"></i>
-            </div>
-            <h3 class="font-heading font-bold text-xl text-uigreen-dark mb-3">Innovation & IP Consultancy</h3>
-            <p class="text-gray-500 text-sm leading-relaxed mb-6">Organizing patent clinics, hosting workshops, developing institutional IP policies, and advising external corporate organizations.</p>
-          </div>
-          <a href="./innovation-ip-consultancy.html" class="inline-flex items-center text-uigreen font-bold text-sm group-hover:text-accentgold-dark transition-colors focus-visible:ring-2 focus-visible:ring-uigreen focus:outline-none rounded-lg px-2 py-1">
-            Learn More <i data-lucide="chevron-right" class="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" aria-hidden="true"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SECTION 5: FROM IDEA TO IMPACT (MAP PATHWAY) -->
-  <section id="timeline" class="py-24 bg-white relative overflow-hidden">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="text-center max-w-3xl mx-auto mb-20 fade-up-element">
-        <span class="section-badge text-uigreen font-bold text-sm tracking-wider uppercase mb-3 block">Our Methodology</span>
-        <h2 class="font-heading text-3xl sm:text-4xl font-bold text-uigreen-dark mb-4">From Idea to Societal Impact</h2>
-        <p class="text-gray-600 text-base">The structured path CIPPAC uses to transform research outputs into real-world market innovations.</p>
-      </div>
-      
-      <!-- Vertical Map Pathway Container -->
-      <div class="relative max-w-5xl mx-auto px-6 mt-16 pb-12">
-        <!-- 3D styled Highway Road Pathway running down the center -->
-        <div class="absolute left-8 lg:left-1/2 top-4 bottom-4 w-6 bg-gray-100 rounded-full transform -translate-x-1/2 z-0 pointer-events-none border border-gray-200/50 shadow-inner flex justify-center items-center">
-          <div class="h-full w-0.5 border-r border-dashed border-accentgold-dark/60"></div>
-        </div>
-        
-        <!-- Start Marker -->
-        <div class="absolute left-8 lg:left-1/2 -top-4 transform -translate-x-1/2 z-20 pointer-events-none select-none">
-          <span class="px-3 py-1 rounded-full bg-uigreen text-white text-[10px] font-heading font-extrabold uppercase tracking-widest shadow-sm">Start</span>
-        </div>
-
-        <!-- Finish Marker -->
-        <div class="absolute left-8 lg:left-1/2 -bottom-6 transform -translate-x-1/2 z-20 pointer-events-none select-none">
-          <span class="px-3 py-1 rounded-full bg-accentgold text-uigreen-dark text-[10px] font-heading font-extrabold uppercase tracking-widest shadow-sm">Finish</span>
-        </div>
-
-        <!-- Step 1 -->
-        <div class="relative flex flex-col lg:flex-row items-center justify-between mb-16 last:mb-0 w-full group">
-          <!-- Left Column (Card for odd steps on desktop) -->
-          <div class="w-full lg:w-[calc(50%-30px)] pr-0 lg:pr-8 pl-16 lg:pl-0 order-2 lg:order-1 lg:text-right">
-            <div class="fade-up-element bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg hover:border-uigreen/20 transition-all duration-300 relative border-l-3 border-l-uigreen lg:border-l-0 lg:border-r-3 lg:border-r-uigreen">
-              <div class="flex items-center lg:justify-end space-x-3 mb-3">
-                <div class="w-10 h-10 rounded-xl bg-uigreen-light text-uigreen flex items-center justify-center flex-shrink-0 lg:order-2 lg:ml-3">
-                  <i data-lucide="lightbulb" class="w-5 h-5" aria-hidden="true"></i>
-                </div>
-                <h4 class="font-heading font-bold text-lg text-uigreen-dark lg:order-1">Idea Generation</h4>
-              </div>
-              <p class="text-gray-500 text-sm leading-relaxed">Researchers and inventors identify innovative solutions to critical local and global problems.</p>
-            </div>
-          </div>
-          
-          <!-- Central Road Node -->
-          <div class="absolute left-8 lg:left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full bg-white border-4 border-uigreen text-uigreen-dark flex items-center justify-center font-bold shadow-md z-10 group-hover:scale-110 transition-transform order-1 lg:order-2">
-            01
-          </div>
-          
-          <!-- Right Column (Empty for odd steps on desktop) -->
-          <div class="hidden lg:block lg:w-[calc(50%-30px)] order-3"></div>
-        </div>
-
-        <!-- Step 2 -->
-        <div class="relative flex flex-col lg:flex-row items-center justify-between mb-16 last:mb-0 w-full group">
-          <!-- Left Column (Empty for even steps on desktop) -->
-          <div class="hidden lg:block lg:w-[calc(50%-30px)] order-2 lg:order-1"></div>
-          
-          <!-- Central Road Node -->
-          <div class="absolute left-8 lg:left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full bg-white border-4 border-accentgold text-accentgold-dark flex items-center justify-center font-bold shadow-md z-10 group-hover:scale-110 transition-transform order-1 lg:order-2">
-            02
-          </div>
-          
-          <!-- Right Column (Card for even steps on desktop/mobile) -->
-          <div class="w-full lg:w-[calc(50%-30px)] pl-16 lg:pl-8 order-3">
-            <div class="fade-up-element bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg hover:border-accentgold/20 transition-all duration-300 relative border-l-3 border-l-accentgold">
-              <div class="flex items-center space-x-3 mb-3">
-                <div class="w-10 h-10 rounded-xl bg-accentgold-light text-accentgold-dark flex items-center justify-center flex-shrink-0">
-                  <i data-lucide="microscope" class="w-5 h-5" aria-hidden="true"></i>
-                </div>
-                <h4 class="font-heading font-bold text-lg text-uigreen-dark">Research & Dev</h4>
-              </div>
-              <p class="text-gray-500 text-sm leading-relaxed">Proving concepts in laboratory research and building initial working prototypes.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Step 3 -->
-        <div class="relative flex flex-col lg:flex-row items-center justify-between mb-16 last:mb-0 w-full group">
-          <!-- Left Column (Card for odd steps on desktop) -->
-          <div class="w-full lg:w-[calc(50%-30px)] pr-0 lg:pr-8 pl-16 lg:pl-0 order-2 lg:order-1 lg:text-right">
-            <div class="fade-up-element bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg hover:border-uigreen/20 transition-all duration-300 relative border-l-3 border-l-uigreen lg:border-l-0 lg:border-r-3 lg:border-r-uigreen">
-              <div class="flex items-center lg:justify-end space-x-3 mb-3">
-                <div class="w-10 h-10 rounded-xl bg-uigreen-light text-uigreen flex items-center justify-center flex-shrink-0 lg:order-2 lg:ml-3">
-                  <i data-lucide="shield" class="w-5 h-5" aria-hidden="true"></i>
-                </div>
-                <h4 class="font-heading font-bold text-lg text-uigreen-dark lg:order-1">IP Protection</h4>
-              </div>
-              <p class="text-gray-500 text-sm leading-relaxed">CIPPAC audits innovation and files patents, copyrights, or trademarks to secure rights.</p>
-            </div>
-          </div>
-          
-          <!-- Central Road Node -->
-          <div class="absolute left-8 lg:left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full bg-white border-4 border-uigreen text-uigreen-dark flex items-center justify-center font-bold shadow-md z-10 group-hover:scale-110 transition-transform order-1 lg:order-2">
-            03
-          </div>
-          
-          <!-- Right Column (Empty for odd steps on desktop) -->
-          <div class="hidden lg:block lg:w-[calc(50%-30px)] order-3"></div>
-        </div>
-
-        <!-- Step 4 -->
-        <div class="relative flex flex-col lg:flex-row items-center justify-between mb-16 last:mb-0 w-full group">
-          <!-- Left Column (Empty for even steps on desktop) -->
-          <div class="hidden lg:block lg:w-[calc(50%-30px)] order-2 lg:order-1"></div>
-          
-          <!-- Central Road Node -->
-          <div class="absolute left-8 lg:left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full bg-white border-4 border-accentgold text-accentgold-dark flex items-center justify-center font-bold shadow-md z-10 group-hover:scale-110 transition-transform order-1 lg:order-2">
-            04
-          </div>
-          
-          <!-- Right Column (Card for even steps on desktop/mobile) -->
-          <div class="w-full lg:w-[calc(50%-30px)] pl-16 lg:pl-8 order-3">
-            <div class="fade-up-element bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg hover:border-accentgold/20 transition-all duration-300 relative border-l-3 border-l-accentgold">
-              <div class="flex items-center space-x-3 mb-3">
-                <div class="w-10 h-10 rounded-xl bg-accentgold-light text-accentgold-dark flex items-center justify-center flex-shrink-0">
-                  <i data-lucide="git-merge" class="w-5 h-5" aria-hidden="true"></i>
-                </div>
-                <h4 class="font-heading font-bold text-lg text-uigreen-dark">Tech Transfer</h4>
-              </div>
-              <p class="text-gray-500 text-sm leading-relaxed">Structuring commercial licensing deals or establishing university spin-off startups.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Step 5 -->
-        <div class="relative flex flex-col lg:flex-row items-center justify-between mb-16 last:mb-0 w-full group">
-          <!-- Left Column (Card for odd steps on desktop) -->
-          <div class="w-full lg:w-[calc(50%-30px)] pr-0 lg:pr-8 pl-16 lg:pl-0 order-2 lg:order-1 lg:text-right">
-            <div class="fade-up-element bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg hover:border-uigreen/20 transition-all duration-300 relative border-l-3 border-l-uigreen lg:border-l-0 lg:border-r-3 lg:border-r-uigreen">
-              <div class="flex items-center lg:justify-end space-x-3 mb-3">
-                <div class="w-10 h-10 rounded-xl bg-uigreen-light text-uigreen flex items-center justify-center flex-shrink-0 lg:order-2 lg:ml-3">
-                  <i data-lucide="trending-up" class="w-5 h-5" aria-hidden="true"></i>
-                </div>
-                <h4 class="font-heading font-bold text-lg text-uigreen-dark lg:order-1">Commercialization</h4>
-              </div>
-              <p class="text-gray-500 text-sm leading-relaxed">Scaling production, marketing products, and establishing distribution channels.</p>
-            </div>
-          </div>
-          
-          <!-- Central Road Node -->
-          <div class="absolute left-8 lg:left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full bg-white border-4 border-uigreen text-uigreen-dark flex items-center justify-center font-bold shadow-md z-10 group-hover:scale-110 transition-transform order-1 lg:order-2">
-            05
-          </div>
-          
-          <!-- Right Column (Empty for odd steps on desktop) -->
-          <div class="hidden lg:block lg:w-[calc(50%-30px)] order-3"></div>
-        </div>
-
-        <!-- Step 6 -->
-        <div class="relative flex flex-col lg:flex-row items-center justify-between mb-16 last:mb-0 w-full group">
-          <!-- Left Column (Empty for even steps on desktop) -->
-          <div class="hidden lg:block lg:w-[calc(50%-30px)] order-2 lg:order-1"></div>
-          
-          <!-- Central Road Node -->
-          <div class="absolute left-8 lg:left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full bg-white border-4 border-accentgold text-accentgold-dark flex items-center justify-center font-bold shadow-md z-10 group-hover:scale-110 transition-transform order-1 lg:order-2">
-            06
-          </div>
-          
-          <!-- Right Column (Card for even steps on desktop/mobile) -->
-          <div class="w-full lg:w-[calc(50%-30px)] pl-16 lg:pl-8 order-3">
-            <div class="fade-up-element bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg hover:border-accentgold/20 transition-all duration-300 relative border-l-3 border-l-accentgold">
-              <div class="flex items-center space-x-3 mb-3">
-                <div class="w-10 h-10 rounded-xl bg-accentgold-light text-accentgold-dark flex items-center justify-center flex-shrink-0">
-                  <i data-lucide="warehouse" class="w-5 h-5" aria-hidden="true"></i>
-                </div>
-                <h4 class="font-heading font-bold text-lg text-uigreen-dark">Industry Adoption</h4>
-              </div>
-              <p class="text-gray-500 text-sm leading-relaxed">Corporate market adoption of the product or process on a large scale.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Step 7 -->
-        <div class="relative flex flex-col lg:flex-row items-center justify-between mb-16 last:mb-0 w-full group">
-          <!-- Left Column (Card for odd steps on desktop) -->
-          <div class="w-full lg:w-[calc(50%-30px)] pr-0 lg:pr-8 pl-16 lg:pl-0 order-2 lg:order-1 lg:text-right">
-            <div class="fade-up-element bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg hover:border-uigreen/20 transition-all duration-300 relative border-l-3 border-l-uigreen lg:border-l-0 lg:border-r-3 lg:border-r-uigreen">
-              <div class="flex items-center lg:justify-end space-x-3 mb-3">
-                <div class="w-10 h-10 rounded-xl bg-uigreen-light text-uigreen flex items-center justify-center flex-shrink-0 lg:order-2 lg:ml-3">
-                  <i data-lucide="flag" class="w-5 h-5" aria-hidden="true"></i>
-                </div>
-                <h4 class="font-heading font-bold text-lg text-uigreen-dark lg:order-1">Societal Impact</h4>
-              </div>
-              <p class="text-gray-500 text-sm leading-relaxed">Creation of new jobs, generation of revenue, and resolving critical societal problems.</p>
-            </div>
-          </div>
-          
-          <!-- Central Road Node -->
-          <div class="absolute left-8 lg:left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full bg-white border-4 border-uigreen text-uigreen-dark flex items-center justify-center font-bold shadow-md z-10 group-hover:scale-110 transition-transform order-1 lg:order-2">
-            07
-          </div>
-          
-          <!-- Right Column (Empty for odd steps on desktop) -->
-          <div class="hidden lg:block lg:w-[calc(50%-30px)] order-3"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SECTION 6: FEATURED SUCCESS STORIES -->
-  <section id="stories" class="bg-gray-50 py-24 border-y border-gray-100">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 fade-up-element">
-        <div>
-          <span class="section-badge text-uigreen font-bold text-sm tracking-wider uppercase mb-3 block">Case Studies</span>
-          <h2 class="font-heading text-3xl sm:text-4xl font-bold text-uigreen-dark">Featured Success Stories</h2>
-        </div>
-        <!-- Slider Controls -->
-        <div class="flex items-center space-x-3 mt-6 md:mt-0">
-          <button id="prev-story-btn" aria-label="Previous success story" class="w-12 h-12 rounded-xl border border-gray-200 bg-white flex items-center justify-center text-charcoal hover:bg-uigreen hover:text-white transition-colors duration-300 shadow-sm focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-uigreen focus:outline-none">
-            <i data-lucide="chevron-left" class="w-5 h-5" aria-hidden="true"></i>
-          </button>
-          <button id="next-story-btn" aria-label="Next success story" class="w-12 h-12 rounded-xl border border-gray-200 bg-white flex items-center justify-center text-charcoal hover:bg-uigreen hover:text-white transition-colors duration-300 shadow-sm focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-uigreen focus:outline-none">
-            <i data-lucide="chevron-right" class="w-5 h-5" aria-hidden="true"></i>
-          </button>
-        </div>
-      </div>
-      
-      <!-- Success Stories Slider -->
-      <div class="relative overflow-hidden w-full">
-        <div id="story-slider-track" class="flex transition-transform duration-500 ease-out gap-8">
-          <!-- Story 1 -->
-          <div class="w-full md:w-[calc(50%-16px)] lg:w-[calc(33.33%-22px)] flex-shrink-0 bg-white border border-gray-100 rounded-2xl shadow-sm overflow-hidden flex flex-col group">
-            <div class="h-56 overflow-hidden relative">
-              <img src="https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=600&q=80" alt="Biotech Diagnostic Kit" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-              <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-uigreen text-white text-xs font-semibold uppercase tracking-wider">Biotech</span>
-            </div>
-            <div class="p-8 flex-grow flex flex-col justify-between">
-              <div>
-                <h3 class="font-heading font-bold text-xl text-uigreen-dark mb-3 group-hover:text-uigreen transition-colors">UI-Diag Malaria Kit</h3>
-                <p class="text-gray-500 text-sm leading-relaxed mb-6">A rapid, low-cost molecular diagnostic malaria kit developed by UI biochemists. Patented via CIPPAC and licensed to a leading African pharmaceutical manufacturer.</p>
-              </div>
-              <div class="border-t border-gray-50 pt-4 flex items-center justify-between text-xs text-gray-400">
-                <span>Outcome: Licensed & Marketed</span>
-                <a href="#contact" class="text-uigreen font-bold hover:text-accentgold-dark cursor-pointer focus-visible:ring-2 focus-visible:ring-uigreen focus:outline-none rounded-lg px-2 py-0.5">Read Case Study</a>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Story 2 -->
-          <div class="w-full md:w-[calc(50%-16px)] lg:w-[calc(33.33%-22px)] flex-shrink-0 bg-white border border-gray-100 rounded-2xl shadow-sm overflow-hidden flex flex-col group">
-            <div class="h-56 overflow-hidden relative">
-              <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=600&q=80" alt="Solar Crop Dryer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-              <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-accentgold text-uigreen-dark text-xs font-semibold uppercase tracking-wider">Agritech</span>
-            </div>
-            <div class="p-8 flex-grow flex flex-col justify-between">
-              <div>
-                <h3 class="font-heading font-bold text-xl text-uigreen-dark mb-3 group-hover:text-uigreen transition-colors">Solar-Grain Dryer</h3>
-                <p class="text-gray-500 text-sm leading-relaxed mb-6">High-efficiency hybrid solar crop dryer designed by UI agricultural engineers. Licensed to a national farming cooperative to reduce post-harvest agricultural losses.</p>
-              </div>
-              <div class="border-t border-gray-50 pt-4 flex items-center justify-between text-xs text-gray-400">
-                <span>Outcome: 200+ Units Deployed</span>
-                <a href="#contact" class="text-uigreen font-bold hover:text-accentgold-dark cursor-pointer focus-visible:ring-2 focus-visible:ring-uigreen focus:outline-none rounded-lg px-2 py-0.5">Read Case Study</a>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Story 3 -->
-          <div class="w-full md:w-[calc(50%-16px)] lg:w-[calc(33.33%-22px)] flex-shrink-0 bg-white border border-gray-100 rounded-2xl shadow-sm overflow-hidden flex flex-col group">
-            <div class="h-56 overflow-hidden relative">
-              <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=600&q=80" alt="EduTech Platform" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-              <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-uigreen text-white text-xs font-semibold uppercase tracking-wider">Software</span>
-            </div>
-            <div class="p-8 flex-grow flex flex-col justify-between">
-              <div>
-                <h3 class="font-heading font-bold text-xl text-uigreen-dark mb-3 group-hover:text-uigreen transition-colors">ClassHub AI Portal</h3>
-                <p class="text-gray-500 text-sm leading-relaxed mb-6">AI-driven classroom portal designed by UI computer science researchers. Secured copyright via CIPPAC and licensed to top private primary and secondary schools.</p>
-              </div>
-              <div class="border-t border-gray-50 pt-4 flex items-center justify-between text-xs text-gray-400">
-                <span>Outcome: Spin-off Venture Launched</span>
-                <a href="#contact" class="text-uigreen font-bold hover:text-accentgold-dark cursor-pointer focus-visible:ring-2 focus-visible:ring-uigreen focus:outline-none rounded-lg px-2 py-0.5">Read Case Study</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SECTION 7: WHY CHOOSE CIPPAC -->
-  <section class="py-24 bg-uigreen-dark text-white relative overflow-hidden">
-    <!-- Floating geometric shape -->
-    <div class="absolute right-0 top-1/4 w-96 h-96 bg-accentgold/10 rounded-full blur-[100px] pointer-events-none animate-float"></div>
-    <div class="absolute left-0 bottom-1/4 w-80 h-80 bg-white/5 rounded-full blur-[90px] pointer-events-none"></div>
-
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
-        <!-- Content Column -->
-        <div class="fade-up-element lg:col-span-7">
-          <span class="section-badge text-accentgold font-bold text-sm tracking-wider uppercase mb-3 block">Why Choose Us</span>
-          <h2 class="font-heading text-3xl sm:text-4xl font-bold text-white leading-tight mb-8">
-            Why UI Researchers and Inventors Partner with CIPPAC
-          </h2>
-          
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
-            <!-- Feature 1 -->
-            <div class="flex items-start space-x-4">
-              <div class="w-10 h-10 rounded-lg bg-white/10 text-accentgold flex items-center justify-center flex-shrink-0">
-                <i data-lucide="shield-check" class="w-5 h-5" aria-hidden="true"></i>
-              </div>
-              <div>
-                <h4 class="font-heading font-bold text-lg text-white mb-1">Expert IP Guidance</h4>
-                <p class="text-white/70 text-xs sm:text-sm leading-relaxed">Providing deep legal and technical advisory to secure your inventions.</p>
-              </div>
-            </div>
-            
-            <!-- Feature 2 -->
-            <div class="flex items-start space-x-4">
-              <div class="w-10 h-10 rounded-lg bg-white/10 text-accentgold flex items-center justify-center flex-shrink-0">
-                <i data-lucide="landmark" class="w-5 h-5" aria-hidden="true"></i>
-              </div>
-              <div>
-                <h4 class="font-heading font-bold text-lg text-white mb-1">UI-Backed Credibility</h4>
-                <p class="text-white/70 text-xs sm:text-sm leading-relaxed">Leveraging the premier reputation of the University of Ibadan, Nigeria.</p>
-              </div>
-            </div>
-            
-            <!-- Feature 3 -->
-            <div class="flex items-start space-x-4">
-              <div class="w-10 h-10 rounded-lg bg-white/10 text-accentgold flex items-center justify-center flex-shrink-0">
-                <i data-lucide="handshake-2" class="w-5 h-5" aria-hidden="true"></i>
-              </div>
-              <div>
-                <h4 class="font-heading font-bold text-lg text-white mb-1">Industry Collaboration</h4>
-                <p class="text-white/70 text-xs sm:text-sm leading-relaxed">Connecting academic research directly with industry leaders and markets.</p>
-              </div>
-            </div>
-            
-            <!-- Feature 4 -->
-            <div class="flex items-start space-x-4">
-              <div class="w-10 h-10 rounded-lg bg-white/10 text-accentgold flex items-center justify-center flex-shrink-0">
-                <i data-lucide="rocket" class="w-5 h-5" aria-hidden="true"></i>
-              </div>
-              <div>
-                <h4 class="font-heading font-bold text-lg text-white mb-1">Commercial Support</h4>
-                <p class="text-white/70 text-xs sm:text-sm leading-relaxed">Securing funding, commercial licenses, and startup incubation support.</p>
-              </div>
-            </div>
-            
-            <!-- Feature 5 -->
-            <div class="flex items-start space-x-4">
-              <div class="w-10 h-10 rounded-lg bg-white/10 text-accentgold flex items-center justify-center flex-shrink-0">
-                <i data-lucide="microscope" class="w-5 h-5" aria-hidden="true"></i>
-              </div>
-              <div>
-                <h4 class="font-heading font-bold text-lg text-white mb-1">Research Excellence</h4>
-                <p class="text-white/70 text-xs sm:text-sm leading-relaxed">Fostering high-quality academic research geared towards solving problems.</p>
-              </div>
-            </div>
-            
-            <!-- Feature 6 -->
-            <div class="flex items-start space-x-4">
-              <div class="w-10 h-10 rounded-lg bg-white/10 text-accentgold flex items-center justify-center flex-shrink-0">
-                <i data-lucide="network" class="w-5 h-5" aria-hidden="true"></i>
-              </div>
-              <div>
-                <h4 class="font-heading font-bold text-lg text-white mb-1">Innovation Ecosystem</h4>
-                <p class="text-white/70 text-xs sm:text-sm leading-relaxed">An all-inclusive hub supporting researchers, startup founders, and students.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Image Column -->
-        <div class="fade-up-element lg:col-span-5 relative">
-          <div class="relative rounded-3xl overflow-hidden shadow-2xl ring-2 ring-accentgold/20">
-            <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80" alt="Expert IP Guidance" class="w-full h-[450px] object-cover hover:scale-105 transition-transform duration-700">
-            <div class="absolute inset-0 bg-gradient-to-t from-uigreen-dark/40 to-transparent"></div>
-          </div>
-          <!-- Decorative background element -->
-          <div class="absolute -top-6 -left-6 w-32 h-32 bg-white/5 rounded-3xl z-[-1] animate-float"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- LEADERSHIP SECTION: DIRECTOR PROFILE -->
-  <section id="leadership" class="bg-white py-24 relative overflow-hidden border-b border-gray-100">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
-        <!-- Photo Column (Left) -->
-        <div class="fade-up-element lg:col-span-5 flex flex-col items-center">
-          <div class="relative overflow-hidden w-full max-w-[340px] aspect-[3/4] rounded-2xl border-4 border-uigreen shadow-[0_0_20px_rgba(11,107,58,0.4)] hover:shadow-[0_0_30px_rgba(11,107,58,0.7)] transition-all duration-500 group" id="director-slideshow">
-            <!-- Slide Track -->
-            <div class="flex h-full transition-transform duration-500 ease-out" id="director-slide-track" style="width: 400%;">
-              <!-- Slide 1 (Original Photo) -->
-              <div class="w-1/4 h-full flex-shrink-0">
-                <img src="./ui-director-photo.png" alt="Professor Oladapo Titus Okareh - Portrait 1" class="w-full h-full object-cover object-top">
-              </div>
-              <!-- Slide 2 -->
-              <div class="w-1/4 h-full flex-shrink-0">
-                <img src="./ui-director-photo-2.png" alt="Professor Oladapo Titus Okareh - Portrait 2" class="w-full h-full object-cover object-top">
-              </div>
-              <!-- Slide 3 -->
-              <div class="w-1/4 h-full flex-shrink-0">
-                <img src="./ui-director-photo-3.png" alt="Professor Oladapo Titus Okareh - Portrait 3" class="w-full h-full object-cover object-top">
-              </div>
-              <!-- Slide 4 -->
-              <div class="w-1/4 h-full flex-shrink-0">
-                <img src="./ui-director-photo-4.png" alt="Professor Oladapo Titus Okareh - Launching Ceremony" class="w-full h-full object-cover object-center">
-              </div>
-            </div>
-            
-            <!-- Slide Navigation Buttons (Hidden by default, show on hover) -->
-            <button id="prev-director-slide" aria-label="Previous image" class="absolute left-3 top-1/2 transform -translate-y-1/2 w-8 h-8 rounded-full bg-black/40 hover:bg-black/75 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 focus-visible:ring-2 focus-visible:ring-accentgold focus:outline-none z-10">
-              <i data-lucide="chevron-left" class="w-4 h-4" aria-hidden="true"></i>
-            </button>
-            <button id="next-director-slide" aria-label="Next image" class="absolute right-3 top-1/2 transform -translate-y-1/2 w-8 h-8 rounded-full bg-black/40 hover:bg-black/75 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 focus-visible:ring-2 focus-visible:ring-accentgold focus:outline-none z-10">
-              <i data-lucide="chevron-right" class="w-4 h-4" aria-hidden="true"></i>
-            </button>
-            
-            <!-- Slide Indicators (Dots) -->
-            <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10">
-              <button aria-label="Go to slide 1" class="w-2 h-2 rounded-full bg-white/50 hover:bg-white transition-colors director-dot active-director-dot" data-slide="0"></button>
-              <button aria-label="Go to slide 2" class="w-2 h-2 rounded-full bg-white/50 hover:bg-white transition-colors director-dot" data-slide="1"></button>
-              <button aria-label="Go to slide 3" class="w-2 h-2 rounded-full bg-white/50 hover:bg-white transition-colors director-dot" data-slide="2"></button>
-              <button aria-label="Go to slide 4" class="w-2 h-2 rounded-full bg-white/50 hover:bg-white transition-colors director-dot" data-slide="3"></button>
-            </div>
-          </div>
-          <!-- Title & Name below the photo, outside the overlay for perfect contrast -->
-          <div class="text-center mt-6">
-            <span class="text-xs uppercase tracking-widest text-accentgold-dark font-bold mb-1 block">Director, CIPPAC</span>
-            <h4 class="font-heading font-extrabold text-2xl text-uigreen-dark">Prof. Oladapo T. Okareh</h4>
-            <p class="text-gray-400 text-xs mt-1">University of Ibadan, Nigeria</p>
-          </div>
-        </div>
-
-        <!-- Content Column (Right) -->
-        <div class="fade-up-element lg:col-span-7">
-          <span class="section-badge text-uigreen font-bold text-sm tracking-wider uppercase mb-3 block">Leadership Spotlight</span>
-          <h2 class="font-heading text-3xl sm:text-4xl font-bold text-uigreen-dark leading-tight mb-6">
-            Guiding Intellectual Property & Commercialization at UI
-          </h2>
-          
-          <p class="text-gray-600 text-base leading-relaxed mb-6">
-            <strong>Professor Oladapo Titus Okareh</strong> is a distinguished scholar and Professor of Environmental Health Sciences in the College of Medicine, University of Ibadan, Nigeria. His academic excellence was nationally recognized by the National Universities Commission (NUC) with a merit award for the best doctoral thesis in Public Health in 2008.
-          </p>
-          
-          <p class="text-gray-600 text-base leading-relaxed mb-8">
-            Re-appointed as Director of the Centre for Intellectual Property Protection and Commercialization (CIPPAC) in September 2023, Prof. Okareh has championed institutional patenting, technology licensing, and matchmaking university innovations with global markets to drive tangible socio-economic impact.
-          </p>
-
-          <!-- Leadership Highlights -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 border-t border-gray-100 pt-8">
-            <div class="flex items-start space-x-3">
-              <div class="w-10 h-10 rounded-xl bg-uigreen-light text-uigreen flex items-center justify-center flex-shrink-0">
-                <i data-lucide="award" class="w-5 h-5" aria-hidden="true"></i>
-              </div>
-              <div>
-                <h4 class="font-heading font-bold text-uigreen-dark text-sm mb-1">NUC Merit Award Winner</h4>
-                <p class="text-gray-500 text-xs leading-relaxed">Recognized for outstanding doctoral research contributions in Public Health.</p>
-              </div>
-            </div>
-            <div class="flex items-start space-x-3">
-              <div class="w-10 h-10 rounded-xl bg-accentgold-light text-accentgold-dark flex items-center justify-center flex-shrink-0">
-                <i data-lucide="shield-check" class="w-5 h-5" aria-hidden="true"></i>
-              </div>
-              <div>
-                <h4 class="font-heading font-bold text-uigreen-dark text-sm mb-1">Transformative Director</h4>
-                <p class="text-gray-500 text-xs leading-relaxed">Re-appointed in September 2023 to lead UI's global IP strategy.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SECTION 8: NEWS & EVENTS -->
-  <section id="news" class="bg-gray-50 py-24 border-y border-gray-100">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="text-center max-w-3xl mx-auto mb-16 fade-up-element">
-        <span class="section-badge text-uigreen font-bold text-sm tracking-wider uppercase mb-3 block">News & Events</span>
-        <h2 class="font-heading text-3xl sm:text-4xl font-bold text-uigreen-dark mb-4">Latest Updates from CIPPAC</h2>
-        <p class="text-gray-600 text-base">Stay updated on patent clinics, workshops, and innovation events.</p>
-      </div>
-      
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- News Card 1 -->
-        <div class="fade-up-element bg-white border border-gray-100 rounded-2xl shadow-sm overflow-hidden flex flex-col group hover:shadow-lg transition-shadow duration-300">
-          <div class="h-48 overflow-hidden relative">
-            <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=600&q=80" alt="News Image 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-            <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-uigreen text-white text-xs font-semibold uppercase tracking-wider">Workshop</span>
-          </div>
-          <div class="p-8 flex-grow flex flex-col justify-between">
-            <div>
-              <span class="text-gray-400 text-xs block mb-2">July 10, 2026</span>
-              <h3 class="font-heading font-bold text-lg text-uigreen-dark mb-3 group-hover:text-uigreen transition-colors">Patent Clinic: Intellectual Property Drafting</h3>
-              <p class="text-gray-500 text-xs sm:text-sm leading-relaxed mb-6">CIPPAC is hosting a hands-on patent drafting clinic for graduate students and faculty researchers at the Trenchard Hall.</p>
-            </div>
-            <a href="#contact" class="inline-flex items-center text-uigreen font-bold text-xs group-hover:text-accentgold-dark transition-colors focus-visible:ring-2 focus-visible:ring-uigreen focus:outline-none rounded px-2 py-0.5 w-fit">
-              Register Now <i data-lucide="arrow-right" class="w-3.5 h-3.5 ml-1 transform group-hover:translate-x-1 transition-transform" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div>
-        
-        <!-- News Card 2 -->
-        <div class="fade-up-element bg-white border border-gray-100 rounded-2xl shadow-sm overflow-hidden flex flex-col group hover:shadow-lg transition-shadow duration-300">
-          <div class="h-48 overflow-hidden relative">
-            <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=600&q=80" alt="News Image 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-            <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-accentgold text-uigreen-dark text-xs font-semibold uppercase tracking-wider">Conference</span>
-          </div>
-          <div class="p-8 flex-grow flex flex-col justify-between">
-            <div>
-              <span class="text-gray-400 text-xs block mb-2">June 24, 2026</span>
-              <h3 class="font-heading font-bold text-lg text-uigreen-dark mb-3 group-hover:text-uigreen transition-colors">UI Annual Technology & Innovation Exhibition</h3>
-              <p class="text-gray-500 text-xs sm:text-sm leading-relaxed mb-6">Showcasing the top patented prototypes and commercial research innovations from the University of Ibadan.</p>
-            </div>
-            <a href="#contact" class="inline-flex items-center text-uigreen font-bold text-xs group-hover:text-accentgold-dark transition-colors focus-visible:ring-2 focus-visible:ring-uigreen focus:outline-none rounded px-2 py-0.5 w-fit">
-              Read More <i data-lucide="arrow-right" class="w-3.5 h-3.5 ml-1 transform group-hover:translate-x-1 transition-transform" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div>
-        
-        <!-- News Card 3 -->
-        <div class="fade-up-element bg-white border border-gray-100 rounded-2xl shadow-sm overflow-hidden flex flex-col group hover:shadow-lg transition-shadow duration-300">
-          <div class="h-48 overflow-hidden relative">
-            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80" alt="News Image 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-            <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-uigreen text-white text-xs font-semibold uppercase tracking-wider">Announcement</span>
-          </div>
-          <div class="p-8 flex-grow flex flex-col justify-between">
-            <div>
-              <span class="text-gray-400 text-xs block mb-2">May 18, 2026</span>
-              <h3 class="font-heading font-bold text-lg text-uigreen-dark mb-3 group-hover:text-uigreen transition-colors">New Intellectual Property Policy Guidelines</h3>
-              <p class="text-gray-500 text-xs sm:text-sm leading-relaxed mb-6">University Senate has approved the updated IP and Commercialization guidelines. Access the full document via our resource portal.</p>
-            </div>
-            <a href="#contact" class="inline-flex items-center text-uigreen font-bold text-xs group-hover:text-accentgold-dark transition-colors focus-visible:ring-2 focus-visible:ring-uigreen focus:outline-none rounded px-2 py-0.5 w-fit">
-              Read Guidelines <i data-lucide="arrow-right" class="w-3.5 h-3.5 ml-1 transform group-hover:translate-x-1 transition-transform" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SECTION 9: STRATEGIC PARTNERS -->
-  <section class="bg-gray-50/50 py-20 overflow-hidden border-t border-b border-gray-100">
-    <div class="max-w-7xl mx-auto px-6 mb-8 text-center">
-      <span class="text-gray-400 text-xs font-semibold uppercase tracking-widest block">Trusted By & Partnered With</span>
-    </div>
-    
-    <!-- Scrolling Marquee -->
-    <div class="relative flex overflow-x-hidden w-full">
-      <div class="flex space-x-16 animate-marquee py-4">
-        <!-- Partner Logo Placeholders -->
-        <span class="text-gray-400 font-heading font-bold text-2xl uppercase tracking-widest whitespace-nowrap hover:text-uigreen cursor-pointer">University of Ibadan</span>
-        <span class="text-gray-400 font-heading font-bold text-2xl uppercase tracking-widest whitespace-nowrap hover:text-uigreen cursor-pointer">Patent Registry Nigeria</span>
-        <span class="text-gray-400 font-heading font-bold text-2xl uppercase tracking-widest whitespace-nowrap hover:text-uigreen cursor-pointer">NOTAP Nigeria</span>
-        <span class="text-gray-400 font-heading font-bold text-2xl uppercase tracking-widest whitespace-nowrap hover:text-uigreen cursor-pointer">Federal Ministry of Science</span>
-        <span class="text-gray-400 font-heading font-bold text-2xl uppercase tracking-widest whitespace-nowrap hover:text-uigreen cursor-pointer">WIPO Agency</span>
-        <span class="text-gray-400 font-heading font-bold text-2xl uppercase tracking-widest whitespace-nowrap hover:text-uigreen cursor-pointer">African Academy of Sciences</span>
-        
-        <!-- Duplicate for Infinite Loop -->
-        <span class="text-gray-400 font-heading font-bold text-2xl uppercase tracking-widest whitespace-nowrap hover:text-uigreen cursor-pointer">University of Ibadan</span>
-        <span class="text-gray-400 font-heading font-bold text-2xl uppercase tracking-widest whitespace-nowrap hover:text-uigreen cursor-pointer">Patent Registry Nigeria</span>
-        <span class="text-gray-400 font-heading font-bold text-2xl uppercase tracking-widest whitespace-nowrap hover:text-uigreen cursor-pointer">NOTAP Nigeria</span>
-        <span class="text-gray-400 font-heading font-bold text-2xl uppercase tracking-widest whitespace-nowrap hover:text-uigreen cursor-pointer">Federal Ministry of Science</span>
-        <span class="text-gray-400 font-heading font-bold text-2xl uppercase tracking-widest whitespace-nowrap hover:text-uigreen cursor-pointer">WIPO Agency</span>
-        <span class="text-gray-400 font-heading font-bold text-2xl uppercase tracking-widest whitespace-nowrap hover:text-uigreen cursor-pointer">African Academy of Sciences</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- SECTION 10: TESTIMONIALS -->
-  <section class="py-24 bg-white relative overflow-hidden">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="text-center max-w-3xl mx-auto mb-16 fade-up-element">
-        <span class="section-badge text-uigreen font-bold text-sm tracking-wider uppercase mb-3 block">Testimonials</span>
-        <h2 class="font-heading text-3xl sm:text-4xl font-bold text-uigreen-dark mb-4">Feedback from Our Community</h2>
-        <p class="text-gray-600 text-base">Hear from the researchers, inventors, and industry partners who work with CIPPAC.</p>
-      </div>
-      
-      <!-- Testimonials Slider -->
-      <div class="relative max-w-4xl mx-auto overflow-hidden">
-        <div id="testimonial-slider-track" class="flex transition-transform duration-500 ease-out">
-          <!-- Testimonial 1 -->
-          <div class="w-full flex-shrink-0 px-6">
-            <div class="bg-gray-50 border border-gray-100 p-10 sm:p-12 rounded-3xl shadow-sm text-center relative group">
-              <div class="absolute top-6 left-6 text-uigreen/10 group-hover:text-uigreen/20 transition-colors">
-                <i data-lucide="quote" class="w-16 h-16" aria-hidden="true"></i>
-              </div>
-              <img src="./ui-testimonial-funke.png" alt="Prof. Funke Adebayo - University of Ibadan Biochemistry Professor and CIPPAC Beneficiary" class="w-20 h-20 rounded-full mx-auto object-cover border-4 border-white shadow-md mb-6">
-              <p class="text-gray-600 text-base sm:text-lg italic leading-relaxed mb-6">
-                "CIPPAC helped guide me through the complicated process of registering my agricultural diagnostic patent. Their expert legal counsel allowed our laboratory to secure its IP rights in less than a year."
-              </p>
-              <h4 class="font-heading font-bold text-lg text-uigreen-dark">Prof. Funke Adebayo</h4>
-              <span class="text-gray-400 text-xs sm:text-sm">Department of Biochemistry, University of Ibadan</span>
-            </div>
-          </div>
-          
-          <!-- Testimonial 2 -->
-          <div class="w-full flex-shrink-0 px-6">
-            <div class="bg-gray-50 border border-gray-100 p-10 sm:p-12 rounded-3xl shadow-sm text-center relative group">
-              <div class="absolute top-6 left-6 text-uigreen/10 group-hover:text-uigreen/20 transition-colors">
-                <i data-lucide="quote" class="w-16 h-16" aria-hidden="true"></i>
-              </div>
-              <img src="./ui-testimonial-emeka.png" alt="Dr. Emeka Okafor - AgriSol Tech Founder and University of Ibadan Spin-off Innovator" class="w-20 h-20 rounded-full mx-auto object-cover border-4 border-white shadow-md mb-6">
-              <p class="text-gray-600 text-base sm:text-lg italic leading-relaxed mb-6">
-                "As a startup founder spinning off university research, CIPPAC was instrumental in negotiating licensing agreements with commercial manufacturers. They are the innovation catalyst in UI."
-              </p>
-              <h4 class="font-heading font-bold text-lg text-uigreen-dark">Dr. Emeka Okafor</h4>
-              <span class="text-gray-400 text-xs sm:text-sm">Founder, AgriSol Tech Ltd (UI Spin-off)</span>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Testimonial Navigation -->
-        <div class="flex items-center justify-center space-x-3 mt-8">
-          <button id="prev-test-btn" aria-label="Previous testimonial" class="w-10 h-10 rounded-full border border-gray-200 bg-white flex items-center justify-center text-charcoal hover:bg-uigreen hover:text-white transition-colors shadow-sm focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-uigreen focus:outline-none">
-            <i data-lucide="chevron-left" class="w-4 h-4" aria-hidden="true"></i>
-          </button>
-          <button id="next-test-btn" aria-label="Next testimonial" class="w-10 h-10 rounded-full border border-gray-200 bg-white flex items-center justify-center text-charcoal hover:bg-uigreen hover:text-white transition-colors shadow-sm focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-uigreen focus:outline-none">
-            <i data-lucide="chevron-right" class="w-4 h-4" aria-hidden="true"></i>
-          </button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SECTION 11: CALL TO ACTION -->
-  <!-- SECTION 11: CONTACT US -->
-  <section id="contact" class="bg-gray-50 py-24 border-b border-gray-100 relative">
-    <div class="max-w-7xl mx-auto px-6">
-      <!-- Section Header -->
-      <div class="text-center max-w-3xl mx-auto mb-16 fade-up-element">
-        <span class="section-badge text-uigreen font-bold text-sm tracking-wider uppercase mb-3 block">Get in Touch</span>
-        <h2 class="font-heading text-3xl sm:text-5xl font-bold text-uigreen-dark mb-4">Contact Us</h2>
-        <p class="text-gray-500 text-sm sm:text-base">Any questions or remarks? Just write us a message!</p>
-      </div>
-      
-      <!-- Contact Card Container -->
-      <div class="max-w-5xl mx-auto bg-white p-4 sm:p-6 rounded-[2rem] shadow-xl border border-gray-100/50 grid grid-cols-1 lg:grid-cols-12 gap-8 fade-up-element relative">
-        <!-- Left: Contact Information Panel -->
-        <div class="lg:col-span-5 bg-uigreen-dark text-white p-8 sm:p-10 rounded-2xl relative overflow-hidden flex flex-col justify-between min-h-[450px]">
-          <!-- Decorative Background Circles -->
-          <div class="absolute -bottom-16 -right-16 w-48 h-48 rounded-full bg-accentgold/20 pointer-events-none z-0"></div>
-          <div class="absolute -bottom-8 -right-8 w-32 h-32 rounded-full bg-white/10 pointer-events-none z-0"></div>
-          
-          <div class="relative z-10">
-            <h3 class="font-heading font-bold text-2xl text-white mb-3">Contact Information</h3>
-            <p class="text-white/70 text-sm leading-relaxed mb-12 font-light">Fill up the form and our team will get back to you within 24 hours.</p>
-            
-            <!-- Details List -->
-            <ul class="space-y-6 text-sm">
-              <li class="flex items-center space-x-4">
-                <div class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center flex-shrink-0">
-                  <i data-lucide="phone" class="w-5 h-5 text-accentgold" aria-hidden="true"></i>
-                </div>
-                <span class="text-white/90 font-medium">+234 (0) 802 000 0000</span>
-              </li>
-              <li class="flex items-center space-x-4">
-                <div class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center flex-shrink-0">
-                  <i data-lucide="mail" class="w-5 h-5 text-accentgold" aria-hidden="true"></i>
-                </div>
-                <a href="mailto:cippac@ui.edu.ng" class="text-white/90 font-medium hover:text-accentgold transition-colors">cippac@ui.edu.ng</a>
-              </li>
-              <li class="flex items-center space-x-4">
-                <div class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center flex-shrink-0">
-                  <i data-lucide="map-pin" class="w-5 h-5 text-accentgold" aria-hidden="true"></i>
-                </div>
-                <span class="text-white/90 font-medium leading-relaxed">Trenchard Hall, University of Ibadan, Nigeria</span>
-              </li>
-            </ul>
-          </div>
-          
-          <!-- Social Links -->
-          <div class="flex items-center space-x-4 relative z-10 mt-12 lg:mt-0">
-            <a href="#" aria-label="Follow CIPPAC on Twitter" class="w-10 h-10 rounded-full bg-white/5 hover:bg-accentgold hover:text-uigreen-dark flex items-center justify-center text-white transition-colors focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accentgold focus:outline-none">
-              <i data-lucide="twitter" class="w-4 h-4" aria-hidden="true"></i>
-            </a>
-            <a href="#" aria-label="Follow CIPPAC on LinkedIn" class="w-10 h-10 rounded-full bg-white/5 hover:bg-accentgold hover:text-uigreen-dark flex items-center justify-center text-white transition-colors focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accentgold focus:outline-none">
-              <i data-lucide="linkedin" class="w-4 h-4" aria-hidden="true"></i>
-            </a>
-            <a href="#" aria-label="Follow CIPPAC on Facebook" class="w-10 h-10 rounded-full bg-white/5 hover:bg-accentgold hover:text-uigreen-dark flex items-center justify-center text-white transition-colors focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accentgold focus:outline-none">
-              <i data-lucide="facebook" class="w-4 h-4" aria-hidden="true"></i>
-            </a>
-            <a href="#" aria-label="Follow CIPPAC on Instagram" class="w-10 h-10 rounded-full bg-white/5 hover:bg-accentgold hover:text-uigreen-dark flex items-center justify-center text-white transition-colors focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accentgold focus:outline-none">
-              <i data-lucide="instagram" class="w-4 h-4" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div>
-        
-        <!-- Right: Interactive Form Panel -->
-        <div class="lg:col-span-7 p-4 sm:p-6">
-          <form id="cippac-contact-form" class="h-full flex flex-col justify-between space-y-8">
-            <!-- Web3Forms Access Key -->
-            <input type="hidden" name="access_key" value="1e096d98-6e6a-48c8-a1ff-8d933fa44bc9">
-            
-            <!-- Text Inputs Grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6">
-              <!-- First Name -->
-              <div>
-                <label for="first-name" class="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1">First Name</label>
-                <input type="text" id="first-name" name="first_name" required placeholder="John" class="w-full bg-transparent border-b border-gray-200 py-2.5 text-sm text-gray-800 placeholder-gray-300 focus:outline-none focus:border-uigreen transition-colors">
-              </div>
-              <!-- Last Name -->
-              <div>
-                <label for="last-name" class="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1">Last Name</label>
-                <input type="text" id="last-name" name="last_name" required placeholder="Doe" class="w-full bg-transparent border-b border-gray-200 py-2.5 text-sm text-gray-800 placeholder-gray-300 focus:outline-none focus:border-uigreen transition-colors">
-              </div>
-              <!-- Email -->
-              <div>
-                <label for="email-addr" class="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1">Mail</label>
-                <input type="email" id="email-addr" name="email" required placeholder="john.doe@gmail.com" class="w-full bg-transparent border-b border-gray-200 py-2.5 text-sm text-gray-800 placeholder-gray-300 focus:outline-none focus:border-uigreen transition-colors">
-              </div>
-              <!-- Phone -->
-              <div>
-                <label for="phone-number" class="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1">Phone</label>
-                <input type="tel" id="phone-number" name="phone" placeholder="+234 802 000 0000" class="w-full bg-transparent border-b border-gray-200 py-2.5 text-sm text-gray-800 placeholder-gray-300 focus:outline-none focus:border-uigreen transition-colors">
-              </div>
-            </div>
-            
-            <!-- Service Options Selection -->
-            <div>
-              <span class="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">What service do you need?</span>
-              <div class="flex flex-wrap gap-4 text-xs font-medium">
-                <label class="flex items-center space-x-2.5 cursor-pointer group">
-                  <input type="radio" name="service_needed" value="Patent Protection" checked class="sr-only peer">
-                  <div class="w-4 h-4 rounded-full border border-gray-300 flex items-center justify-center peer-checked:border-uigreen peer-checked:bg-uigreen transition-all">
-                    <div class="w-1.5 h-1.5 rounded-full bg-white scale-0 peer-checked:scale-100 transition-transform"></div>
-                  </div>
-                  <span class="text-gray-600 peer-checked:text-uigreen peer-checked:font-bold transition-all">Patent Protection</span>
-                </label>
-                <label class="flex items-center space-x-2.5 cursor-pointer group">
-                  <input type="radio" name="service_needed" value="Trademarks" class="sr-only peer">
-                  <div class="w-4 h-4 rounded-full border border-gray-300 flex items-center justify-center peer-checked:border-uigreen peer-checked:bg-uigreen transition-all">
-                    <div class="w-1.5 h-1.5 rounded-full bg-white scale-0 peer-checked:scale-100 transition-transform"></div>
-                  </div>
-                  <span class="text-gray-600 peer-checked:text-uigreen peer-checked:font-bold transition-all">Trademarks</span>
-                </label>
-                <label class="flex items-center space-x-2.5 cursor-pointer group">
-                  <input type="radio" name="service_needed" value="Copyright" class="sr-only peer">
-                  <div class="w-4 h-4 rounded-full border border-gray-300 flex items-center justify-center peer-checked:border-uigreen peer-checked:bg-uigreen transition-all">
-                    <div class="w-1.5 h-1.5 rounded-full bg-white scale-0 peer-checked:scale-100 transition-transform"></div>
-                  </div>
-                  <span class="text-gray-600 peer-checked:text-uigreen peer-checked:font-bold transition-all">Copyright</span>
-                </label>
-                <label class="flex items-center space-x-2.5 cursor-pointer group">
-                  <input type="radio" name="service_needed" value="Tech Transfer" class="sr-only peer">
-                  <div class="w-4 h-4 rounded-full border border-gray-300 flex items-center justify-center peer-checked:border-uigreen peer-checked:bg-uigreen transition-all">
-                    <div class="w-1.5 h-1.5 rounded-full bg-white scale-0 peer-checked:scale-100 transition-transform"></div>
-                  </div>
-                  <span class="text-gray-600 peer-checked:text-uigreen peer-checked:font-bold transition-all">Tech Transfer</span>
-                </label>
-                <label class="flex items-center space-x-2.5 cursor-pointer group">
-                  <input type="radio" name="service_needed" value="Other" class="sr-only peer">
-                  <div class="w-4 h-4 rounded-full border border-gray-300 flex items-center justify-center peer-checked:border-uigreen peer-checked:bg-uigreen transition-all">
-                    <div class="w-1.5 h-1.5 rounded-full bg-white scale-0 peer-checked:scale-100 transition-transform"></div>
-                  </div>
-                  <span class="text-gray-600 peer-checked:text-uigreen peer-checked:font-bold transition-all">Other</span>
-                </label>
-              </div>
-            </div>
-            
-            <!-- Message Input -->
-            <div>
-              <label for="message-content" class="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1">Message</label>
-              <textarea id="message-content" name="message" required placeholder="Write your message..." rows="3" class="w-full bg-transparent border-b border-gray-200 py-2.5 text-sm text-gray-800 placeholder-gray-300 focus:outline-none focus:border-uigreen transition-colors resize-none"></textarea>
-            </div>
-            
-            <!-- Submit Button -->
-            <div class="flex justify-end pt-4">
-              <button type="submit" class="w-full sm:w-auto px-8 py-4 bg-uigreen text-white font-bold rounded-xl hover:bg-uigreen-dark transition-all duration-300 hover:scale-[1.02] shadow-lg shadow-uigreen/20 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accentgold focus:outline-none">
-                Send Message
-              </button>
-            </div>
-          </form>
-          
-          <!-- Success Overlay (Hidden initially) -->
-          <div id="contact-success-state" class="hidden h-full flex flex-col justify-center items-center text-center p-6 space-y-4">
-            <div class="w-16 h-16 rounded-full bg-uigreen/10 text-uigreen flex items-center justify-center animate-bounce">
-              <i data-lucide="check-circle-2" class="w-10 h-10"></i>
-            </div>
-            <h4 class="font-heading font-bold text-2xl text-uigreen-dark">Message Sent!</h4>
-            <p class="text-gray-500 text-sm max-w-sm">Thank you for reaching out to CIPPAC. Our team will review your message and get back to you shortly.</p>
-            <button id="reset-contact-form" class="mt-4 px-6 py-2 border border-gray-200 hover:border-uigreen hover:text-uigreen rounded-xl text-xs font-semibold text-gray-500 transition-colors">Send another message</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ELEMENTOR CONTENT AREA -->
-  <div class="elementor-content-area">
-    <?php
-    if ( have_posts() ) :
-         while ( have_posts() ) : the_post();
-             the_content();
-         endwhile;
-     endif;
-    ?>
-  </div>
-
-  <!-- Back to Top Button -->
-  <button id="back-to-top" aria-label="Scroll back to top" class="fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-uigreen text-white shadow-lg shadow-uigreen/20 flex items-center justify-center opacity-0 translate-y-4 transition-all duration-300 pointer-events-none hover:bg-uigreen-dark border border-accentgold/30 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accentgold focus:outline-none">
-    <i data-lucide="chevron-up" class="w-5 h-5" aria-hidden="true"></i>
-  </button>
-
-  <!-- FOOTER -->
-  <footer class="bg-uigreen-dark text-white/85 py-16 border-t border-white/5">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
-        <!-- Col 1: About -->
-        <div class="lg:col-span-2">
-          <a href="#" class="flex items-center space-x-3 mb-6 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accentgold focus:outline-none rounded-xl w-fit">
-            <div class="w-8 h-8 rounded-lg overflow-hidden border border-accentgold/30 flex items-center justify-center bg-white p-0.5">
-              <img src="./ui-cippac-logo.png" alt="CIPPAC Logo" class="w-full h-full object-contain">
-            </div>
-            <span class="font-heading font-extrabold text-lg text-white">CIPPAC</span>
-          </a>
-          <p class="text-white/80 text-xs sm:text-sm leading-relaxed mb-6 max-w-sm">
-            Centre for Intellectual Property Protection and Commercialization (CIPPAC), University of Ibadan, Nigeria. Empowering researchers and driving innovation across Africa.
-          </p>
-          <div class="flex items-center space-x-4">
-            <a href="#" aria-label="Follow CIPPAC on Twitter" class="w-10 h-10 rounded-lg bg-white/5 hover:bg-accentgold hover:text-uigreen-dark flex items-center justify-center text-white/85 transition-colors focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accentgold focus:outline-none">
-              <i data-lucide="twitter" class="w-4 h-4" aria-hidden="true"></i>
-            </a>
-            <a href="#" aria-label="Follow CIPPAC on LinkedIn" class="w-10 h-10 rounded-lg bg-white/5 hover:bg-accentgold hover:text-uigreen-dark flex items-center justify-center text-white/85 transition-colors focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accentgold focus:outline-none">
-              <i data-lucide="linkedin" class="w-4 h-4" aria-hidden="true"></i>
-            </a>
-            <a href="#" aria-label="Follow CIPPAC on Facebook" class="w-10 h-10 rounded-lg bg-white/5 hover:bg-accentgold hover:text-uigreen-dark flex items-center justify-center text-white/85 transition-colors focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accentgold focus:outline-none">
-              <i data-lucide="facebook" class="w-4 h-4" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div>
-        
-        <!-- Col 2: Quick Links -->
-        <div>
-          <h4 class="font-heading font-bold text-white mb-6 text-sm sm:text-base">Quick Links</h4>
-          <ul class="space-y-3 text-xs sm:text-sm">
-            <li><a href="#hero" class="hover:text-white transition-colors focus-visible:ring-2 focus-visible:ring-accentgold focus:outline-none rounded px-1.5 py-0.5">Home</a></li>
-            <li><a href="#about" class="hover:text-white transition-colors focus-visible:ring-2 focus-visible:ring-accentgold focus:outline-none rounded px-1.5 py-0.5">About Us</a></li>
-            <li><a href="#services" class="hover:text-white transition-colors focus-visible:ring-2 focus-visible:ring-accentgold focus:outline-none rounded px-1.5 py-0.5">Services</a></li>
-            <li><a href="#timeline" class="hover:text-white transition-colors focus-visible:ring-2 focus-visible:ring-accentgold focus:outline-none rounded px-1.5 py-0.5">Process</a></li>
-            <li><a href="#stories" class="hover:text-white transition-colors focus-visible:ring-2 focus-visible:ring-accentgold focus:outline-none rounded px-1.5 py-0.5">Case Studies</a></li>
-          </ul>
-        </div>
-        
-        <!-- Col 3: Services -->
-        <div>
-          <h4 class="font-heading font-bold text-white mb-6 text-sm sm:text-base">Services</h4>
-          <ul class="space-y-3 text-xs sm:text-sm">
-            <li><a href="#services" class="hover:text-white transition-colors focus-visible:ring-2 focus-visible:ring-accentgold focus:outline-none rounded px-1.5 py-0.5">Patent Protection</a></li>
-            <li><a href="#services" class="hover:text-white transition-colors focus-visible:ring-2 focus-visible:ring-accentgold focus:outline-none rounded px-1.5 py-0.5">Trademarks</a></li>
-            <li><a href="#services" class="hover:text-white transition-colors focus-visible:ring-2 focus-visible:ring-accentgold focus:outline-none rounded px-1.5 py-0.5">Copyright Support</a></li>
-            <li><a href="#services" class="hover:text-white transition-colors focus-visible:ring-2 focus-visible:ring-accentgold focus:outline-none rounded px-1.5 py-0.5">Tech Transfer</a></li>
-            <li><a href="#services" class="hover:text-white transition-colors focus-visible:ring-2 focus-visible:ring-accentgold focus:outline-none rounded px-1.5 py-0.5">Commercialization</a></li>
-          </ul>
-        </div>
-        
-        <!-- Col 4: Newsletter -->
-        <div>
-          <h4 class="font-heading font-bold text-white mb-6 text-sm sm:text-base">Newsletter</h4>
-          <p class="text-white/80 text-xs leading-relaxed mb-4">Subscribe to our newsletter for clinic schedules and technology transfer updates.</p>
-          <form class="flex flex-col sm:flex-row gap-2">
-            <input type="email" placeholder="Email Address" aria-label="Email Address" class="w-full px-4 py-2 rounded-lg bg-white/5 border border-white/10 text-white placeholder-white/40 focus:outline-none focus:border-transparent focus-visible:ring-2 focus-visible:ring-accentgold text-xs">
-            <button type="submit" class="px-4 py-2 rounded-lg bg-accentgold text-uigreen-dark font-bold text-xs hover:bg-white transition-all focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accentgold focus:outline-none">Join</button>
-          </form>
-        </div>
-      </div>
-      
-      <!-- Footer Copyright Bar -->
-      <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-white/40">
-        <p>&copy; 2026 CIPPAC, University of Ibadan, Nigeria. All Rights Reserved.</p>
-        <div class="flex items-center space-x-6 mt-4 md:mt-0">
-          <a href="./privacy-policy.html" class="hover:text-white transition-colors focus-visible:ring-2 focus-visible:ring-accentgold focus:outline-none rounded px-1.5 py-0.5">Privacy Policy</a>
-          <a href="./terms-of-use.html" class="hover:text-white transition-colors focus-visible:ring-2 focus-visible:ring-accentgold focus:outline-none rounded px-1.5 py-0.5">Terms of Use</a>
-          <a href="https://www.ui.edu.ng" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors focus-visible:ring-2 focus-visible:ring-accentgold focus:outline-none rounded px-1.5 py-0.5">UI Portal</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Privacy Notice Cookie Consent Banner -->
-  <div id="privacy-consent-banner" class="fixed bottom-6 left-6 right-6 md:left-auto md:right-6 md:max-w-md z-[100] translate-y-12 opacity-0 pointer-events-none transition-all duration-500 ease-out">
-    <div class="bg-uigreen-dark/95 backdrop-blur-md border border-white/10 p-6 rounded-2xl shadow-2xl text-white">
-      <div class="flex items-start space-x-3 mb-4">
-        <div class="w-8 h-8 rounded-lg bg-accentgold/15 flex items-center justify-center flex-shrink-0 text-accentgold">
-          <i data-lucide="cookie" class="w-4 h-4" aria-hidden="true"></i>
-        </div>
-        <div>
-          <h4 class="font-heading font-bold text-base text-white">Cookie Consent & Privacy Notice</h4>
-          <p class="text-white/70 text-xs leading-relaxed mt-1">
-            CIPPAC uses cookies to optimize your experience, analyze site traffic, and support tech transfer services. By clicking "Accept All", you agree to our policies in accordance with our <a href="./privacy-policy.html" class="text-accentgold hover:underline font-semibold">Privacy Policy</a>.
-          </p>
-        </div>
-      </div>
-      <div class="flex items-center justify-end space-x-3 text-xs">
-        <button id="reject-consent-btn" class="px-4 py-2 text-white/75 hover:text-white transition-colors focus-visible:ring-1 focus-visible:ring-white rounded-lg">
-          Decline
-        </button>
-        <button id="accept-consent-btn" class="px-5 py-2 bg-accentgold text-uigreen-dark font-bold rounded-xl hover:bg-white hover:text-uigreen transition-all duration-300 shadow-md focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accentgold focus:outline-none">
-          Accept All
+        <h3 class="font-heading font-bold text-2xl text-uigreen-dark">Thank You!</h3>
+        <p class="text-gray-500 text-sm max-w-sm mx-auto leading-relaxed">
+          Your inquiry has been successfully received. A CIPPAC officer will review your details and respond within 24 hours.
+        </p>
+        <button id="reset-form-btn" class="inline-flex items-center justify-center px-6 py-2.5 bg-uigreen text-white font-semibold text-sm rounded-xl hover:bg-uigreen-dark transition-all shadow-sm">
+          Send another message
         </button>
       </div>
-    </div>
-  </div>
+<form id="cippac-contact-form" class="grid grid-cols-1 sm:grid-cols-2 gap-8" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="1e096d98-6e6a-48c8-a1ff-8d933fa44bc9">
+<div class="space-y-2">
+<label class="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest">First Name</label>
+<input class="w-full border-b border-slate-200 py-2 focus:border-deep-emerald focus:ring-0 outline-none transition-all" name="firstname" placeholder="John" type="text" required/>
+</div>
+<div class="space-y-2">
+<label class="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest">Last Name</label>
+<input class="w-full border-b border-slate-200 py-2 focus:border-deep-emerald focus:ring-0 outline-none transition-all" name="lastname" placeholder="Doe" type="text" required/>
+</div>
+<div class="space-y-2">
+<label class="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest">Mail</label>
+<input class="w-full border-b border-slate-200 py-2 focus:border-deep-emerald focus:ring-0 outline-none transition-all" name="email" placeholder="john.doe@example.com" type="email" required/>
+</div>
+<div class="space-y-2">
+<label class="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest">Phone</label>
+<input class="w-full border-b border-slate-200 py-2 focus:border-deep-emerald focus:ring-0 outline-none transition-all" name="phone" placeholder="+234 800 000 0000" type="tel" required/>
+</div>
+<div class="sm:col-span-2 space-y-4">
+<label class="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest block">What service do you need?</label>
+<div class="flex flex-wrap gap-4">
+<label class="flex items-center gap-2 cursor-pointer">
+<input class="rounded text-deep-emerald focus:ring-deep-emerald" type="checkbox" name="services[]"/>
+<span class="text-xs">Patent Protection</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer">
+<input class="rounded text-deep-emerald focus:ring-deep-emerald" type="checkbox"/>
+<span class="text-xs">Trademarks</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer">
+<input class="rounded text-deep-emerald focus:ring-deep-emerald" type="checkbox"/>
+<span class="text-xs">Copyright</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer">
+<input class="rounded text-deep-emerald focus:ring-deep-emerald" type="checkbox"/>
+<span class="text-xs">Other</span>
+</label>
+</div>
+</div>
+<div class="sm:col-span-2 space-y-2">
+<label class="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest">Message</label>
+<textarea class="w-full border-b border-slate-200 py-2 focus:border-deep-emerald focus:ring-0 outline-none transition-all resize-none" name="message" placeholder="Write your message here..." rows="4" required></textarea>
+</div>
+<div class="sm:col-span-2 flex justify-end">
+<button class="bg-deep-emerald text-white px-10 py-4 rounded-lg font-bold hover:shadow-lg transition-all flex items-center gap-2" type="submit">
+                                Send Message
+                                <span class="material-symbols-outlined">send</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-primary pt-20 pb-10 text-white">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter mb-16">
+<div class="space-y-6">
+<div class="flex items-center gap-3">
+<img alt="CIPPAC Logo" class="h-10 w-10 brightness-0 invert object-contain" src="./ui-cippac-logo.png"/>
+<span class="text-headline-sm font-headline-sm font-bold text-white">CIPPAC</span>
+</div>
+<p class="text-on-primary-container text-sm leading-relaxed max-w-xs">
+                    Centre for Intellectual Property Protection and Commercialization (CIPPAC), University of Ibadan, Nigeria. Empowering researchers and driving innovation across Africa.
+                </p>
+<div class="flex gap-4">
+<a class="hover:text-institutional-gold transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="hover:text-institutional-gold transition-colors" href="#"><span class="material-symbols-outlined">mail</span></a>
+</div>
+</div>
+<div>
+<h4 class="text-label-caps font-label-caps text-institutional-gold mb-8">Quick Links</h4>
+<ul class="space-y-4 text-sm text-on-primary-container">
+<li><a class="hover:text-white transition-colors" href="#">Home</a></li>
+<li><a class="hover:text-white transition-colors" href="#">About Us</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Services</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Process</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Case Studies</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-label-caps font-label-caps text-institutional-gold mb-8">Services</h4>
+<ul class="space-y-4 text-sm text-on-primary-container">
+<li><a class="hover:text-white transition-colors" href="#">Patent Protection</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Trademarks</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Copyright Support</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Tech Transfer</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Commercialization</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-label-caps font-label-caps text-institutional-gold mb-8">Newsletter</h4>
+<p class="text-sm text-on-primary-container mb-6">Subscribe to our newsletter for clinic schedules and technology transfer updates.</p>
+<form class="flex">
+<input class="bg-white/5 border border-white/20 px-4 py-2 rounded-l-lg w-full focus:outline-none focus:border-institutional-gold" placeholder="Email Address" type="email"/>
+<button class="bg-institutional-gold text-deep-emerald px-6 py-2 rounded-r-lg font-bold text-sm">Join</button>
+</form>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="text-xs text-on-primary-container">© 2024 CIPPAC University of Ibadan. All Rights Reserved.</p>
+<div class="flex gap-8 text-xs text-on-primary-container">
+<a class="hover:text-institutional-gold" href="#">Privacy Policy</a>
+<a class="hover:text-institutional-gold" href="#">Terms of Service</a>
+<a class="hover:text-institutional-gold" href="#">IP Guidelines</a>
+<a class="hover:text-institutional-gold" href="#">Contact Us</a>
+</div>
+</div>
+</footer>
 
-  <!-- Lucide Icon Initialization -->
   <script>
     lucide.createIcons();
-  </script>
-  
-  <!-- JavaScript for Interactions & Smooth Scrolling -->
-  <script>
-    // Header Scroll Transition
-    const header = document.getElementById('main-header');
-    const logoText = document.getElementById('logo-text-cippac');
-    const navCta = document.getElementById('nav-cta');
-    const navLinks = document.querySelectorAll('.nav-link');
-    
-    const sections = document.querySelectorAll('section[id]');
-    const backToTopBtn = document.getElementById('back-to-top');
 
+    // Sticky Navigation Listener
+    const header = document.querySelector('header');
     window.addEventListener('scroll', () => {
       if (window.scrollY > 50) {
-        header.classList.remove('py-6');
-        header.classList.add('py-4', 'bg-white/80', 'backdrop-blur-md', 'shadow-sm', 'border-gray-100');
-        logoText.classList.remove('text-white');
-        logoText.classList.add('text-uigreen-dark');
-        navCta.classList.remove('border-white/30', 'text-white', 'hover:bg-white', 'hover:text-uigreen');
-        navCta.classList.add('border-uigreen/30', 'text-uigreen', 'hover:bg-uigreen', 'hover:text-white');
-        navLinks.forEach(link => {
-          link.classList.remove('text-white/90', 'hover:text-white');
-          link.classList.add('text-gray-600', 'hover:text-uigreen');
-        });
+        header.classList.add('py-2', 'shadow-md', 'bg-surface/95');
+        header.classList.remove('py-4');
       } else {
-        header.classList.remove('py-4', 'bg-white/80', 'backdrop-blur-md', 'shadow-sm', 'border-gray-100');
-        header.classList.add('py-6');
-        logoText.classList.remove('text-uigreen-dark');
-        logoText.classList.add('text-white');
-        navCta.classList.remove('border-uigreen/30', 'text-uigreen', 'hover:bg-uigreen', 'hover:text-white');
-        navCta.classList.add('border-white/30', 'text-white', 'hover:bg-white', 'hover:text-uigreen');
-        navLinks.forEach(link => {
-          link.classList.remove('text-gray-600', 'hover:text-uigreen');
-          link.classList.add('text-white/90', 'hover:text-white');
-        });
+        header.classList.remove('py-2', 'shadow-md', 'bg-surface/95');
+        header.classList.add('py-4');
       }
-
-      // Back to Top Button Show/Hide
-      if (backToTopBtn) {
-        if (window.scrollY > 600) {
-          backToTopBtn.classList.remove('opacity-0', 'translate-y-4', 'pointer-events-none');
-          backToTopBtn.classList.add('opacity-100', 'translate-y-0', 'pointer-events-auto');
-        } else {
-          backToTopBtn.classList.add('opacity-0', 'translate-y-4', 'pointer-events-none');
-          backToTopBtn.classList.remove('opacity-100', 'translate-y-0', 'pointer-events-auto');
-        }
-      }
-
-      // Active Nav Link Highlighting
-      let current = '';
-      sections.forEach(section => {
-        const sectionTop = section.offsetTop - 100;
-        if (window.scrollY >= sectionTop) {
-          current = section.getAttribute('id');
-        }
-      });
-      navLinks.forEach(link => {
-        link.classList.remove('text-accentgold', '!text-accentgold');
-        if (link.getAttribute('href') === '#' + current) {
-          link.classList.add('!text-accentgold');
-        }
-      });
     });
 
-    // Mobile Menu Toggle
+    // Mobile Navigation Drawer Toggle
+    const mobileMenu = document.getElementById('mobile-menu');
     const mobileMenuBtn = document.getElementById('mobile-menu-btn');
     const closeMenuBtn = document.getElementById('close-menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const mobileLinks = document.querySelectorAll('.mobile-nav-link');
-    
-    mobileMenuBtn.addEventListener('click', () => {
-      mobileMenu.classList.remove('translate-x-full');
-    });
-    
-    closeMenuBtn.addEventListener('click', (e) => {
-      e.stopPropagation();
-      mobileMenu.classList.add('translate-x-full');
-    });
-    
-    // Tap backdrop to close
-    mobileMenu.addEventListener('click', (e) => {
-      if (e.target === mobileMenu) {
-        mobileMenu.classList.add('translate-x-full');
-      }
-    });
-    
-    mobileLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        mobileMenu.classList.add('translate-x-full');
-      });
-    });
-    
-    // Fade-up Animation using Intersection Observer
-    const fadeElements = document.querySelectorAll('.fade-up-element');
-    const observerOptions = {
-      root: null,
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
-    };
-    
-    const fadeObserver = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          
-          // Trigger metric counter animation if this element has counters
-          const counters = entry.target.querySelectorAll('.counter');
-          if (counters.length > 0) {
-            counters.forEach(counter => {
-              if (!counter.started) {
-                counter.started = true;
-                animateCounter(counter);
-              }
-            });
-          }
-          
-          observer.unobserve(entry.target);
-        }
-      });
-    }, observerOptions);
-    
-    fadeElements.forEach(element => {
-      fadeObserver.observe(element);
-    });
-    
-    // Animate Number Counters Function
-    function animateCounter(counter) {
-      const target = +counter.getAttribute('data-target');
-      const duration = 2000; // 2 seconds
-      const startTime = performance.now();
-      
-      function update(currentTime) {
-        const elapsed = currentTime - startTime;
-        const progress = Math.min(elapsed / duration, 1);
-        // Ease out quad
-        const easeProgress = progress * (2 - progress);
-        
-        const currentValue = Math.floor(easeProgress * target);
-        counter.innerText = currentValue;
-        
-        if (progress < 1) {
-          requestAnimationFrame(update);
-        } else {
-          counter.innerText = target;
-        }
-      }
-      
-      requestAnimationFrame(update);
-    }
-    
-    // Story Slider Control
-    const sliderTrack = document.getElementById('story-slider-track');
-    const prevBtn = document.getElementById('prev-story-btn');
-    const nextBtn = document.getElementById('next-story-btn');
-    let sliderOffset = 0;
-    
-    nextBtn.addEventListener('click', () => {
-      const maxScroll = sliderTrack.scrollWidth - sliderTrack.parentElement.clientWidth;
-      sliderOffset += sliderTrack.parentElement.clientWidth / 2;
-      if (sliderOffset > maxScroll) sliderOffset = maxScroll;
-      sliderTrack.style.transform = "translateX(-" + sliderOffset + "px)";
-    });
-    
-    prevBtn.addEventListener('click', () => {
-      sliderOffset -= sliderTrack.parentElement.clientWidth / 2;
-      if (sliderOffset < 0) sliderOffset = 0;
-      sliderTrack.style.transform = "translateX(-" + sliderOffset + "px)";
-    });
-    
-    // Testimonials Slider Control
-    const testTrack = document.getElementById('testimonial-slider-track');
-    const prevTestBtn = document.getElementById('prev-test-btn');
-    const nextTestBtn = document.getElementById('next-test-btn');
-    let testIndex = 0;
-    const testCount = testTrack.children.length;
-    
-    function updateTestimonialSlider() {
-      testTrack.style.transform = "translateX(-" + (testIndex * 100) + "%)";
-    }
-    
-    nextTestBtn.addEventListener('click', () => {
-      testIndex = (testIndex + 1) % testCount;
-      updateTestimonialSlider();
-    });
-    
-    prevTestBtn.addEventListener('click', () => {
-      testIndex = (testIndex - 1 + testCount) % testCount;
-      updateTestimonialSlider();
-    });
-    
-    // Auto play testimonials
-    setInterval(() => {
-      testIndex = (testIndex + 1) % testCount;
-      updateTestimonialSlider();
-    }, 8000);
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
 
-    // Back to Top Button click handler
+    if (mobileMenu && mobileMenuBtn && closeMenuBtn) {
+      const openDrawer = () => {
+        mobileMenu.classList.remove('translate-x-full');
+        mobileMenu.classList.add('translate-x-0');
+      };
+      const closeDrawer = () => {
+        mobileMenu.classList.remove('translate-x-0');
+        mobileMenu.classList.add('translate-x-full');
+      };
+
+      mobileMenuBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        openDrawer();
+      });
+
+      closeMenuBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        closeDrawer();
+      });
+
+      // Backdrop Tap-to-Close
+      mobileMenu.addEventListener('click', (e) => {
+        if (e.target === mobileMenu) {
+          closeDrawer();
+        }
+      });
+
+      mobileNavLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          closeDrawer();
+        });
+      });
+    }
+
+    // Back to Top Button Logic
+    const backToTopBtn = document.getElementById('back-to-top');
     if (backToTopBtn) {
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 600) {
+          backToTopBtn.classList.remove('translate-y-16', 'opacity-0');
+          backToTopBtn.classList.add('translate-y-0', 'opacity-100');
+        } else {
+          backToTopBtn.classList.remove('translate-y-0', 'opacity-100');
+          backToTopBtn.classList.add('translate-y-16', 'opacity-0');
+        }
+      });
       backToTopBtn.addEventListener('click', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
       });
     }
 
-    // Director Slideshow Control
-    const directorTrack = document.getElementById('director-slide-track');
-    const prevDirectorBtn = document.getElementById('prev-director-slide');
-    const nextDirectorBtn = document.getElementById('next-director-slide');
-    const directorDots = document.querySelectorAll('.director-dot');
-    const directorSlideshow = document.getElementById('director-slideshow');
-    
-    let directorIndex = 0;
-    const directorCount = 4;
-    let directorInterval;
-
-    function updateDirectorSlider() {
-      if (directorTrack) {
-        directorTrack.style.transform = "translateX(-" + (directorIndex * 25) + "%)";
-      }
-      
-      directorDots.forEach((dot, idx) => {
-        if (idx === directorIndex) {
-          dot.classList.add('bg-white', 'scale-110');
-          dot.classList.remove('bg-white/50');
-        } else {
-          dot.classList.remove('bg-white', 'scale-110');
-          dot.classList.add('bg-white/50');
-        }
-      });
-    }
-
-    function startDirectorAutoplay() {
-      directorInterval = setInterval(() => {
-        directorIndex = (directorIndex + 1) % directorCount;
-        updateDirectorSlider();
-      }, 5000);
-    }
-
-    function stopDirectorAutoplay() {
-      clearInterval(directorInterval);
-    }
-
-    if (nextDirectorBtn) {
-      nextDirectorBtn.addEventListener('click', () => {
-        directorIndex = (directorIndex + 1) % directorCount;
-        updateDirectorSlider();
-      });
-    }
-
-    if (prevDirectorBtn) {
-      prevDirectorBtn.addEventListener('click', () => {
-        directorIndex = (directorIndex - 1 + directorCount) % directorCount;
-        updateDirectorSlider();
-      });
-    }
-
-    directorDots.forEach(dot => {
-      dot.addEventListener('click', () => {
-        directorIndex = parseInt(dot.getAttribute('data-slide'));
-        updateDirectorSlider();
-      });
-    });
-
-    if (directorSlideshow) {
-      directorSlideshow.addEventListener('mouseenter', stopDirectorAutoplay);
-      directorSlideshow.addEventListener('mouseleave', startDirectorAutoplay);
-    }
-
-    // Initialize
-    updateDirectorSlider();
-    startDirectorAutoplay();
-
-    // Newsletter Form Validation handler
-    const newsletterForm = document.querySelector('footer form');
-    if (newsletterForm) {
-      newsletterForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const emailInput = newsletterForm.querySelector('input[type="email"]');
-        if (emailInput && emailInput.value && emailInput.value.includes('@')) {
-          emailInput.value = '';
-          emailInput.placeholder = 'Thank you for subscribing!';
-          emailInput.classList.add('border-accentgold');
-          emailInput.disabled = true;
-          const submitBtn = newsletterForm.querySelector('button[type="submit"]');
-          if (submitBtn) submitBtn.disabled = true;
-        }
-      });
-    }
-
-    // Contact Form submission handler
+    // Contact Form AJAX Handler
     const contactForm = document.getElementById('cippac-contact-form');
     const successState = document.getElementById('contact-success-state');
-    const resetFormBtn = document.getElementById('reset-contact-form');
-    const submitBtn = contactForm ? contactForm.querySelector('button[type="submit"]') : null;
+    const resetFormBtn = document.getElementById('reset-form-btn');
 
     if (contactForm && successState) {
       contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
         
-        // Show loading state
-        const originalBtnText = submitBtn ? submitBtn.innerHTML : 'Send Message';
+        const submitBtn = contactForm.querySelector('button[type="submit"]');
+        const originalBtnText = submitBtn ? submitBtn.innerHTML : '';
         if (submitBtn) {
           submitBtn.disabled = true;
-          submitBtn.innerHTML = 'Sending... <i data-lucide="loader-2" class="w-4 h-4 ml-2 animate-spin inline-block"></i>';
-          if (window.lucide) window.lucide.createIcons();
+          submitBtn.innerHTML = 'Sending...';
         }
         
         const formData = new FormData(contactForm);
         const object = Object.fromEntries(formData);
         
-        // Set styling formats for Web3Forms email notifications
+        // Subject formatting for email
         object['subject'] = 'New Contact Form Submission - CIPPAC';
         object['from_name'] = 'CIPPAC Website Portal';
 
@@ -1782,10 +887,9 @@ and Global Innovation
         .then(async (response) => {
           let json = await response.json();
           if (response.status == 200) {
-            // Show success state
             contactForm.classList.add('hidden');
             successState.classList.remove('hidden');
-            if (window.lucide) window.lucide.createIcons();
+            lucide.createIcons();
           } else {
             console.log(response);
             alert(json.message || "Something went wrong!");
@@ -1796,7 +900,6 @@ and Global Innovation
           alert("Connection error. Please try again.");
         })
         .then(() => {
-          // Restore button state
           if (submitBtn) {
             submitBtn.disabled = false;
             submitBtn.innerHTML = originalBtnText;
@@ -1820,8 +923,6 @@ and Global Innovation
 
     if (consentBanner && acceptBtn && rejectBtn) {
       const consentGiven = localStorage.getItem('cippac-cookie-consent');
-      
-      // If no consent has been logged yet, show the banner with a delay
       if (!consentGiven) {
         setTimeout(() => {
           consentBanner.classList.remove('translate-y-12', 'opacity-0', 'pointer-events-none');
@@ -1845,7 +946,35 @@ and Global Innovation
       }
     }
   </script>
+
+  <!-- Privacy Consent Banner -->
+  <div id="privacy-consent-banner" class="fixed bottom-6 right-6 z-50 max-w-md bg-[#00201a]/95 text-white p-6 rounded-3xl border border-white/10 shadow-2xl backdrop-blur-md transition-all duration-500 translate-y-12 opacity-0 pointer-events-none">
+    <div class="flex items-start gap-4">
+      <div class="w-10 h-10 rounded-xl bg-institutional-gold/10 flex items-center justify-center shrink-0 text-institutional-gold">
+        <i data-lucide="cookie" class="w-5 h-5"></i>
+      </div>
+      <div class="space-y-4">
+        <div>
+          <h4 class="font-heading font-bold text-base text-white">Privacy & Cookies</h4>
+          <p class="text-white/70 text-xs leading-relaxed mt-1">
+            We use cookies to optimize your experience and analyze website traffic. Learn more in our <a href="./privacy-policy.html" class="underline text-institutional-gold hover:text-white transition-colors">Privacy Policy</a>.
+          </p>
+        </div>
+        <div class="flex items-center gap-3">
+          <button id="accept-consent-btn" class="px-4 py-2 bg-institutional-gold text-deep-emerald font-bold text-xs rounded-xl hover:scale-105 transition-transform shadow-md">
+            Accept All
+          </button>
+          <button id="reject-consent-btn" class="px-4 py-2 border border-white/20 text-white font-bold text-xs rounded-xl hover:bg-white/10 transition-colors">
+            Decline
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" aria-label="Scroll back to top" class="fixed bottom-6 left-6 z-50 w-12 h-12 rounded-full bg-deep-emerald text-white flex items-center justify-center border border-white/10 shadow-lg transition-all duration-300 translate-y-16 opacity-0 hover:scale-110 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-deep-emerald focus:outline-none">
+    <i data-lucide="arrow-up" class="w-5 h-5"></i>
+  </button>
   
-  
-</body>
-</html>
+</body></html>
