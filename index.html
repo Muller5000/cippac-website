@@ -154,7 +154,7 @@
     .fade-up-element {
       opacity: 0;
       transform: translateY(30px);
-      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
     }
     .fade-up-element.visible {
       opacity: 1;
@@ -162,11 +162,17 @@
     }
 
     /* Staggered transition delays for grid elements */
-    .fade-up-element:nth-child(2) { transition-delay: 100ms; }
-    .fade-up-element:nth-child(3) { transition-delay: 200ms; }
-    .fade-up-element:nth-child(4) { transition-delay: 300ms; }
-    .fade-up-element:nth-child(5) { transition-delay: 400ms; }
-    .fade-up-element:nth-child(6) { transition-delay: 500ms; }
+    .fade-up-element:nth-child(2) { transition-delay: 75ms; }
+    .fade-up-element:nth-child(3) { transition-delay: 150ms; }
+    .fade-up-element:nth-child(4) { transition-delay: 225ms; }
+    .fade-up-element:nth-child(5) { transition-delay: 300ms; }
+    .fade-up-element:nth-child(6) { transition-delay: 375ms; }
+
+    /* Fix hover sluggishness caused by reveal transition */
+    .fade-up-element:hover {
+      transition-delay: 0ms !important;
+      transition-duration: 0.2s !important;
+    }
 
     /* Logo wall marquee */
     @keyframes marquee {
